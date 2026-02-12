@@ -1,0 +1,12 @@
+# OLLAMA-LANGCHAING-AGENTE/config.yaml
+database:
+  uri: "sqlite:///tron_memory.db"
+
+models:
+  default_ollama: "llama3.1:8b"
+  simple_task: "gemma2"
+  complex_task: "deepseek/deepseek-chat" # Assuming OpenRouter for DeepSeek
+  image_gen: "dall-e-3" # Assuming OpenRouter for DALL-E
+
+openrouter:
+  api_key: "" # Will be loaded from .env

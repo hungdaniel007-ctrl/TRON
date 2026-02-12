@@ -1,0 +1,9 @@
+# Documentation Indexer Requirements
+# Auto-generated requirements file
+
+# Core dependencies (though the scripts use only standard library)
+typing-extensions>=4.0.0
+pathlib>=1.0.0
+
+# Optional dependencies for enhanced functionality
+# (Add any additional packages as needed)

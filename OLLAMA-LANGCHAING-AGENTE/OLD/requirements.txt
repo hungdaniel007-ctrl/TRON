@@ -1,0 +1,15 @@
+langchain
+sqlalchemy
+pysqlite3-binary
+ollama
+langchain-cognee
+langchain-community
+langchain-openai
+langgraph
+langgraph-checkpoint-sqlite
+langgraph-checkpoint-postgres
+langchain-ollama
+pytest
+pytest-asyncio
+pyyaml
+bs4

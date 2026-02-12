@@ -1,0 +1,1038 @@
+2026-02-11 10:38:05,642 - __main__ - INFO - Starting extraction of titles from: Scripts de Ejemplo Documentadores/SqlAlchemyDocs.md
+2026-02-11 10:38:05,947 - __main__ - INFO - Title extraction completed. Found 3463 titles.
+2026-02-11 10:38:05,952 - __main__ - INFO - Filtered out title 'maestro.md - Contenido de: /home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA' (addr=1.1, line=1) due to insufficient content (1 lines).
+2026-02-11 10:38:05,952 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/_modules/index.md' (addr=2.1, line=5) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'W-#B^#R-#B^#W-' (addr=1.1, line=425) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'W>#B^#R-#B^#W<' (addr=1.3, line=429) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'W***' (addr=1.5, line=437) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'W@@@' (addr=1.7, line=441) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'Y((--))' (addr=1.9, line=449) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'Y[[--]]' (addr=1.11, line=453) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'WVVVVV' (addr=1.13, line=467) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'W> #R*** #W<' (addr=1.14, line=468) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'M|' (addr=1.16, line=472) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'M- #Y+++ #M-' (addr=1.17, line=473) due to insufficient content (0 lines).
+2026-02-11 10:38:05,953 - __main__ - INFO - Filtered out title 'Y^' (addr=1.19, line=481) due to insufficient content (0 lines).
+2026-02-11 10:38:05,954 - __main__ - INFO - Filtered out title 'create message box' (addr=1.22, line=627) due to insufficient content (1 lines).
+2026-02-11 10:38:05,954 - __main__ - INFO - Filtered out title 'get the lower/upper boundaries of the army' (addr=1.25, line=692) due to insufficient content (0 lines).
+2026-02-11 10:38:05,954 - __main__ - INFO - Filtered out title 'locate enemy glyphs which intersect with the' (addr=1.28, line=760) due to insufficient content (0 lines).
+2026-02-11 10:38:05,955 - __main__ - INFO - Filtered out title 'there's no connection pool, so if these were distinct' (addr=1.1, line=1104) due to insufficient content (0 lines).
+2026-02-11 10:38:05,955 - __main__ - INFO - Filtered out title 'because if you're going to roll your own, you're probably' (addr=1.1, line=1702) due to insufficient content (0 lines).
+2026-02-11 10:38:05,956 - __main__ - INFO - Filtered out title 'going to do this, so see how this pushes you right back into' (addr=1.2, line=1703) due to insufficient content (0 lines).
+2026-02-11 10:38:05,956 - __main__ - INFO - Filtered out title 'make us transient (removes persistent' (addr=1.1, line=1993) due to insufficient content (0 lines).
+2026-02-11 10:38:05,956 - __main__ - INFO - Filtered out title 'identity).' (addr=1.2, line=1994) due to insufficient content (1 lines).
+2026-02-11 10:38:05,956 - __main__ - INFO - Filtered out title 'set 'id' to None.' (addr=1.3, line=1997) due to insufficient content (0 lines).
+2026-02-11 10:38:05,956 - __main__ - INFO - Filtered out title 'make it transient' (addr=1.5, line=2013) due to insufficient content (1 lines).
+2026-02-11 10:38:05,956 - __main__ - INFO - Filtered out title 'expire parent's reference to us' (addr=1.9, line=2065) due to insufficient content (1 lines).
+2026-02-11 10:38:05,956 - __main__ - INFO - Filtered out title 'create new version' (addr=1.10, line=2068) due to insufficient content (1 lines).
+2026-02-11 10:38:05,956 - __main__ - INFO - Filtered out title 'this will be the current time as the test runs' (addr=1.1, line=2156) due to insufficient content (1 lines).
+2026-02-11 10:38:05,956 - __main__ - INFO - Filtered out title 'our current identity key, which will be used on the "old"' (addr=1.4, line=2176) due to insufficient content (0 lines).
+2026-02-11 10:38:05,956 - __main__ - INFO - Filtered out title 'version of us to emit an UPDATE. this is just for assertion purposes' (addr=1.5, line=2177) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'make sure self.start / self.end are not expired' (addr=1.6, line=2180) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'turn us into an INSERT' (addr=1.7, line=2183) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'make the "old" version of us, which we will turn into an' (addr=1.8, line=2186) due to insufficient content (0 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'turn old_copy_of_us into an UPDATE' (addr=1.10, line=2192) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'the "old" object has our old identity key (that we no longer have)' (addr=1.11, line=2195) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'now put it back in the session' (addr=1.12, line=2198) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'now update the 'end' - SQLAlchemy sees this as a PK switch' (addr=1.13, line=2201) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'fun fact!  the new_version() routine is *not* called for' (addr=1.14, line=2204) due to insufficient content (0 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'old_copy_of_us!  because we are already in the before_flush() hook!' (addr=1.15, line=2205) due to insufficient content (0 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'this surprised even me.   I was thinking we had to guard against' (addr=1.16, line=2206) due to insufficient content (0 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'make it transient' (addr=1.18, line=2224) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'note the primaryjoin can also be:' (addr=1.20, line=2256) due to insufficient content (0 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'expire parent's reference to us' (addr=1.22, line=2280) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'create new version' (addr=1.23, line=2283) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'close the transaction, if any, since PG time doesn't increment in the' (addr=1.25, line=2297) due to insufficient content (0 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'transaction' (addr=1.26, line=2298) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'get "now" in terms of the DB so we can keep the ranges low and' (addr=1.27, line=2301) due to insufficient content (0 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'same object' (addr=1.30, line=2359) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'new data' (addr=1.31, line=2362) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'new end time' (addr=1.32, line=2365) due to insufficient content (1 lines).
+2026-02-11 10:38:05,957 - __main__ - INFO - Filtered out title 'add some more rows to test that these aren't coming back for' (addr=1.35, line=2405) due to insufficient content (0 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'make it transient' (addr=1.1, line=2517) due to insufficient content (1 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'history of the 'elements' collection.' (addr=1.4, line=2586) due to insufficient content (0 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'this is a tuple of groups: (added, unchanged, deleted)' (addr=1.5, line=2587) due to insufficient content (1 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'rewrite the 'elements' collection' (addr=1.6, line=2590) due to insufficient content (0 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'from scratch, removing all history' (addr=1.7, line=2591) due to insufficient content (1 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'new elements in the "added" group' (addr=1.8, line=2594) due to insufficient content (0 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'copy elements in the 'unchanged' group.' (addr=1.10, line=2599) due to insufficient content (0 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'the new ones associate with the new ConfigData,' (addr=1.11, line=2600) due to insufficient content (0 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'we also need to expire changes on each ConfigValueAssociation' (addr=1.13, line=2607) due to insufficient content (0 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'that is to remain associated with the old ConfigData.' (addr=1.14, line=2608) due to insufficient content (0 lines).
+2026-02-11 10:38:05,958 - __main__ - INFO - Filtered out title 'Here, each one takes care of that in its new_version()' (addr=1.15, line=2609) due to insufficient content (0 lines).
+2026-02-11 10:38:05,959 - __main__ - INFO - Filtered out title 'the history of any key can be acquired using' (addr=1.18, line=2749) due to insufficient content (0 lines).
+2026-02-11 10:38:05,959 - __main__ - INFO - Filtered out title 'we have a composite primary key consisting of "id"' (addr=1.1, line=2826) due to insufficient content (0 lines).
+2026-02-11 10:38:05,959 - __main__ - INFO - Filtered out title 'optional - add a persisted is_current_version column' (addr=1.3, line=2831) due to insufficient content (1 lines).
+2026-02-11 10:38:05,959 - __main__ - INFO - Filtered out title 'make us transient (removes persistent' (addr=1.6, line=2851) due to insufficient content (0 lines).
+2026-02-11 10:38:05,959 - __main__ - INFO - Filtered out title 'identity).' (addr=1.7, line=2852) due to insufficient content (1 lines).
+2026-02-11 10:38:05,959 - __main__ - INFO - Filtered out title 'make it transient' (addr=1.9, line=2870) due to insufficient content (1 lines).
+2026-02-11 10:38:05,959 - __main__ - INFO - Filtered out title 'expire parent's reference to us' (addr=1.13, line=2934) due to insufficient content (1 lines).
+2026-02-11 10:38:05,959 - __main__ - INFO - Filtered out title 'create new version' (addr=1.14, line=2937) due to insufficient content (1 lines).
+2026-02-11 10:38:05,960 - __main__ - INFO - Filtered out title 're-add ourselves to the parent.  this causes the' (addr=1.15, line=2940) due to insufficient content (0 lines).
+2026-02-11 10:38:05,960 - __main__ - INFO - Filtered out title 'use populate_existing() to ensure the range option takes' (addr=1.1, line=3084) due to insufficient content (0 lines).
+2026-02-11 10:38:05,960 - __main__ - INFO - Filtered out title 'the with_loader_criteria automatically applies itself to' (addr=1.1, line=3221) due to insufficient content (0 lines).
+2026-02-11 10:38:05,960 - __main__ - INFO - Filtered out title 'relationship loads as well including lazy loads.   So if this is' (addr=1.2, line=3222) due to insufficient content (0 lines).
+2026-02-11 10:38:05,961 - __main__ - INFO - Filtered out title 'a relationship load, assume the option was set up from the top level' (addr=1.3, line=3223) due to insufficient content (0 lines).
+2026-02-11 10:38:05,961 - __main__ - INFO - Filtered out title 'the addresses collection will also be "public only", which works' (addr=1.6, line=3323) due to insufficient content (0 lines).
+2026-02-11 10:38:05,961 - __main__ - INFO - Filtered out title 'count all public addresses' (addr=1.9, line=3357) due to insufficient content (1 lines).
+2026-02-11 10:38:05,961 - __main__ - INFO - Filtered out title 'load an Address that is public, but its parent User is private' (addr=1.11, line=3366) due to insufficient content (0 lines).
+2026-02-11 10:38:05,961 - __main__ - INFO - Filtered out title '(2.0 style query)' (addr=1.12, line=3367) due to insufficient content (1 lines).
+2026-02-11 10:38:05,961 - __main__ - INFO - Filtered out title 'assuming the User isn't already in the Session, it returns None' (addr=1.13, line=3370) due to insufficient content (1 lines).
+2026-02-11 10:38:05,961 - __main__ - INFO - Filtered out title 'however, if that user is present in the session, then a many-to-one' (addr=1.14, line=3373) due to insufficient content (0 lines).
+2026-02-11 10:38:05,962 - __main__ - INFO - Filtered out title '"version" stores the integer version id.  This column is' (addr=1.3, line=3521) due to insufficient content (0 lines).
+2026-02-11 10:38:05,962 - __main__ - INFO - Filtered out title '"changed" column stores the UTC timestamp of when the' (addr=1.5, line=3533) due to insufficient content (0 lines).
+2026-02-11 10:38:05,962 - __main__ - INFO - Filtered out title 'history row was created.' (addr=1.6, line=3534) due to insufficient content (0 lines).
+2026-02-11 10:38:05,962 - __main__ - INFO - Filtered out title 'single table inheritance.  take any additional columns that may have' (addr=1.8, line=3561) due to insufficient content (0 lines).
+2026-02-11 10:38:05,962 - __main__ - INFO - Filtered out title 'Set default value of version column to the maximum of the' (addr=1.10, line=3573) due to insufficient content (0 lines).
+2026-02-11 10:38:05,962 - __main__ - INFO - Filtered out title 'version in history columns already present +1' (addr=1.11, line=3574) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'Otherwise re-appearance of deleted rows would cause an error' (addr=1.12, line=3575) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'if rows are not being deleted from the main table with' (addr=1.14, line=3598) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'subsequent reuse of primary key, this default can be' (addr=1.15, line=3599) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'set the "active_history" flag' (addr=1.17, line=3613) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'on on column-mapped attributes so that the old version' (addr=1.18, line=3614) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'get the value of the' (addr=1.20, line=3701) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'attribute based on the MapperProperty related to the' (addr=1.21, line=3702) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'mapped column.  this will allow usage of MapperProperties' (addr=1.22, line=3703) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'in the case of single table inheritance, there may be' (addr=1.24, line=3708) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'columns on the mapped table intended for the subclass only.' (addr=1.25, line=3709) due to insufficient content (0 lines).
+2026-02-11 10:38:05,963 - __main__ - INFO - Filtered out title 'the "unmapped" status of the subclass column on the' (addr=1.26, line=3710) due to insufficient content (0 lines).
+2026-02-11 10:38:05,964 - __main__ - INFO - Filtered out title 'base class is a feature of the declarative module.' (addr=1.27, line=3711) due to insufficient content (1 lines).
+2026-02-11 10:38:05,964 - __main__ - INFO - Filtered out title 'expired object attributes and also deferred cols might not' (addr=1.28, line=3714) due to insufficient content (0 lines).
+2026-02-11 10:38:05,964 - __main__ - INFO - Filtered out title 'be in the dict.  force it to load no matter what by' (addr=1.29, line=3715) due to insufficient content (0 lines).
+2026-02-11 10:38:05,964 - __main__ - INFO - Filtered out title 'not changed, but we have relationships.  OK' (addr=1.32, line=3733) due to insufficient content (0 lines).
+2026-02-11 10:38:05,965 - __main__ - INFO - Filtered out title 'foreign key constraint objects are copied and have the same' (addr=1.3, line=4003) due to insufficient content (0 lines).
+2026-02-11 10:38:05,965 - __main__ - INFO - Filtered out title 'name, but no database in Core has any problem with this as the' (addr=1.4, line=4004) due to insufficient content (0 lines).
+2026-02-11 10:38:05,966 - __main__ - INFO - Filtered out title 'test the unique constraint on the subclass' (addr=1.6, line=4460) due to insufficient content (0 lines).
+2026-02-11 10:38:05,967 - __main__ - INFO - Filtered out title 'only one entry should exist in the history table; one()' (addr=1.8, line=4672) due to insufficient content (0 lines).
+2026-02-11 10:38:05,967 - __main__ - INFO - Filtered out title 'ensures that' (addr=1.9, line=4673) due to insufficient content (1 lines).
+2026-02-11 10:38:05,967 - __main__ - INFO - Filtered out title 'If sc2 has the same id that deleted sc1 had,' (addr=1.10, line=4676) due to insufficient content (0 lines).
+2026-02-11 10:38:05,967 - __main__ - INFO - Filtered out title 'it will fail when modified or deleted' (addr=1.11, line=4677) due to insufficient content (0 lines).
+2026-02-11 10:38:05,967 - __main__ - INFO - Filtered out title 'because of the violation of the uniqueness of the primary key on' (addr=1.12, line=4678) due to insufficient content (0 lines).
+2026-02-11 10:38:05,967 - __main__ - INFO - Filtered out title 'sometable_history' (addr=1.13, line=4679) due to insufficient content (1 lines).
+2026-02-11 10:38:05,967 - __main__ - INFO - Filtered out title 'query using with_polymorphic.  flat=True is generally recommended' (addr=1.1, line=4951) due to insufficient content (0 lines).
+2026-02-11 10:38:05,967 - __main__ - INFO - Filtered out title 'for joined inheritance mappings as it will produce fewer levels' (addr=1.2, line=4952) due to insufficient content (0 lines).
+2026-02-11 10:38:05,968 - __main__ - INFO - Filtered out title 'query using with_polymorphic.' (addr=1.1, line=5155) due to insufficient content (0 lines).
+2026-02-11 10:38:05,968 - __main__ - INFO - Filtered out title 'when using ConcreteBase, use "*" to use the default selectable' (addr=1.2, line=5156) due to insufficient content (0 lines).
+2026-02-11 10:38:05,968 - __main__ - INFO - Filtered out title 'columns that are local to subclasses must be nullable.' (addr=1.1, line=5244) due to insufficient content (0 lines).
+2026-02-11 10:38:05,968 - __main__ - INFO - Filtered out title 'illustrate a single-inh "conflicting" mapped_column declaration,' (addr=1.3, line=5287) due to insufficient content (0 lines).
+2026-02-11 10:38:05,968 - __main__ - INFO - Filtered out title 'where both subclasses want to share the same column that is nonetheless' (addr=1.4, line=5288) due to insufficient content (0 lines).
+2026-02-11 10:38:05,968 - __main__ - INFO - Filtered out title 'illustrate a single-inh "conflicting" mapped_column declaration,' (addr=1.6, line=5312) due to insufficient content (0 lines).
+2026-02-11 10:38:05,968 - __main__ - INFO - Filtered out title 'where both subclasses want to share the same column that is nonetheless' (addr=1.7, line=5313) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'this will autoflush the current map.' (addr=1.1, line=5518) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title '[k1, k2b]' (addr=1.5, line=5535) due to insufficient content (1 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'this is not needed as of SQLAlchemy 1.4.28;' (addr=1.2, line=5706) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'UserDefinedOption classes no longer participate in the SQL' (addr=1.3, line=5707) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'have the "addresses" collection cached separately' (addr=1.1, line=5864) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'each lazyload of Person.addresses loads from cache.' (addr=1.2, line=5865) due to insufficient content (1 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'alternatively, eagerly load the "addresses" collection, so that they'd' (addr=1.3, line=5868) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'be cached together.   This issues a bigger SQL statement and caches' (addr=1.4, line=5869) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'a single, larger value in the cache per person rather than two' (addr=1.5, line=5870) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'separate ones.' (addr=1.6, line=5871) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'q = q.options(joinedload(Person.addresses))' (addr=1.7, line=5872) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'illustrate the address loading from either cache/already' (addr=1.11, line=5896) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'illustrate the address loading from either cache/already' (addr=1.13, line=5905) due to insufficient content (0 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'remove the Session.  next query starts from scratch.' (addr=1.2, line=5964) due to insufficient content (1 lines).
+2026-02-11 10:38:05,969 - __main__ - INFO - Filtered out title 'load again, using the same FromCache option. now they're cached,' (addr=1.3, line=5967) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'Specifying a different query produces a different cache key, so' (addr=1.5, line=5972) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'the data is cached under string structure of the SQL statement, *plus*' (addr=1.7, line=5981) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'the bind parameters of the query.    So this query, having' (addr=1.8, line=5982) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'different literal parameters under "Person.name.between()" than the' (addr=1.9, line=5983) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'invalidate the cache for the three queries we've done.  Recreate' (addr=1.12, line=6002) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'each Query, which includes at the very least the same FromCache,' (addr=1.13, line=6003) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'same list of objects to be loaded, and the same parameters in the' (addr=1.14, line=6004) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'set up a region based on the ScopedSessionBackend,' (addr=1.1, line=6122) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'pointing to the scoped_session declared in the example' (addr=1.2, line=6123) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'query to load Person by name, with criterion' (addr=1.4, line=6131) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'load from DB' (addr=1.6, line=6139) due to insufficient content (1 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'next call, the query is cached.' (addr=1.7, line=6142) due to insufficient content (1 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'clear out the Session.  The "_cache_dictionary" dictionary' (addr=1.8, line=6145) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'disappears with it.' (addr=1.9, line=6146) due to insufficient content (1 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'query calls from DB again' (addr=1.10, line=6149) due to insufficient content (1 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'identity is preserved - person10 is the *same* object that's' (addr=1.11, line=6152) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'ultimately inside the cache.   So it is safe to manipulate' (addr=1.12, line=6153) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'the not-queried-for attributes of objects when using such a' (addr=1.13, line=6154) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'cache without the need to invalidate - however, any change' (addr=1.14, line=6155) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'that would change the results of a cached query, such as' (addr=1.15, line=6156) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'inserts, deletes, or modification to attributes that are' (addr=1.16, line=6157) due to insufficient content (0 lines).
+2026-02-11 10:38:05,970 - __main__ - INFO - Filtered out title 'dogpile cache regions.  A home base for cache configurations.' (addr=1.1, line=6217) due to insufficient content (1 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'configure the "default" cache region.' (addr=1.4, line=6252) due to insufficient content (1 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'the "dbm" backend needs' (addr=1.5, line=6254) due to insufficient content (0 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'using type 'file' to illustrate' (addr=1.7, line=6258) due to insufficient content (0 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'serialized persistence.  Normally' (addr=1.8, line=6259) due to insufficient content (0 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'memcached or similar is a better choice' (addr=1.9, line=6260) due to insufficient content (0 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'optional; call invalidate() on the region' (addr=1.11, line=6267) due to insufficient content (0 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'once created so that all data is fresh when' (addr=1.12, line=6268) due to insufficient content (0 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'the app is restarted.  Good for development,' (addr=1.13, line=6269) due to insufficient content (0 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'on a production system needs to be used carefully' (addr=1.14, line=6270) due to insufficient content (0 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'start the demo fresh' (addr=1.1, line=6383) due to insufficient content (1 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'Caching options.   A set of three RelationshipCache options' (addr=1.1, line=6528) due to insufficient content (0 lines).
+2026-02-11 10:38:05,971 - __main__ - INFO - Filtered out title 'which can be applied to Query(), causing the "lazy load"' (addr=1.2, line=6529) due to insufficient content (0 lines).
+2026-02-11 10:38:05,972 - __main__ - INFO - Filtered out title 'To find the descendants of this node, we look for nodes whose path' (addr=1.1, line=6699) due to insufficient content (0 lines).
+2026-02-11 10:38:05,972 - __main__ - INFO - Filtered out title 'Finding the ancestors is a little bit trickier. We need to create a fake' (addr=1.3, line=6708) due to insufficient content (0 lines).
+2026-02-11 10:38:05,972 - __main__ - INFO - Filtered out title 'only "A" is referenced explicitly.  Using "collections",' (addr=1.1, line=6924) due to insufficient content (0 lines).
+2026-02-11 10:38:05,972 - __main__ - INFO - Filtered out title 'create an order' (addr=1.2, line=7067) due to insufficient content (1 lines).
+2026-02-11 10:38:05,972 - __main__ - INFO - Filtered out title 'add items via the association proxy.' (addr=1.3, line=7070) due to insufficient content (0 lines).
+2026-02-11 10:38:05,972 - __main__ - INFO - Filtered out title 'print items based on the "proxied" items collection' (addr=1.8, line=7094) due to insufficient content (1 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'create an order' (addr=1.2, line=7234) due to insufficient content (1 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'create session function.  this binds the shard ids' (addr=1.2, line=7347) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'table setup.  we'll store a lead table of continents/cities, and a secondary' (addr=1.5, line=7365) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'table storing locations. a particular row will be placed in the database' (addr=1.6, line=7366) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'whose shard id corresponds to the 'continent'.  in this setup, secondary rows' (addr=1.7, line=7367) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'in 'weather_reports' will be placed in the same DB as that of the parent, but' (addr=1.8, line=7368) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'this can be changed if you're willing to write more complex sharding' (addr=1.9, line=7369) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'define sharding functions.' (addr=1.11, line=7405) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'we'll use a straight mapping of a particular set of "country"' (addr=1.12, line=7407) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'if we are in a lazy load, we can look at the parent object' (addr=1.14, line=7444) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'and limit our search to that same shard, assuming that's how we've' (addr=1.15, line=7445) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'the Report class uses a simple integer primary key.  So across two' (addr=1.23, line=7536) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'databases, a primary key will be repeated.  The "identity_token"' (addr=1.24, line=7537) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'tracks in memory that these two identical primary keys are local to' (addr=1.25, line=7538) due to insufficient content (0 lines).
+2026-02-11 10:38:05,973 - __main__ - INFO - Filtered out title 'the token representing the originating shard is also available' (addr=1.27, line=7550) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'for asyncio, the ShardedSession class is passed' (addr=1.1, line=7636) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'via sync_session_class.  The shards themselves are used within' (addr=1.2, line=7637) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'implicit-awaited internals, so we use the sync_engine Engine objects' (addr=1.3, line=7638) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'we need a way to create identifiers which are unique across all databases.' (addr=1.6, line=7657) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'one easy way would be to just use a composite primary key, where  one value' (addr=1.7, line=7658) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'is the shard id.  but here, we'll show something more "generic", an id' (addr=1.8, line=7659) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'generation function.  we'll use a simplistic "id table" stored in database' (addr=1.9, line=7660) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title '#1.  Any other method will do just as well; UUID, hilo, application-specific,' (addr=1.10, line=7661) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'id_generator is run within a "synchronous" context, where' (addr=1.12, line=7668) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'we use an implicit-await API that will convert back to explicit await' (addr=1.13, line=7669) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'table setup.  we'll store a lead table of continents/cities, and a secondary' (addr=1.15, line=7677) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'table storing locations. a particular row will be placed in the database' (addr=1.16, line=7678) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'whose shard id corresponds to the 'continent'.  in this setup, secondary rows' (addr=1.17, line=7679) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'in 'weather_reports' will be placed in the same DB as that of the parent, but' (addr=1.18, line=7680) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'this can be changed if you're willing to write more complex sharding' (addr=1.19, line=7681) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'step 5. define sharding functions.' (addr=1.21, line=7717) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'we'll use a straight mapping of a particular set of "country"' (addr=1.22, line=7719) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'if we are in a lazy load, we can look at the parent object' (addr=1.24, line=7755) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'and limit our search to that same shard, assuming that's how we've' (addr=1.25, line=7756) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'we'll grab continent names as we find them' (addr=1.27, line=7773) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'and convert to shard ids' (addr=1.28, line=7774) due to insufficient content (1 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title '"shares_lineage()" returns True if both columns refer to the same' (addr=1.29, line=7776) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'statement column, adjusting for any annotations present.' (addr=1.30, line=7777) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title '(an annotation is an internal clone of a Column object' (addr=1.31, line=7778) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title 'and occur when using ORM-mapped attributes like' (addr=1.32, line=7779) due to insufficient content (0 lines).
+2026-02-11 10:38:05,974 - __main__ - INFO - Filtered out title '"WeatherLocation.continent"). A simpler comparison, though less' (addr=1.33, line=7780) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'here we will traverse through the query's criterion, searching' (addr=1.36, line=7827) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'for SQL constructs.  We will place simple column comparisons' (addr=1.37, line=7828) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'the Report class uses a simple integer primary key.  So across two' (addr=1.46, line=7923) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'databases, a primary key will be repeated.  The "identity_token"' (addr=1.47, line=7924) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'tracks in memory that these two identical primary keys are local to' (addr=1.48, line=7925) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'the token representing the originating shard is also available' (addr=1.50, line=7937) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'create session function.  this binds the shard ids' (addr=1.1, line=8025) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'we need a way to create identifiers which are unique across all databases.' (addr=1.4, line=8043) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'one easy way would be to just use a composite primary key, where  one value' (addr=1.5, line=8044) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'is the shard id.  but here, we'll show something more "generic", an id' (addr=1.6, line=8045) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'generation function.  we'll use a simplistic "id table" stored in database' (addr=1.7, line=8046) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title '#1.  Any other method will do just as well; UUID, hilo, application-specific,' (addr=1.8, line=8047) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'table setup.  we'll store a lead table of continents/cities, and a secondary' (addr=1.11, line=8061) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'table storing locations. a particular row will be placed in the database' (addr=1.12, line=8062) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'whose shard id corresponds to the 'continent'.  in this setup, secondary rows' (addr=1.13, line=8063) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'in 'weather_reports' will be placed in the same DB as that of the parent, but' (addr=1.14, line=8064) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'this can be changed if you're willing to write more complex sharding' (addr=1.15, line=8065) due to insufficient content (0 lines).
+2026-02-11 10:38:05,975 - __main__ - INFO - Filtered out title 'define sharding functions.' (addr=1.17, line=8101) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'we'll use a straight mapping of a particular set of "country"' (addr=1.18, line=8103) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'if we are in a lazy load, we can look at the parent object' (addr=1.20, line=8139) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'and limit our search to that same shard, assuming that's how we've' (addr=1.21, line=8140) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'we'll grab continent names as we find them' (addr=1.23, line=8157) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'and convert to shard ids' (addr=1.24, line=8158) due to insufficient content (1 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title '"shares_lineage()" returns True if both columns refer to the same' (addr=1.25, line=8160) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'statement column, adjusting for any annotations present.' (addr=1.26, line=8161) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title '(an annotation is an internal clone of a Column object' (addr=1.27, line=8162) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'and occur when using ORM-mapped attributes like' (addr=1.28, line=8163) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title '"WeatherLocation.continent"). A simpler comparison, though less' (addr=1.29, line=8164) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'here we will traverse through the query's criterion, searching' (addr=1.32, line=8211) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'for SQL constructs.  We will place simple column comparisons' (addr=1.33, line=8212) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'the Report class uses a simple integer primary key.  So across two' (addr=1.41, line=8297) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'databases, a primary key will be repeated.  The "identity_token"' (addr=1.42, line=8298) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'tracks in memory that these two identical primary keys are local to' (addr=1.43, line=8299) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'the token representing the originating shard is also available' (addr=1.45, line=8311) due to insufficient content (0 lines).
+2026-02-11 10:38:05,976 - __main__ - INFO - Filtered out title 'create session function.  this binds the shard ids' (addr=1.1, line=8386) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'we need a way to create identifiers which are unique across all databases.' (addr=1.4, line=8404) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'one easy way would be to just use a composite primary key, where  one value' (addr=1.5, line=8405) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'is the shard id.  but here, we'll show something more "generic", an id' (addr=1.6, line=8406) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'generation function.  we'll use a simplistic "id table" stored in database' (addr=1.7, line=8407) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title '#1.  Any other method will do just as well; UUID, hilo, application-specific,' (addr=1.8, line=8408) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'table setup.  we'll store a lead table of continents/cities, and a secondary' (addr=1.11, line=8422) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'table storing locations. a particular row will be placed in the database' (addr=1.12, line=8423) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'whose shard id corresponds to the 'continent'.  in this setup, secondary rows' (addr=1.13, line=8424) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'in 'weather_reports' will be placed in the same DB as that of the parent, but' (addr=1.14, line=8425) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'this can be changed if you're willing to write more complex sharding' (addr=1.15, line=8426) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'define sharding functions.' (addr=1.17, line=8462) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'we'll use a straight mapping of a particular set of "country"' (addr=1.18, line=8464) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'if we are in a lazy load, we can look at the parent object' (addr=1.20, line=8500) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'and limit our search to that same shard, assuming that's how we've' (addr=1.21, line=8501) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'we'll grab continent names as we find them' (addr=1.23, line=8518) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'and convert to shard ids' (addr=1.24, line=8519) due to insufficient content (1 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title '"shares_lineage()" returns True if both columns refer to the same' (addr=1.25, line=8521) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'statement column, adjusting for any annotations present.' (addr=1.26, line=8522) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title '(an annotation is an internal clone of a Column object' (addr=1.27, line=8523) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'and occur when using ORM-mapped attributes like' (addr=1.28, line=8524) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title '"WeatherLocation.continent"). A simpler comparison, though less' (addr=1.29, line=8525) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'here we will traverse through the query's criterion, searching' (addr=1.32, line=8572) due to insufficient content (0 lines).
+2026-02-11 10:38:05,977 - __main__ - INFO - Filtered out title 'for SQL constructs.  We will place simple column comparisons' (addr=1.33, line=8573) due to insufficient content (0 lines).
+2026-02-11 10:38:05,978 - __main__ - INFO - Filtered out title 'the Report class uses a simple integer primary key.  So across two' (addr=1.42, line=8659) due to insufficient content (0 lines).
+2026-02-11 10:38:05,978 - __main__ - INFO - Filtered out title 'databases, a primary key will be repeated.  The "identity_token"' (addr=1.43, line=8660) due to insufficient content (0 lines).
+2026-02-11 10:38:05,978 - __main__ - INFO - Filtered out title 'tracks in memory that these two identical primary keys are local to' (addr=1.44, line=8661) due to insufficient content (0 lines).
+2026-02-11 10:38:05,978 - __main__ - INFO - Filtered out title 'the token representing the originating shard is also available' (addr=1.46, line=8673) due to insufficient content (0 lines).
+2026-02-11 10:38:05,978 - __main__ - INFO - Filtered out title 'no parent here' (addr=1.1, line=9003) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'iterate through ColumnProperty objects' (addr=1.1, line=9447) due to insufficient content (1 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'look at the Column mapped by the ColumnProperty' (addr=1.2, line=9449) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title '(we look at the first column in the less common case' (addr=1.3, line=9450) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'of a property mapped to multiple columns at once)' (addr=1.4, line=9451) due to insufficient content (1 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'the callable of ColumnDefault always accepts a context' (addr=1.6, line=9473) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'default is a Sequence, a SQL expression, server' (addr=1.8, line=9479) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'side default generator, or other non-Python-evaluable' (addr=1.9, line=9480) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'object.  The feature here can't easily support this.   This' (addr=1.10, line=9481) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'can be made to return None, rather than raising,' (addr=1.11, line=9482) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'or can procure a connection from an Engine' (addr=1.12, line=9483) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'set the value in the given dict_; this won't emit any further' (addr=1.14, line=9489) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'attribute set events or create attribute "history", but the value' (addr=1.15, line=9490) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'will be used in the INSERT statement' (addr=1.16, line=9491) due to insufficient content (1 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'not persisted at all, default values are present the moment' (addr=1.18, line=9516) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'we access them' (addr=1.19, line=9517) due to insufficient content (1 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'this line will invoke the datetime.now() function, and establish' (addr=1.20, line=9520) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'its return value upon the w1 instance, such that the' (addr=1.21, line=9521) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'Column-level default for the "timestamp" column will no longer fire' (addr=1.22, line=9522) due to insufficient content (0 lines).
+2026-02-11 10:38:05,979 - __main__ - INFO - Filtered out title 'data is persisted.  The timestamp is also the one we generated above;' (addr=1.25, line=9534) due to insufficient content (0 lines).
+2026-02-11 10:38:05,980 - __main__ - INFO - Filtered out title 'add information about storage for different types' (addr=1.1, line=9994) due to insufficient content (0 lines).
+2026-02-11 10:38:05,980 - __main__ - INFO - Filtered out title 'The properties table will have one row for a 'species' value, and' (addr=1.2, line=10148) due to insufficient content (0 lines).
+2026-02-11 10:38:05,981 - __main__ - INFO - Filtered out title 'dict-like assignment transparently creates entries in the' (addr=1.4, line=10257) due to insufficient content (0 lines).
+2026-02-11 10:38:05,981 - __main__ - INFO - Filtered out title 'create a directed graph like this:' (addr=1.1, line=10393) due to insufficient content (0 lines).
+2026-02-11 10:38:05,981 - __main__ - INFO - Filtered out title 'n1 -> n2 -> n1' (addr=1.2, line=10394) due to insufficient content (0 lines).
+2026-02-11 10:38:05,981 - __main__ - INFO - Filtered out title '-> n5' (addr=1.3, line=10395) due to insufficient content (0 lines).
+2026-02-11 10:38:05,981 - __main__ - INFO - Filtered out title '-> n7' (addr=1.4, line=10396) due to insufficient content (0 lines).
+2026-02-11 10:38:05,981 - __main__ - INFO - Filtered out title 'before_update() would be needed to support moving of nodes' (addr=1.2, line=10533) due to insufficient content (0 lines).
+2026-02-11 10:38:05,981 - __main__ - INFO - Filtered out title 'the order of "add" is important here.  elements must be added in' (addr=1.4, line=10556) due to insufficient content (0 lines).
+2026-02-11 10:38:05,981 - __main__ - INFO - Filtered out title '2. Find the employee and all their subordinates.' (addr=1.7, line=10572) due to insufficient content (0 lines).
+2026-02-11 10:38:05,981 - __main__ - INFO - Filtered out title '3. Find the level of each node, so you can print the tree' (addr=1.9, line=10581) due to insufficient content (0 lines).
+2026-02-11 10:38:05,981 - __main__ - INFO - Filtered out title 'remove node1 from the parent, which will trigger a delete' (addr=1.1, line=10716) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'use AUTOCOMMIT for each connection to reduce transaction' (addr=1.1, line=10830) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'merge_results means the ORM objects from the result' (addr=1.3, line=10871) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'will be merged back into the original session.' (addr=1.4, line=10872) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'load=False means we can use the objects directly without' (addr=1.5, line=10873) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 're-selecting them.  however this merge operation is still' (addr=1.6, line=10874) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'more expensive CPU-wise than a regular ORM load because the' (addr=1.7, line=10875) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'we have the option to run a function written in sync style' (addr=1.2, line=11011) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'within the AsyncSession.run_sync() method.  The function will' (addr=1.3, line=11012) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'be passed a synchronous-style Session object and the function' (addr=1.4, line=11013) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'collection relationships are declared with WriteOnlyMapped.  There' (addr=1.1, line=11094) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'WriteOnlyMapped may be populated using any iterable,' (addr=1.3, line=11123) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'conn is an instance of AsyncConnection' (addr=1.2, line=11231) due to insufficient content (1 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'to support SQLAlchemy DDL methods as well as legacy functions, the' (addr=1.3, line=11233) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'AsyncConnection.run_sync() awaitable method will pass a "sync"' (addr=1.4, line=11234) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'version of the AsyncConnection object to any synchronous method,' (addr=1.5, line=11235) due to insufficient content (0 lines).
+2026-02-11 10:38:05,982 - __main__ - INFO - Filtered out title 'where synchronous IO calls will be transparently translated for' (addr=1.6, line=11236) due to insufficient content (0 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'for normal statement execution, a traditional "await execute()"' (addr=1.8, line=11241) due to insufficient content (0 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'the default result object is the' (addr=1.10, line=11248) due to insufficient content (0 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'sqlalchemy.engine.Result object' (addr=1.11, line=11249) due to insufficient content (1 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'the results are buffered so no await call is necessary' (addr=1.12, line=11252) due to insufficient content (0 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'for this case.' (addr=1.13, line=11253) due to insufficient content (1 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'for a streaming result that buffers only segments of the' (addr=1.14, line=11256) due to insufficient content (0 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'result at time, the AsyncConnection.stream() method is used.' (addr=1.15, line=11257) due to insufficient content (0 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'this returns a sqlalchemy.ext.asyncio.AsyncResult object.' (addr=1.16, line=11258) due to insufficient content (1 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'this object supports async iteration and awaitable' (addr=1.17, line=11261) due to insufficient content (0 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'expire_on_commit=False will prevent attributes from being expired' (addr=1.1, line=11364) due to insufficient content (0 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'for relationship loading, eager loading should be applied.' (addr=1.3, line=11378) due to insufficient content (1 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'AsyncSession.execute() is used for 2.0 style ORM execution' (addr=1.4, line=11381) due to insufficient content (0 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title '(same as the synchronous API).' (addr=1.5, line=11382) due to insufficient content (1 lines).
+2026-02-11 10:38:05,983 - __main__ - INFO - Filtered out title 'for streaming ORM results, AsyncSession.stream() may be used.' (addr=1.7, line=11392) due to insufficient content (1 lines).
+2026-02-11 10:38:05,985 - __main__ - INFO - Filtered out title 'so that the DBAPI itself knows that the connection has been' (addr=1.2, line=15043) due to insufficient content (0 lines).
+2026-02-11 10:38:05,987 - __main__ - INFO - Filtered out title 'in-place mutation, requires Mutable extension' (addr=1.12, line=17667) due to insufficient content (0 lines).
+2026-02-11 10:38:05,988 - __main__ - INFO - Filtered out title 'postgresql.conf file' (addr=1.15, line=19475) due to insufficient content (0 lines).
+2026-02-11 10:38:05,988 - __main__ - INFO - Filtered out title 'client_encoding = sql_ascii # actually, defaults to database' (addr=1.16, line=19477) due to insufficient content (0 lines).
+2026-02-11 10:38:05,988 - __main__ - INFO - Filtered out title '... other pool parameters as desired ...' (addr=1.19, line=19670) due to insufficient content (1 lines).
+2026-02-11 10:38:05,988 - __main__ - INFO - Filtered out title '... other pool parameters as desired ...' (addr=1.22, line=19695) due to insufficient content (1 lines).
+2026-02-11 10:38:05,988 - __main__ - INFO - Filtered out title 'Must explicitly open AsyncConnectionPool outside constructor' (addr=1.23, line=19698) due to insufficient content (0 lines).
+2026-02-11 10:38:05,988 - __main__ - INFO - Filtered out title 'https://www.psycopg.org/psycopg3/docs/api/pool.html#psycopg_pool.AsyncConnectionPool' (addr=1.24, line=19699) due to insufficient content (1 lines).
+2026-02-11 10:38:05,988 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/dialects/index.md' (addr=2.1, line=20080) due to insufficient content (0 lines).
+2026-02-11 10:38:05,989 - __main__ - INFO - Filtered out title 'the sqlite3 driver will not set PRAGMA foreign_keys' (addr=1.9, line=20818) due to insufficient content (0 lines).
+2026-02-11 10:38:05,989 - __main__ - INFO - Filtered out title 'relative path' (addr=1.12, line=21828) due to insufficient content (1 lines).
+2026-02-11 10:38:05,989 - __main__ - INFO - Filtered out title 'absolute path' (addr=1.13, line=21836) due to insufficient content (1 lines).
+2026-02-11 10:38:05,989 - __main__ - INFO - Filtered out title 'absolute path on Windows' (addr=1.14, line=21844) due to insufficient content (1 lines).
+2026-02-11 10:38:05,989 - __main__ - INFO - Filtered out title 'in-memory database (note three slashes)' (addr=1.15, line=21853) due to insufficient content (1 lines).
+2026-02-11 10:38:05,990 - __main__ - INFO - Filtered out title 'so that the DBAPI itself knows that the connection has been' (addr=1.2, line=23133) due to insufficient content (0 lines).
+2026-02-11 10:38:05,991 - __main__ - INFO - Filtered out title 'remove the "Trusted_Connection" parameter that SQLAlchemy adds' (addr=1.8, line=24424) due to insufficient content (1 lines).
+2026-02-11 10:38:05,991 - __main__ - INFO - Filtered out title 'matches a table created with CREATE TABLE mytable' (addr=1.1, line=25240) due to insufficient content (1 lines).
+2026-02-11 10:38:05,992 - __main__ - INFO - Filtered out title 'Uncomment to use the optional python-oracledb Thick mode.' (addr=1.6, line=26850) due to insufficient content (0 lines).
+2026-02-11 10:38:05,992 - __main__ - INFO - Filtered out title 'Review the python-oracledb doc for the appropriate parameters' (addr=1.7, line=26851) due to insufficient content (0 lines).
+2026-02-11 10:38:05,992 - __main__ - INFO - Filtered out title 'Uncomment to use the optional python-oracledb Thick mode.' (addr=1.9, line=26891) due to insufficient content (0 lines).
+2026-02-11 10:38:05,992 - __main__ - INFO - Filtered out title 'Review the python-oracledb doc for the appropriate parameters' (addr=1.10, line=26892) due to insufficient content (0 lines).
+2026-02-11 10:38:05,992 - __main__ - INFO - Filtered out title 'Uncomment to use python-oracledb Thick mode.' (addr=1.12, line=26927) due to insufficient content (0 lines).
+2026-02-11 10:38:05,992 - __main__ - INFO - Filtered out title 'Review the python-oracledb doc for the appropriate parameters' (addr=1.13, line=26928) due to insufficient content (0 lines).
+2026-02-11 10:38:05,993 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/mapper_config.md' (addr=2.1, line=27649) due to insufficient content (0 lines).
+2026-02-11 10:38:05,993 - __main__ - INFO - Filtered out title 'equivalent to:' (addr=1.1, line=28259) due to insufficient content (0 lines).
+2026-02-11 10:38:05,993 - __main__ - INFO - Filtered out title 'a Session local to the thread and/or request' (addr=1.3, line=28335) due to insufficient content (1 lines).
+2026-02-11 10:38:05,993 - __main__ - INFO - Filtered out title 'the Session registry can otherwise' (addr=1.4, line=28338) due to insufficient content (0 lines).
+2026-02-11 10:38:05,993 - __main__ - INFO - Filtered out title 'be used at any time, creating the' (addr=1.5, line=28339) due to insufficient content (0 lines).
+2026-02-11 10:38:05,993 - __main__ - INFO - Filtered out title 'request-local Session() if not present,' (addr=1.6, line=28340) due to insufficient content (0 lines).
+2026-02-11 10:38:05,993 - __main__ - INFO - Filtered out title 'if data was modified, commit the' (addr=1.8, line=28346) due to insufficient content (0 lines).
+2026-02-11 10:38:05,993 - __main__ - INFO - Filtered out title 'after mappers are defined' (addr=1.12, line=29602) due to insufficient content (1 lines).
+2026-02-11 10:38:05,994 - __main__ - INFO - Filtered out title 'pending objects recently added to the Session' (addr=1.1, line=30013) due to insufficient content (1 lines).
+2026-02-11 10:38:05,994 - __main__ - INFO - Filtered out title 'persistent objects which currently have changes detected' (addr=1.2, line=30016) due to insufficient content (0 lines).
+2026-02-11 10:38:05,994 - __main__ - INFO - Filtered out title '(this collection is now created on the fly each time the property is called)' (addr=1.3, line=30017) due to insufficient content (1 lines).
+2026-02-11 10:38:05,994 - __main__ - INFO - Filtered out title 'persistent objects that have been marked as deleted via session.delete(obj)' (addr=1.4, line=30020) due to insufficient content (1 lines).
+2026-02-11 10:38:05,994 - __main__ - INFO - Filtered out title 'dictionary of all persistent objects, keyed on their' (addr=1.5, line=30023) due to insufficient content (0 lines).
+2026-02-11 10:38:05,994 - __main__ - INFO - Filtered out title 'expire all ORM-mapped attributes on obj1' (addr=1.7, line=30437) due to insufficient content (1 lines).
+2026-02-11 10:38:05,994 - __main__ - INFO - Filtered out title 'reload all attributes on obj1' (addr=1.9, line=30461) due to insufficient content (1 lines).
+2026-02-11 10:38:05,995 - __main__ - INFO - Filtered out title 'note for a Core table, we use the sqlalchemy.Column construct,' (addr=1.1, line=31152) due to insufficient content (0 lines).
+2026-02-11 10:38:05,995 - __main__ - INFO - Filtered out title 'row will be deleted from the "secondary" table' (addr=1.3, line=31291) due to insufficient content (0 lines).
+2026-02-11 10:38:05,995 - __main__ - INFO - Filtered out title 'iterate through child objects via association, including association' (addr=1.6, line=31455) due to insufficient content (0 lines).
+2026-02-11 10:38:05,995 - __main__ - INFO - Filtered out title 'association between Association -> Child' (addr=1.8, line=31523) due to insufficient content (1 lines).
+2026-02-11 10:38:05,995 - __main__ - INFO - Filtered out title 'first, module A, where Child has not been created yet,' (addr=1.26, line=31843) due to insufficient content (0 lines).
+2026-02-11 10:38:05,995 - __main__ - INFO - Filtered out title 'we create a Parent class which knows nothing about Child' (addr=1.27, line=31844) due to insufficient content (1 lines).
+2026-02-11 10:38:05,995 - __main__ - INFO - Filtered out title 'assign the User.addresses relationship as a class variable.  The' (addr=1.29, line=31858) due to insufficient content (0 lines).
+2026-02-11 10:38:05,995 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/queryguide.md' (addr=2.1, line=31958) due to insufficient content (0 lines).
+2026-02-11 10:38:05,996 - __main__ - INFO - Filtered out title '... additional mapping directives' (addr=1.3, line=32310) due to insufficient content (0 lines).
+2026-02-11 10:38:05,996 - __main__ - INFO - Filtered out title 'later ...' (addr=1.4, line=32313) due to insufficient content (0 lines).
+2026-02-11 10:38:05,996 - __main__ - INFO - Filtered out title 'mapping attributes using declarative with imperative table' (addr=1.1, line=32623) due to insufficient content (0 lines).
+2026-02-11 10:38:05,996 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/loading_columns.md' (addr=2.1, line=33049) due to insufficient content (0 lines).
+2026-02-11 10:38:05,997 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/tutorial.md' (addr=2.3, line=33631) due to insufficient content (0 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'default type mapping, deriving the type for mapped_column()' (addr=1.4, line=34988) due to insufficient content (0 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'primary_key=True, therefore will be NOT NULL' (addr=1.6, line=35043) due to insufficient content (1 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'not Optional[], therefore will be NOT NULL' (addr=1.7, line=35046) due to insufficient content (1 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title '...' (addr=1.9, line=35063) due to insufficient content (0 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title '...' (addr=1.11, line=35075) due to insufficient content (0 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'will be String() NULL, but type checker will not expect' (addr=1.12, line=35077) due to insufficient content (0 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'set up variants for str/String()' (addr=1.14, line=35111) due to insufficient content (1 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'use NVARCHAR for MSSQL' (addr=1.15, line=35113) due to insufficient content (1 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'new style Union using a pipe operator' (addr=1.17, line=35197) due to insufficient content (1 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'uses JSON' (addr=1.19, line=35217) due to insufficient content (1 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'uses JSON and is also nullable=True' (addr=1.20, line=35220) due to insufficient content (1 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'BigInt is in the type_annotation_map.  So this' (addr=1.22, line=35342) due to insufficient content (0 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'will resolve to sqlalchemy.BigInteger' (addr=1.23, line=35343) due to insufficient content (1 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'nstr30 is in the type_annotation_map.  So this' (addr=1.24, line=35346) due to insufficient content (0 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'PlainInt refers to int, which is one of the default types' (addr=1.26, line=35364) due to insufficient content (0 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'already in the type_annotation_map.   So this' (addr=1.27, line=35365) due to insufficient content (0 lines).
+2026-02-11 10:38:05,998 - __main__ - INFO - Filtered out title 'AlsoAnInt refers to PlainInt, which is not in the type_annotation_map.' (addr=1.29, line=35385) due to insufficient content (0 lines).
+2026-02-11 10:38:05,999 - __main__ - INFO - Filtered out title 'a NewType is a new kind of type, so this will emit a deprecation' (addr=1.31, line=35407) due to insufficient content (0 lines).
+2026-02-11 10:38:05,999 - __main__ - INFO - Filtered out title 'warning in 2.0 and fail in 2.1, as nstr30 is not present' (addr=1.32, line=35408) due to insufficient content (0 lines).
+2026-02-11 10:38:05,999 - __main__ - INFO - Filtered out title '...' (addr=1.34, line=35619) due to insufficient content (0 lines).
+2026-02-11 10:38:05,999 - __main__ - INFO - Filtered out title 'pep-484 type will be Optional, but column will be' (addr=1.35, line=35621) due to insufficient content (0 lines).
+2026-02-11 10:38:05,999 - __main__ - INFO - Filtered out title 'add ForeignKey to mapped_column(Integer, primary_key=True)' (addr=1.37, line=35664) due to insufficient content (1 lines).
+2026-02-11 10:38:05,999 - __main__ - INFO - Filtered out title 'construct a Table directly.  The Base.metadata collection is' (addr=1.41, line=36072) due to insufficient content (0 lines).
+2026-02-11 10:38:05,999 - __main__ - INFO - Filtered out title 'usually a good choice for MetaData but any MetaData' (addr=1.42, line=36073) due to insufficient content (0 lines).
+2026-02-11 10:38:06,000 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/scalar_mapping.md' (addr=2.1, line=36641) due to insufficient content (0 lines).
+2026-02-11 10:38:06,001 - __main__ - INFO - Filtered out title 'load the first A' (addr=1.1, line=37695) due to insufficient content (1 lines).
+2026-02-11 10:38:06,001 - __main__ - INFO - Filtered out title 'load the same A with an option; expression will **not** be applied' (addr=1.2, line=37698) due to insufficient content (0 lines).
+2026-02-11 10:38:06,001 - __main__ - INFO - Filtered out title 'assign desired expression up front, then refer to that in' (addr=1.5, line=37744) due to insufficient content (0 lines).
+2026-02-11 10:38:06,001 - __main__ - INFO - Filtered out title 'undefer all columns specific to a single class using Load + *' (addr=1.8, line=38015) due to insufficient content (1 lines).
+2026-02-11 10:38:06,001 - __main__ - INFO - Filtered out title 'force lazy loading for an attribute that is set to' (addr=1.4, line=38610) due to insufficient content (0 lines).
+2026-02-11 10:38:06,002 - __main__ - INFO - Filtered out title '... selectinload() emits a SELECT in order' (addr=1.8, line=38989) due to insufficient content (0 lines).
+2026-02-11 10:38:06,002 - __main__ - INFO - Filtered out title 'incorrect, no ORDER BY' (addr=1.10, line=39186) due to insufficient content (1 lines).
+2026-02-11 10:38:06,002 - __main__ - INFO - Filtered out title 'incorrect if User.name is not unique' (addr=1.11, line=39189) due to insufficient content (1 lines).
+2026-02-11 10:38:06,002 - __main__ - INFO - Filtered out title 'use an alias of the Address entity' (addr=1.13, line=39339) due to insufficient content (1 lines).
+2026-02-11 10:38:06,003 - __main__ - INFO - Filtered out title 'joined-load the "orders" collection on "User"' (addr=1.16, line=39590) due to insufficient content (1 lines).
+2026-02-11 10:38:06,003 - __main__ - INFO - Filtered out title 'joined-load Order.items and then Item.keywords' (addr=1.17, line=39593) due to insufficient content (1 lines).
+2026-02-11 10:38:06,003 - __main__ - INFO - Filtered out title 'lazily load Order.items, but when Items are loaded,' (addr=1.18, line=39596) due to insufficient content (0 lines).
+2026-02-11 10:38:06,003 - __main__ - INFO - Filtered out title 'selectin-load the "orders" collection on "User"' (addr=1.20, line=40001) due to insufficient content (1 lines).
+2026-02-11 10:38:06,003 - __main__ - INFO - Filtered out title 'lazily load Order.items, but when Items are loaded,' (addr=1.22, line=40009) due to insufficient content (0 lines).
+2026-02-11 10:38:06,003 - __main__ - INFO - Filtered out title 'selectin-load the keywords collection' (addr=1.23, line=40010) due to insufficient content (1 lines).
+2026-02-11 10:38:06,003 - __main__ - INFO - Filtered out title 'subquery-load the "orders" collection on "User"' (addr=1.24, line=40052) due to insufficient content (1 lines).
+2026-02-11 10:38:06,003 - __main__ - INFO - Filtered out title 'lazily load Order.items, but when Items are loaded,' (addr=1.26, line=40060) due to insufficient content (0 lines).
+2026-02-11 10:38:06,003 - __main__ - INFO - Filtered out title 'subquery-load the keywords collection' (addr=1.27, line=40061) due to insufficient content (1 lines).
+2026-02-11 10:38:06,003 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/queryguide/index.md' (addr=2.1, line=40088) due to insufficient content (0 lines).
+2026-02-11 10:38:06,004 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/queryguide/_end_doctest.md' (addr=2.4, line=41676) due to insufficient content (0 lines).
+2026-02-11 10:38:06,005 - __main__ - INFO - Filtered out title 'this expression:' (addr=1.1, line=42177) due to insufficient content (1 lines).
+2026-02-11 10:38:06,005 - __main__ - INFO - Filtered out title 'count User records, without' (addr=1.3, line=42278) due to insufficient content (0 lines).
+2026-02-11 10:38:06,005 - __main__ - INFO - Filtered out title 'using a subquery.' (addr=1.4, line=42279) due to insufficient content (1 lines).
+2026-02-11 10:38:06,005 - __main__ - INFO - Filtered out title 'return count of user "id" grouped' (addr=1.5, line=42282) due to insufficient content (0 lines).
+2026-02-11 10:38:06,006 - __main__ - INFO - Filtered out title 'Users, filtered on some arbitrary criterion' (addr=1.10, line=43716) due to insufficient content (0 lines).
+2026-02-11 10:38:06,006 - __main__ - INFO - Filtered out title 'given *only* User.id==5, Address.email, and 'q', what' (addr=1.12, line=43725) due to insufficient content (0 lines).
+2026-02-11 10:38:06,009 - __main__ - INFO - Filtered out title 'will refresh all matching User objects as well as the related' (addr=1.1, line=47140) due to insufficient content (0 lines).
+2026-02-11 10:38:06,009 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/relationships.md' (addr=2.1, line=48242) due to insufficient content (0 lines).
+2026-02-11 10:38:06,010 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/index.md' (addr=2.2, line=48409) due to insufficient content (0 lines).
+2026-02-11 10:38:06,010 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/extensions/index.md' (addr=2.4, line=48919) due to insufficient content (0 lines).
+2026-02-11 10:38:06,010 - __main__ - INFO - Filtered out title 'correct use, however is not accepted by pep-484 tooling' (addr=1.2, line=50038) due to insufficient content (1 lines).
+2026-02-11 10:38:06,011 - __main__ - INFO - Filtered out title 'correct use which is also accepted by pep-484 tooling' (addr=1.4, line=50081) due to insufficient content (1 lines).
+2026-02-11 10:38:06,011 - __main__ - INFO - Filtered out title '...' (addr=1.10, line=50529) due to insufficient content (1 lines).
+2026-02-11 10:38:06,011 - __main__ - INFO - Filtered out title ''inplace' is not used here; calling getter creates a copy' (addr=1.11, line=50533) due to insufficient content (0 lines).
+2026-02-11 10:38:06,012 - __main__ - INFO - Filtered out title 'association proxy of "user_keyword_associations" collection' (addr=1.3, line=51751) due to insufficient content (0 lines).
+2026-02-11 10:38:06,012 - __main__ - INFO - Filtered out title 'user/user_keyword_associations relationship, mapping' (addr=1.5, line=51887) due to insufficient content (0 lines).
+2026-02-11 10:38:06,012 - __main__ - INFO - Filtered out title 'proxy to 'user_keyword_associations', instantiating' (addr=1.7, line=51894) due to insufficient content (0 lines).
+2026-02-11 10:38:06,012 - __main__ - INFO - Filtered out title 'UserKeywordAssociation assigning the new key to 'special_key',' (addr=1.8, line=51895) due to insufficient content (0 lines).
+2026-02-11 10:38:06,012 - __main__ - INFO - Filtered out title 'the same 'user_keyword_associations'->'keyword' proxy as in' (addr=1.10, line=51983) due to insufficient content (0 lines).
+2026-02-11 10:38:06,012 - __main__ - INFO - Filtered out title 'the relationship to Keyword is now called' (addr=1.12, line=52004) due to insufficient content (0 lines).
+2026-02-11 10:38:06,012 - __main__ - INFO - Filtered out title ''kw'' (addr=1.13, line=52005) due to insufficient content (1 lines).
+2026-02-11 10:38:06,012 - __main__ - INFO - Filtered out title ''keyword' is changed to be a proxy to the' (addr=1.14, line=52008) due to insufficient content (0 lines).
+2026-02-11 10:38:06,014 - __main__ - INFO - Filtered out title 'engine, suppose it has two tables 'user' and 'address' set up' (addr=1.1, line=57483) due to insufficient content (1 lines).
+2026-02-11 10:38:06,014 - __main__ - INFO - Filtered out title 'reflect the tables' (addr=1.2, line=57486) due to insufficient content (1 lines).
+2026-02-11 10:38:06,014 - __main__ - INFO - Filtered out title 'mapped classes are now created with names by default' (addr=1.3, line=57489) due to insufficient content (0 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'collection-based relationships are by default named' (addr=1.6, line=57500) due to insufficient content (0 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'produce our own MetaData object' (addr=1.8, line=57546) due to insufficient content (1 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'we can reflect it ourselves from a database, using options' (addr=1.9, line=57549) due to insufficient content (0 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'such as 'only' to limit what tables we look at...' (addr=1.10, line=57550) due to insufficient content (1 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'we can then produce a set of mappings from this MetaData.' (addr=1.12, line=57561) due to insufficient content (1 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'calling prepare() just sets up mapped classes and relationships.' (addr=1.13, line=57564) due to insufficient content (1 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'automap base' (addr=1.15, line=57696) due to insufficient content (1 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'override schema elements like Columns' (addr=1.17, line=57704) due to insufficient content (1 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'override relationships too, if desired.' (addr=1.18, line=57707) due to insufficient content (0 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'we must use the same name that automap would use for the' (addr=1.19, line=57708) due to insufficient content (0 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'relationship, and also must refer to the class name that automap will' (addr=1.20, line=57709) due to insufficient content (0 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'generate for "address"' (addr=1.21, line=57710) due to insufficient content (1 lines).
+2026-02-11 10:38:06,015 - __main__ - INFO - Filtered out title 'we still have Address generated from the tablename "address",' (addr=1.23, line=57718) due to insufficient content (0 lines).
+2026-02-11 10:38:06,016 - __main__ - INFO - Filtered out title 'make use of the built-in function to actually return' (addr=1.26, line=57891) due to insufficient content (0 lines).
+2026-02-11 10:38:06,016 - __main__ - INFO - Filtered out title 'produce relationships' (addr=1.29, line=58095) due to insufficient content (1 lines).
+2026-02-11 10:38:06,016 - __main__ - INFO - Filtered out title 'mapping is complete, with "address_collection" and' (addr=1.30, line=58098) due to insufficient content (0 lines).
+2026-02-11 10:38:06,016 - __main__ - INFO - Filtered out title 'set column.key = "attr_<lower_case_name>"' (addr=1.32, line=58127) due to insufficient content (1 lines).
+2026-02-11 10:38:06,016 - __main__ - INFO - Filtered out title 'select a correlated subquery in the top columns list,' (addr=1.2, line=58976) due to insufficient content (0 lines).
+2026-02-11 10:38:06,016 - __main__ - INFO - Filtered out title 'we have the "session" argument, pass that' (addr=1.3, line=58977) due to insufficient content (1 lines).
+2026-02-11 10:38:06,016 - __main__ - INFO - Filtered out title 'use a correlated subquery in some of the criteria, we have' (addr=1.4, line=58980) due to insufficient content (0 lines).
+2026-02-11 10:38:06,017 - __main__ - INFO - Filtered out title 'create AsyncSession with expire_on_commit=False' (addr=1.3, line=60224) due to insufficient content (1 lines).
+2026-02-11 10:38:06,017 - __main__ - INFO - Filtered out title 'commit would normally expire all attributes' (addr=1.5, line=60235) due to insufficient content (1 lines).
+2026-02-11 10:38:06,017 - __main__ - INFO - Filtered out title 'access attribute subsequent to commit; this is what' (addr=1.6, line=60238) due to insufficient content (0 lines).
+2026-02-11 10:38:06,017 - __main__ - INFO - Filtered out title 'expire_on_commit=False allows' (addr=1.7, line=60239) due to insufficient content (1 lines).
+2026-02-11 10:38:06,017 - __main__ - INFO - Filtered out title 'assume a_obj is an A that has lazy loaded A.bs collection' (addr=1.8, line=60256) due to insufficient content (1 lines).
+2026-02-11 10:38:06,017 - __main__ - INFO - Filtered out title 'force the collection to load by naming it in attribute_names' (addr=1.9, line=60259) due to insufficient content (1 lines).
+2026-02-11 10:38:06,018 - __main__ - INFO - Filtered out title 'the session object here is a traditional ORM Session.' (addr=1.11, line=60360) due to insufficient content (0 lines).
+2026-02-11 10:38:06,018 - __main__ - INFO - Filtered out title 'for AsyncEngine created in function scope, close and' (addr=1.15, line=60402) due to insufficient content (0 lines).
+2026-02-11 10:38:06,018 - __main__ - INFO - Filtered out title 'sync style API use on Session' (addr=1.21, line=60561) due to insufficient content (1 lines).
+2026-02-11 10:38:06,018 - __main__ - INFO - Filtered out title 'use the AsyncSession directly' (addr=1.24, line=60818) due to insufficient content (1 lines).
+2026-02-11 10:38:06,018 - __main__ - INFO - Filtered out title 'use the AsyncSession via the context-local proxy' (addr=1.25, line=60821) due to insufficient content (1 lines).
+2026-02-11 10:38:06,018 - __main__ - INFO - Filtered out title 'use the inspector' (addr=1.27, line=60849) due to insufficient content (1 lines).
+2026-02-11 10:38:06,019 - __main__ - INFO - Filtered out title 'run do_something_with_core() with a sync-style' (addr=1.29, line=61404) due to insufficient content (0 lines).
+2026-02-11 10:38:06,019 - __main__ - INFO - Filtered out title 'run metadata.create_all(conn) with a sync-style Connection,' (addr=1.31, line=61423) due to insufficient content (0 lines).
+2026-02-11 10:38:06,019 - __main__ - INFO - Filtered out title 'an AsyncEngine, which the AsyncSession will use for connection' (addr=1.33, line=62335) due to insufficient content (0 lines).
+2026-02-11 10:38:06,019 - __main__ - INFO - Filtered out title 'use the lazy loader on ``a1.bs`` via the ``.awaitable_attrs``' (addr=1.42, line=63296) due to insufficient content (0 lines).
+2026-02-11 10:38:06,020 - __main__ - INFO - Filtered out title 'run some_business_method() with a sync-style' (addr=1.49, line=64049) due to insufficient content (0 lines).
+2026-02-11 10:38:06,020 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/extensions/instrumentation.md' (addr=2.1, line=64183) due to insufficient content (0 lines).
+2026-02-11 10:38:06,020 - __main__ - INFO - Filtered out title '"Base" is a class that is created dynamically from the' (addr=1.1, line=64637) due to insufficient content (0 lines).
+2026-02-11 10:38:06,020 - __main__ - INFO - Filtered out title '"some_user" is an instance of the User class, which' (addr=1.3, line=64649) due to insufficient content (0 lines).
+2026-02-11 10:38:06,020 - __main__ - INFO - Filtered out title 'accepts "id" and "name" kwargs based on the mapping' (addr=1.4, line=64650) due to insufficient content (1 lines).
+2026-02-11 10:38:06,020 - __main__ - INFO - Filtered out title 'it has an attribute called .name that's a string' (addr=1.5, line=64653) due to insufficient content (1 lines).
+2026-02-11 10:38:06,020 - __main__ - INFO - Filtered out title 'a select() construct makes use of SQL expressions derived from the' (addr=1.6, line=64656) due to insufficient content (0 lines).
+2026-02-11 10:38:06,020 - __main__ - INFO - Filtered out title 'will pass mypy --strict' (addr=1.12, line=64814) due to insufficient content (1 lines).
+2026-02-11 10:38:06,020 - __main__ - INFO - Filtered out title 'if the target of the relationship is in another module' (addr=1.14, line=64971) due to insufficient content (0 lines).
+2026-02-11 10:38:06,021 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/extensions/declarative/relationships.md' (addr=2.1, line=65156) due to insufficient content (0 lines).
+2026-02-11 10:38:06,021 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/extensions/declarative/table_config.md' (addr=2.1, line=65642) due to insufficient content (0 lines).
+2026-02-11 10:38:06,021 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/extensions/declarative/inheritance.md' (addr=2.2, line=65704) due to insufficient content (0 lines).
+2026-02-11 10:38:06,021 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/extensions/declarative/basic_use.md' (addr=2.3, line=65756) due to insufficient content (0 lines).
+2026-02-11 10:38:06,021 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/extensions/declarative/api.md' (addr=2.4, line=65834) due to insufficient content (0 lines).
+2026-02-11 10:38:06,021 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/extensions/declarative/mixins.md' (addr=2.5, line=65900) due to insufficient content (0 lines).
+2026-02-11 10:38:06,022 - __main__ - INFO - Filtered out title 'set the attribute' (addr=1.3, line=66389) due to insufficient content (1 lines).
+2026-02-11 10:38:06,022 - __main__ - INFO - Filtered out title 'other Point methods' (addr=1.5, line=66463) due to insufficient content (0 lines).
+2026-02-11 10:38:06,022 - __main__ - INFO - Filtered out title '... (event handling logic) ...' (addr=1.3, line=67346) due to insufficient content (0 lines).
+2026-02-11 10:38:06,022 - __main__ - INFO - Filtered out title '... (event handling logic) ...' (addr=1.6, line=67409) due to insufficient content (0 lines).
+2026-02-11 10:38:06,023 - __main__ - INFO - Filtered out title 'execute a stored procedure upon INSERT,' (addr=1.30, line=68356) due to insufficient content (0 lines).
+2026-02-11 10:38:06,023 - __main__ - INFO - Filtered out title 'associate the listener function with SomeClass,' (addr=1.32, line=68363) due to insufficient content (0 lines).
+2026-02-11 10:38:06,023 - __main__ - INFO - Filtered out title 'support return values for the event' (addr=1.40, line=68937) due to insufficient content (1 lines).
+2026-02-11 10:38:06,023 - __main__ - INFO - Filtered out title 'propagate the listener to all subclasses of' (addr=1.41, line=68939) due to insufficient content (0 lines).
+2026-02-11 10:38:06,023 - __main__ - INFO - Filtered out title 'setup listener on UserContact.phone attribute, instructing' (addr=1.55, line=69665) due to insufficient content (0 lines).
+2026-02-11 10:38:06,024 - __main__ - INFO - Filtered out title '... (event handling logic) ...' (addr=1.74, line=70602) due to insufficient content (0 lines).
+2026-02-11 10:38:06,024 - __main__ - INFO - Filtered out title 'define a join between them.  This' (addr=1.2, line=70725) due to insufficient content (0 lines).
+2026-02-11 10:38:06,024 - __main__ - INFO - Filtered out title 'takes place across the user.id and address.user_id' (addr=1.3, line=70726) due to insufficient content (0 lines).
+2026-02-11 10:38:06,026 - __main__ - INFO - Filtered out title 'relationship() using explicit foreign() and remote() annotations' (addr=1.2, line=72433) due to insufficient content (0 lines).
+2026-02-11 10:38:06,026 - __main__ - INFO - Filtered out title '1. set up the join() as a variable, so we can refer' (addr=1.6, line=73007) due to insufficient content (0 lines).
+2026-02-11 10:38:06,026 - __main__ - INFO - Filtered out title 'to it in the mapping multiple times.' (addr=1.7, line=73008) due to insufficient content (1 lines).
+2026-02-11 10:38:06,026 - __main__ - INFO - Filtered out title '1. the relationship can be declared using lambdas, allowing it to resolve' (addr=1.10, line=73084) due to insufficient content (0 lines).
+2026-02-11 10:38:06,026 - __main__ - INFO - Filtered out title '2. configure the targets of the relationship using a before_mapper_configured' (addr=1.12, line=73091) due to insufficient content (0 lines).
+2026-02-11 10:38:06,026 - __main__ - INFO - Filtered out title '3. set up the join() and AliasedClass as globals from within' (addr=1.14, line=73095) due to insufficient content (0 lines).
+2026-02-11 10:38:06,027 - __main__ - INFO - Filtered out title 'this expression works on PostgreSQL but may not be supported' (addr=1.17, line=73292) due to insufficient content (0 lines).
+2026-02-11 10:38:06,027 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/collections.md' (addr=2.1, line=73521) due to insufficient content (0 lines).
+2026-02-11 10:38:06,028 - __main__ - INFO - Filtered out title 'an Engine, which the Session will use for connection' (addr=1.1, line=75015) due to insufficient content (0 lines).
+2026-02-11 10:38:06,028 - __main__ - INFO - Filtered out title 'resources' (addr=1.2, line=75016) due to insufficient content (1 lines).
+2026-02-11 10:38:06,028 - __main__ - INFO - Filtered out title 'inner context calls session.commit(), if there were no exceptions' (addr=1.6, line=75086) due to insufficient content (0 lines).
+2026-02-11 10:38:06,028 - __main__ - INFO - Filtered out title 'outer context calls session.close()' (addr=1.7, line=75087) due to insufficient content (0 lines).
+2026-02-11 10:38:06,028 - __main__ - INFO - Filtered out title 'inner context calls session.commit(), if there were no exceptions' (addr=1.9, line=75097) due to insufficient content (0 lines).
+2026-02-11 10:38:06,028 - __main__ - INFO - Filtered out title 'an Engine, which the Session will use for connection' (addr=1.11, line=75113) due to insufficient content (0 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'resources, typically in module scope' (addr=1.12, line=75114) due to insufficient content (1 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'a sessionmaker(), also in the same scope as the engine' (addr=1.13, line=75117) due to insufficient content (1 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'we can now construct a Session() without needing to pass the' (addr=1.14, line=75120) due to insufficient content (0 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'an Engine, which the Session will use for connection' (addr=1.17, line=75139) due to insufficient content (0 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'resources' (addr=1.18, line=75140) due to insufficient content (1 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'a sessionmaker(), also in the same scope as the engine' (addr=1.19, line=75143) due to insufficient content (1 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'we can now construct a Session() and include begin()/commit()/rollback()' (addr=1.20, line=75146) due to insufficient content (0 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'query for ``User`` objects' (addr=1.23, line=75188) due to insufficient content (1 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'list of ``User`` objects' (addr=1.24, line=75191) due to insufficient content (1 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'query for individual columns' (addr=1.25, line=75194) due to insufficient content (1 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title 'closes session automatically' (addr=1.29, line=75713) due to insufficient content (0 lines).
+2026-02-11 10:38:06,029 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/loading_relationships.md' (addr=2.1, line=75989) due to insufficient content (0 lines).
+2026-02-11 10:38:06,031 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/session.md' (addr=2.1, line=79150) due to insufficient content (0 lines).
+2026-02-11 10:38:06,031 - __main__ - INFO - Filtered out title '...' (addr=1.3, line=80167) due to insufficient content (1 lines).
+2026-02-11 10:38:06,031 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/inheritance_loading.md' (addr=2.1, line=80223) due to insufficient content (0 lines).
+2026-02-11 10:38:06,031 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/declarative_mapping.md' (addr=2.2, line=80271) due to insufficient content (0 lines).
+2026-02-11 10:38:06,031 - __main__ - INFO - Filtered out title 'an Engine, which the Session will use for connection' (addr=1.1, line=80729) due to insufficient content (0 lines).
+2026-02-11 10:38:06,032 - __main__ - INFO - Filtered out title 'commits transaction, closes session' (addr=1.3, line=80771) due to insufficient content (1 lines).
+2026-02-11 10:38:06,032 - __main__ - INFO - Filtered out title 'application starts, sessionmaker does not have' (addr=1.5, line=80801) due to insufficient content (0 lines).
+2026-02-11 10:38:06,032 - __main__ - INFO - Filtered out title 'an engine bound yet' (addr=1.6, line=80802) due to insufficient content (1 lines).
+2026-02-11 10:38:06,032 - __main__ - INFO - Filtered out title '... later, when an engine URL is read from a configuration' (addr=1.7, line=80805) due to insufficient content (0 lines).
+2026-02-11 10:38:06,032 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/loading.md' (addr=2.1, line=83276) due to insufficient content (0 lines).
+2026-02-11 10:38:06,033 - __main__ - INFO - Filtered out title 'use a List, Python 3.8 and earlier' (addr=1.3, line=83561) due to insufficient content (1 lines).
+2026-02-11 10:38:06,033 - __main__ - INFO - Filtered out title 'for mapping type, an 'append' may kick out a previous value' (addr=1.10, line=84574) due to insufficient content (0 lines).
+2026-02-11 10:38:06,033 - __main__ - INFO - Filtered out title 'that occupies that slot.  consider d['a'] = 'foo'- any previous' (addr=1.11, line=84575) due to insufficient content (0 lines).
+2026-02-11 10:38:06,033 - __main__ - INFO - Filtered out title 'normally an 'extend' method on a list-like class would be' (addr=1.13, line=84643) due to insufficient content (0 lines).
+2026-02-11 10:38:06,033 - __main__ - INFO - Filtered out title 'automatically intercepted and re-implemented in terms of' (addr=1.14, line=84644) due to insufficient content (0 lines).
+2026-02-11 10:38:06,033 - __main__ - INFO - Filtered out title 'SQLAlchemy events and append().  your implementation will' (addr=1.15, line=84645) due to insufficient content (0 lines).
+2026-02-11 10:38:06,034 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/loading_objects.md' (addr=2.1, line=84788) due to insufficient content (0 lines).
+2026-02-11 10:38:06,034 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/exceptions.md' (addr=2.1, line=85626) due to insufficient content (0 lines).
+2026-02-11 10:38:06,034 - __main__ - INFO - Filtered out title 'name the attribute with an underscore,' (addr=1.4, line=86087) due to insufficient content (0 lines).
+2026-02-11 10:38:06,034 - __main__ - INFO - Filtered out title 'different from the column name' (addr=1.5, line=86088) due to insufficient content (1 lines).
+2026-02-11 10:38:06,034 - __main__ - INFO - Filtered out title 'then create an ".email" attribute' (addr=1.6, line=86091) due to insufficient content (0 lines).
+2026-02-11 10:38:06,035 - __main__ - INFO - Filtered out title 'add populate_existing for all SELECT statements' (addr=1.1, line=86605) due to insufficient content (1 lines).
+2026-02-11 10:38:06,035 - __main__ - INFO - Filtered out title 'check if the SELECT is against a certain entity and add an' (addr=1.2, line=86609) due to insufficient content (0 lines).
+2026-02-11 10:38:06,035 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/query.md' (addr=2.1, line=87256) due to insufficient content (0 lines).
+2026-02-11 10:38:06,035 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/extending.md' (addr=2.2, line=87304) due to insufficient content (0 lines).
+2026-02-11 10:38:06,035 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/constructors.md' (addr=2.3, line=87427) due to insufficient content (0 lines).
+2026-02-11 10:38:06,036 - __main__ - INFO - Filtered out title 'passive_updates=False *only* needed if the database' (addr=1.1, line=87811) due to insufficient content (0 lines).
+2026-02-11 10:38:06,036 - __main__ - INFO - Filtered out title 'filter Jack's blog posts' (addr=1.1, line=88676) due to insufficient content (1 lines).
+2026-02-11 10:38:06,037 - __main__ - INFO - Filtered out title 'count User records, without' (addr=1.3, line=88807) due to insufficient content (0 lines).
+2026-02-11 10:38:06,037 - __main__ - INFO - Filtered out title 'using a subquery.' (addr=1.4, line=88808) due to insufficient content (1 lines).
+2026-02-11 10:38:06,037 - __main__ - INFO - Filtered out title 'return count of user "id" grouped' (addr=1.5, line=88811) due to insufficient content (0 lines).
+2026-02-11 10:38:06,037 - __main__ - INFO - Filtered out title '...' (addr=1.9, line=89050) due to insufficient content (1 lines).
+2026-02-11 10:38:06,037 - __main__ - INFO - Filtered out title 'foreign key to "company.id" is added' (addr=1.1, line=89870) due to insufficient content (1 lines).
+2026-02-11 10:38:06,038 - __main__ - INFO - Filtered out title 'Executive, Technologist, Manager, Principal, Engineer, SysAdmin' (addr=1.3, line=89882) due to insufficient content (0 lines).
+2026-02-11 10:38:06,039 - __main__ - INFO - Filtered out title 'commits transaction at the end, or rolls back if there' (addr=1.1, line=91076) due to insufficient content (0 lines).
+2026-02-11 10:38:06,039 - __main__ - INFO - Filtered out title 'expunges all objects, releases all transactions unconditionally' (addr=1.4, line=91121) due to insufficient content (0 lines).
+2026-02-11 10:38:06,039 - __main__ - INFO - Filtered out title '(with rollback), releases all database connections back to their' (addr=1.5, line=91122) due to insufficient content (0 lines).
+2026-02-11 10:38:06,039 - __main__ - INFO - Filtered out title 'remaining transactional state from the .execute() call is' (addr=1.7, line=91147) due to insufficient content (0 lines).
+2026-02-11 10:38:06,039 - __main__ - INFO - Filtered out title 'commits' (addr=1.9, line=91159) due to insufficient content (0 lines).
+2026-02-11 10:38:06,039 - __main__ - INFO - Filtered out title '.... work with accounts and users' (addr=1.17, line=91486) due to insufficient content (0 lines).
+2026-02-11 10:38:06,039 - __main__ - INFO - Filtered out title 'commit.  session will issue a flush to all DBs, and a prepare step to all DBs,' (addr=1.18, line=91488) due to insufficient content (0 lines).
+2026-02-11 10:38:06,039 - __main__ - INFO - Filtered out title 'will normally use plain_engine' (addr=1.21, line=91599) due to insufficient content (1 lines).
+2026-02-11 10:38:06,039 - __main__ - INFO - Filtered out title 'make a specific Session that will use the "autocommit" engine' (addr=1.22, line=91602) due to insufficient content (1 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'assume session just constructed' (addr=1.24, line=91635) due to insufficient content (1 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'call connection() with options before any other operations proceed.' (addr=1.25, line=91638) due to insufficient content (0 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'this will procure a new connection from the bound engine and begin a real' (addr=1.26, line=91639) due to insufficient content (0 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'database transaction.' (addr=1.27, line=91640) due to insufficient content (1 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title '... work with session in SERIALIZABLE isolation level...' (addr=1.28, line=91643) due to insufficient content (0 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'commit transaction.  the connection is released' (addr=1.29, line=91645) due to insufficient content (0 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'and reverted to its previous isolation level.' (addr=1.30, line=91646) due to insufficient content (1 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'subsequent to commit() above, a new transaction may be begun if desired,' (addr=1.31, line=91649) due to insufficient content (0 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'which will proceed with the previous default isolation level unless' (addr=1.32, line=91650) due to insufficient content (0 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'call connection() with options before any other operations proceed.' (addr=1.34, line=91672) due to insufficient content (0 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'this will procure a new connection from the bound engine and begin a' (addr=1.35, line=91673) due to insufficient content (0 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'real database transaction.' (addr=1.36, line=91674) due to insufficient content (1 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title '... work with session in SERIALIZABLE isolation level...' (addr=1.37, line=91677) due to insufficient content (0 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'outside the block, the transaction has been committed.  the connection is' (addr=1.38, line=91679) due to insufficient content (0 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'connect to the database' (addr=1.41, line=91727) due to insufficient content (1 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'begin a non-ORM transaction' (addr=1.42, line=91730) due to insufficient content (1 lines).
+2026-02-11 10:38:06,040 - __main__ - INFO - Filtered out title 'bind an individual Session to the connection, selecting' (addr=1.43, line=91733) due to insufficient content (0 lines).
+2026-02-11 10:38:06,041 - __main__ - INFO - Filtered out title 'rollback - everything that happened with the' (addr=1.46, line=91756) due to insufficient content (0 lines).
+2026-02-11 10:38:06,041 - __main__ - INFO - Filtered out title 'Session above (including calls to commit())' (addr=1.47, line=91757) due to insufficient content (0 lines).
+2026-02-11 10:38:06,041 - __main__ - INFO - Filtered out title 'is rolled back.' (addr=1.48, line=91758) due to insufficient content (1 lines).
+2026-02-11 10:38:06,041 - __main__ - INFO - Filtered out title 'return connection to the Engine' (addr=1.49, line=91761) due to insufficient content (1 lines).
+2026-02-11 10:38:06,041 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/declarative_styles.md' (addr=2.1, line=91781) due to insufficient content (1 lines).
+2026-02-11 10:38:06,042 - __main__ - INFO - Filtered out title 'query for Person objects, specifying cache' (addr=1.3, line=93139) due to insufficient content (1 lines).
+2026-02-11 10:38:06,042 - __main__ - INFO - Filtered out title 'specify that each Person's "addresses" collection comes from' (addr=1.4, line=93142) due to insufficient content (0 lines).
+2026-02-11 10:38:06,042 - __main__ - INFO - Filtered out title 'cache too' (addr=1.5, line=93143) due to insufficient content (1 lines).
+2026-02-11 10:38:06,042 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/mapping_columns.md' (addr=2.1, line=93207) due to insufficient content (0 lines).
+2026-02-11 10:38:06,043 - __main__ - INFO - Filtered out title 'set 'value' attribute to a SQL expression adding one' (addr=1.2, line=97495) due to insufficient content (1 lines).
+2026-02-11 10:38:06,043 - __main__ - INFO - Filtered out title 'execute a string statement' (addr=1.4, line=97559) due to insufficient content (1 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'the ORM still omits it from the statement and the' (addr=1.9, line=97662) due to insufficient content (0 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'the ORM uses this directly, bypassing all client-' (addr=1.11, line=97682) due to insufficient content (0 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'and server-side defaults, and the database will' (addr=1.12, line=97683) due to insufficient content (0 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'the ORM uses this directly, bypassing all client-' (addr=1.14, line=97711) due to insufficient content (0 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'and server-side defaults, and the database will' (addr=1.15, line=97712) due to insufficient content (0 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'server-side SQL date function generates a new timestamp' (addr=1.17, line=97771) due to insufficient content (1 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'some other server-side function not named here, such as a trigger,' (addr=1.18, line=97774) due to insufficient content (0 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'populates a value into this column during INSERT' (addr=1.19, line=97775) due to insufficient content (1 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'set eager defaults to True.  This is usually optional, as if the' (addr=1.20, line=97778) due to insufficient content (0 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'backend supports RETURNING + insertmanyvalues, eager defaults' (addr=1.21, line=97779) due to insufficient content (0 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'assume a database trigger populates a value into this column' (addr=1.23, line=97837) due to insufficient content (0 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'during INSERT' (addr=1.24, line=97838) due to insufficient content (1 lines).
+2026-02-11 10:38:06,044 - __main__ - INFO - Filtered out title 'assume a database trigger populates a value into this column' (addr=1.26, line=97872) due to insufficient content (0 lines).
+2026-02-11 10:38:06,045 - __main__ - INFO - Filtered out title 'all User/Address operations will be on engine 1, all' (addr=1.29, line=98208) due to insufficient content (0 lines).
+2026-02-11 10:38:06,045 - __main__ - INFO - Filtered out title 'NOTE: this is for example, however in practice reader/writer' (addr=1.31, line=98271) due to insufficient content (0 lines).
+2026-02-11 10:38:06,045 - __main__ - INFO - Filtered out title 'splits are likely more straightforward by using two distinct' (addr=1.32, line=98272) due to insufficient content (0 lines).
+2026-02-11 10:38:06,045 - __main__ - INFO - Filtered out title 'Sessions at the top of a "reader" or "writer" operation.' (addr=1.33, line=98273) due to insufficient content (0 lines).
+2026-02-11 10:38:06,045 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/classical.md' (addr=2.1, line=98344) due to insufficient content (0 lines).
+2026-02-11 10:38:06,045 - __main__ - INFO - Filtered out title '/home/daniel/Escritorio/OLLAMA-LANGCHAING-AGENTE/SALIDA/orm/relationship_api.md' (addr=2.2, line=98392) due to insufficient content (1 lines).
+2026-02-11 10:38:06,045 - __main__ - INFO - Filtered out title 'is the same as' (addr=1.4, line=99320) due to insufficient content (1 lines).
+2026-02-11 10:38:06,049 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.107, line=110806) due to insufficient content (0 lines).
+2026-02-11 10:38:06,049 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=110808) due to insufficient content (1 lines).
+2026-02-11 10:38:06,049 - __main__ - INFO - Filtered out title 'DBAPI Support[¶](#dialect-mysql "Link to this heading")' (addr=2.1, line=111111) due to insufficient content (1 lines).
+2026-02-11 10:38:06,050 - __main__ - INFO - Filtered out title 'Unicode[¶](#unicode "Link to this heading")' (addr=2.7, line=111450) due to insufficient content (0 lines).
+2026-02-11 10:38:06,050 - __main__ - INFO - Filtered out title 'MySQL / MariaDB- Specific Index Options[¶](#mysql-mariadb-specific-index-options "Link to this heading")' (addr=2.7, line=111827) due to insufficient content (1 lines).
+2026-02-11 10:38:06,050 - __main__ - INFO - Filtered out title 'MySQL / MariaDB Foreign Keys[¶](#mysql-mariadb-foreign-keys "Link to this heading")' (addr=2.1, line=111920) due to insufficient content (1 lines).
+2026-02-11 10:38:06,051 - __main__ - INFO - Filtered out title 'TIMESTAMP / DATETIME issues[¶](#timestamp-datetime-issues "Link to this heading")' (addr=2.2, line=111995) due to insufficient content (0 lines).
+2026-02-11 10:38:06,054 - __main__ - INFO - Filtered out title 'mysqlclient (fork of MySQL-Python)[¶](#module-sqlalchemy.dialects.mysql.mysqldb "Link to this heading")' (addr=2.4, line=113238) due to insufficient content (1 lines).
+2026-02-11 10:38:06,054 - __main__ - INFO - Filtered out title 'Connecting[¶](#dialect-mysql-mysqldb-connect "Link to this heading")' (addr=3.2, line=113247) due to insufficient content (1 lines).
+2026-02-11 10:38:06,054 - __main__ - INFO - Filtered out title 'Server Side Cursors[¶](#id3 "Link to this heading")' (addr=3.7, line=113313) due to insufficient content (1 lines).
+2026-02-11 10:38:06,055 - __main__ - INFO - Filtered out title 'PyMySQL[¶](#module-sqlalchemy.dialects.mysql.pymysql "Link to this heading")' (addr=2.1, line=113317) due to insufficient content (1 lines).
+2026-02-11 10:38:06,055 - __main__ - INFO - Filtered out title 'Connecting[¶](#dialect-mysql-pymysql-connect "Link to this heading")' (addr=3.2, line=113326) due to insufficient content (1 lines).
+2026-02-11 10:38:06,055 - __main__ - INFO - Filtered out title 'MariaDB-Connector[¶](#module-sqlalchemy.dialects.mysql.mariadbconnector "Link to this heading")' (addr=2.1, line=113364) due to insufficient content (1 lines).
+2026-02-11 10:38:06,055 - __main__ - INFO - Filtered out title 'Connecting[¶](#dialect-mysql-mariadbconnector-connect "Link to this heading")' (addr=3.2, line=113373) due to insufficient content (1 lines).
+2026-02-11 10:38:06,055 - __main__ - INFO - Filtered out title 'MySQL-Connector[¶](#module-sqlalchemy.dialects.mysql.mysqlconnector "Link to this heading")' (addr=2.1, line=113391) due to insufficient content (1 lines).
+2026-02-11 10:38:06,055 - __main__ - INFO - Filtered out title 'Connecting[¶](#dialect-mysql-mysqlconnector-connect "Link to this heading")' (addr=3.2, line=113400) due to insufficient content (1 lines).
+2026-02-11 10:38:06,055 - __main__ - INFO - Filtered out title 'asyncmy[¶](#asyncmy "Link to this heading")' (addr=2.1, line=113436) due to insufficient content (1 lines).
+2026-02-11 10:38:06,055 - __main__ - INFO - Filtered out title 'aiomysql[¶](#aiomysql "Link to this heading")' (addr=2.1, line=113468) due to insufficient content (1 lines).
+2026-02-11 10:38:06,055 - __main__ - INFO - Filtered out title 'cymysql[¶](#module-sqlalchemy.dialects.mysql.cymysql "Link to this heading")' (addr=2.1, line=113502) due to insufficient content (1 lines).
+2026-02-11 10:38:06,055 - __main__ - INFO - Filtered out title 'pyodbc[¶](#module-sqlalchemy.dialects.mysql.pyodbc "Link to this heading")' (addr=2.1, line=113525) due to insufficient content (1 lines).
+2026-02-11 10:38:06,056 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=113596) due to insufficient content (0 lines).
+2026-02-11 10:38:06,056 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=113598) due to insufficient content (1 lines).
+2026-02-11 10:38:06,057 - __main__ - INFO - Filtered out title 'DBAPI Support[¶](#dialect-postgresql "Link to this heading")' (addr=2.1, line=114137) due to insufficient content (1 lines).
+2026-02-11 10:38:06,060 - __main__ - INFO - Filtered out title 'HSTORE Type[¶](#hstore-type "Link to this heading")' (addr=2.3, line=115809) due to insufficient content (1 lines).
+2026-02-11 10:38:06,064 - __main__ - INFO - Filtered out title 'psycopg2[¶](#module-sqlalchemy.dialects.postgresql.psycopg2 "Link to this heading")' (addr=2.6, line=118466) due to insufficient content (1 lines).
+2026-02-11 10:38:06,064 - __main__ - INFO - Filtered out title 'Connecting[¶](#dialect-postgresql-psycopg2-connect "Link to this heading")' (addr=3.2, line=118475) due to insufficient content (1 lines).
+2026-02-11 10:38:06,064 - __main__ - INFO - Filtered out title 'Transactions[¶](#transactions "Link to this heading")' (addr=3.11, line=118851) due to insufficient content (1 lines).
+2026-02-11 10:38:06,065 - __main__ - INFO - Filtered out title 'psycopg[¶](#module-sqlalchemy.dialects.postgresql.psycopg "Link to this heading")' (addr=2.1, line=118950) due to insufficient content (1 lines).
+2026-02-11 10:38:06,065 - __main__ - INFO - Filtered out title 'pg8000[¶](#module-sqlalchemy.dialects.postgresql.pg8000 "Link to this heading")' (addr=2.1, line=119133) due to insufficient content (1 lines).
+2026-02-11 10:38:06,065 - __main__ - INFO - Filtered out title 'asyncpg[¶](#module-sqlalchemy.dialects.postgresql.asyncpg "Link to this heading")' (addr=2.1, line=119229) due to insufficient content (1 lines).
+2026-02-11 10:38:06,065 - __main__ - INFO - Filtered out title 'psycopg2cffi[¶](#module-sqlalchemy.dialects.postgresql.psycopg2cffi "Link to this heading")' (addr=2.1, line=119411) due to insufficient content (1 lines).
+2026-02-11 10:38:06,065 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=119461) due to insufficient content (0 lines).
+2026-02-11 10:38:06,065 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=119463) due to insufficient content (1 lines).
+2026-02-11 10:38:06,065 - __main__ - INFO - Filtered out title 'Included Dialects[¶](#included-dialects "Link to this heading")' (addr=2.1, line=119514) due to insufficient content (0 lines).
+2026-02-11 10:38:06,066 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=119631) due to insufficient content (0 lines).
+2026-02-11 10:38:06,066 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=119633) due to insufficient content (1 lines).
+2026-02-11 10:38:06,066 - __main__ - INFO - Filtered out title 'DBAPI Support[¶](#dialect-sqlite "Link to this heading")' (addr=2.1, line=119804) due to insufficient content (1 lines).
+2026-02-11 10:38:06,068 - __main__ - INFO - Filtered out title 'Connecting[¶](#dialect-sqlite-pysqlite-connect "Link to this heading")' (addr=3.2, line=121170) due to insufficient content (1 lines).
+2026-02-11 10:38:06,068 - __main__ - INFO - Filtered out title 'Aiosqlite[¶](#aiosqlite "Link to this heading")' (addr=2.1, line=121547) due to insufficient content (1 lines).
+2026-02-11 10:38:06,068 - __main__ - INFO - Filtered out title 'Connecting[¶](#dialect-sqlite-pysqlcipher-connect "Link to this heading")' (addr=3.1, line=121623) due to insufficient content (1 lines).
+2026-02-11 10:38:06,068 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=121740) due to insufficient content (0 lines).
+2026-02-11 10:38:06,069 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=121742) due to insufficient content (1 lines).
+2026-02-11 10:38:06,069 - __main__ - INFO - Filtered out title 'DBAPI Support[¶](#dialect-mssql "Link to this heading")' (addr=2.1, line=121943) due to insufficient content (1 lines).
+2026-02-11 10:38:06,071 - __main__ - INFO - Filtered out title 'PyODBC[¶](#module-sqlalchemy.dialects.mssql.pyodbc "Link to this heading")' (addr=2.7, line=123641) due to insufficient content (1 lines).
+2026-02-11 10:38:06,072 - __main__ - INFO - Filtered out title 'Connecting[¶](#dialect-mssql-pyodbc-connect "Link to this heading")' (addr=3.2, line=123650) due to insufficient content (1 lines).
+2026-02-11 10:38:06,072 - __main__ - INFO - Filtered out title 'pymssql[¶](#module-sqlalchemy.dialects.mssql.pymssql "Link to this heading")' (addr=2.1, line=123997) due to insufficient content (1 lines).
+2026-02-11 10:38:06,072 - __main__ - INFO - Filtered out title 'aioodbc[¶](#module-sqlalchemy.dialects.mssql.aioodbc "Link to this heading")' (addr=2.1, line=124014) due to insufficient content (1 lines).
+2026-02-11 10:38:06,072 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=124083) due to insufficient content (0 lines).
+2026-02-11 10:38:06,072 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=124085) due to insufficient content (1 lines).
+2026-02-11 10:38:06,073 - __main__ - INFO - Filtered out title 'DBAPI Support[¶](#dialect-oracle "Link to this heading")' (addr=2.1, line=124380) due to insufficient content (1 lines).
+2026-02-11 10:38:06,074 - __main__ - INFO - Filtered out title 'Oracle Database Specific Index Options[¶](#oracle-database-specific-index-options "Link to this heading")' (addr=2.10, line=125067) due to insufficient content (0 lines).
+2026-02-11 10:38:06,075 - __main__ - INFO - Filtered out title 'python-oracledb[¶](#module-sqlalchemy.dialects.oracle.oracledb "Link to this heading")' (addr=2.2, line=125951) due to insufficient content (1 lines).
+2026-02-11 10:38:06,075 - __main__ - INFO - Filtered out title 'Connecting[¶](#dialect-oracle-oracledb-connect "Link to this heading")' (addr=3.2, line=125960) due to insufficient content (1 lines).
+2026-02-11 10:38:06,075 - __main__ - INFO - Filtered out title 'Ensuring the Correct Client Encoding[¶](#ensuring-the-correct-client-encoding "Link to this heading")' (addr=4.1, line=126350) due to insufficient content (1 lines).
+2026-02-11 10:38:06,076 - __main__ - INFO - Filtered out title 'cx\_Oracle[¶](#cx-oracle "Link to this heading")' (addr=2.1, line=126527) due to insufficient content (1 lines).
+2026-02-11 10:38:06,076 - __main__ - INFO - Filtered out title 'Connecting[¶](#dialect-oracle-cx_oracle-connect "Link to this heading")' (addr=3.2, line=126536) due to insufficient content (1 lines).
+2026-02-11 10:38:06,076 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=127030) due to insufficient content (0 lines).
+2026-02-11 10:38:06,076 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=127032) due to insufficient content (1 lines).
+2026-02-11 10:38:06,077 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=127348) due to insufficient content (0 lines).
+2026-02-11 10:38:06,077 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=127350) due to insufficient content (1 lines).
+2026-02-11 10:38:06,080 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=129228) due to insufficient content (0 lines).
+2026-02-11 10:38:06,080 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=129230) due to insufficient content (1 lines).
+2026-02-11 10:38:06,080 - __main__ - INFO - Filtered out title 'State Management[¶](#state-management "Link to this heading")' (addr=1.1, line=129293) due to insufficient content (0 lines).
+2026-02-11 10:38:06,081 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=129997) due to insufficient content (0 lines).
+2026-02-11 10:38:06,081 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=129999) due to insufficient content (1 lines).
+2026-02-11 10:38:06,083 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=131339) due to insufficient content (0 lines).
+2026-02-11 10:38:06,083 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=131341) due to insufficient content (1 lines).
+2026-02-11 10:38:06,083 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=131387) due to insufficient content (0 lines).
+2026-02-11 10:38:06,083 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=131389) due to insufficient content (1 lines).
+2026-02-11 10:38:06,083 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=131827) due to insufficient content (0 lines).
+2026-02-11 10:38:06,083 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=131829) due to insufficient content (1 lines).
+2026-02-11 10:38:06,084 - __main__ - INFO - Filtered out title 'Other Declarative Mapping Directives[¶](#other-declarative-mapping-directives "Link to this heading")' (addr=2.1, line=132207) due to insufficient content (0 lines).
+2026-02-11 10:38:06,084 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=132430) due to insufficient content (0 lines).
+2026-02-11 10:38:06,084 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=132432) due to insufficient content (1 lines).
+2026-02-11 10:38:06,084 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=132478) due to insufficient content (0 lines).
+2026-02-11 10:38:06,084 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=132480) due to insufficient content (1 lines).
+2026-02-11 10:38:06,085 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=133012) due to insufficient content (0 lines).
+2026-02-11 10:38:06,085 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=133014) due to insufficient content (1 lines).
+2026-02-11 10:38:06,085 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=133069) due to insufficient content (0 lines).
+2026-02-11 10:38:06,085 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=133071) due to insufficient content (1 lines).
+2026-02-11 10:38:06,086 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=133717) due to insufficient content (0 lines).
+2026-02-11 10:38:06,086 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=133719) due to insufficient content (1 lines).
+2026-02-11 10:38:06,088 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=136022) due to insufficient content (0 lines).
+2026-02-11 10:38:06,088 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=136024) due to insufficient content (1 lines).
+2026-02-11 10:38:06,088 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.2, line=136101) due to insufficient content (0 lines).
+2026-02-11 10:38:06,088 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=136103) due to insufficient content (1 lines).
+2026-02-11 10:38:06,088 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.2, line=136246) due to insufficient content (0 lines).
+2026-02-11 10:38:06,088 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=136248) due to insufficient content (1 lines).
+2026-02-11 10:38:06,090 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=137491) due to insufficient content (0 lines).
+2026-02-11 10:38:06,090 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=137493) due to insufficient content (1 lines).
+2026-02-11 10:38:06,092 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=139469) due to insufficient content (0 lines).
+2026-02-11 10:38:06,092 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=139471) due to insufficient content (1 lines).
+2026-02-11 10:38:06,093 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.2, line=139682) due to insufficient content (0 lines).
+2026-02-11 10:38:06,093 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=139684) due to insufficient content (1 lines).
+2026-02-11 10:38:06,094 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=140942) due to insufficient content (0 lines).
+2026-02-11 10:38:06,094 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=140944) due to insufficient content (1 lines).
+2026-02-11 10:38:06,094 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.2, line=141057) due to insufficient content (0 lines).
+2026-02-11 10:38:06,094 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=141059) due to insufficient content (1 lines).
+2026-02-11 10:38:06,094 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=141103) due to insufficient content (0 lines).
+2026-02-11 10:38:06,094 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=141105) due to insufficient content (1 lines).
+2026-02-11 10:38:06,098 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=143374) due to insufficient content (0 lines).
+2026-02-11 10:38:06,098 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=143376) due to insufficient content (1 lines).
+2026-02-11 10:38:06,099 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=144657) due to insufficient content (0 lines).
+2026-02-11 10:38:06,099 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=144659) due to insufficient content (1 lines).
+2026-02-11 10:38:06,100 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=145886) due to insufficient content (0 lines).
+2026-02-11 10:38:06,100 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=145888) due to insufficient content (1 lines).
+2026-02-11 10:38:06,101 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.2, line=146031) due to insufficient content (0 lines).
+2026-02-11 10:38:06,101 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=146033) due to insufficient content (1 lines).
+2026-02-11 10:38:06,101 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.2, line=146181) due to insufficient content (0 lines).
+2026-02-11 10:38:06,101 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=146183) due to insufficient content (1 lines).
+2026-02-11 10:38:06,101 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.2, line=146327) due to insufficient content (0 lines).
+2026-02-11 10:38:06,101 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=146329) due to insufficient content (1 lines).
+2026-02-11 10:38:06,101 - __main__ - INFO - Filtered out title 'ORM API Features for Querying[¶](#orm-api-features-for-querying "Link to this heading")' (addr=1.1, line=146429) due to insufficient content (0 lines).
+2026-02-11 10:38:06,103 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=147623) due to insufficient content (0 lines).
+2026-02-11 10:38:06,103 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=147625) due to insufficient content (1 lines).
+2026-02-11 10:38:06,103 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=147790) due to insufficient content (0 lines).
+2026-02-11 10:38:06,103 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=147792) due to insufficient content (1 lines).
+2026-02-11 10:38:06,104 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.2, line=147932) due to insufficient content (0 lines).
+2026-02-11 10:38:06,104 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=147934) due to insufficient content (1 lines).
+2026-02-11 10:38:06,104 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=148300) due to insufficient content (0 lines).
+2026-02-11 10:38:06,104 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=148302) due to insufficient content (1 lines).
+2026-02-11 10:38:06,105 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.2, line=148395) due to insufficient content (0 lines).
+2026-02-11 10:38:06,105 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=148397) due to insufficient content (1 lines).
+2026-02-11 10:38:06,106 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=148709) due to insufficient content (0 lines).
+2026-02-11 10:38:06,106 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=148711) due to insufficient content (1 lines).
+2026-02-11 10:38:06,107 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=149075) due to insufficient content (0 lines).
+2026-02-11 10:38:06,107 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=149077) due to insufficient content (1 lines).
+2026-02-11 10:38:06,110 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=150427) due to insufficient content (0 lines).
+2026-02-11 10:38:06,110 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=150429) due to insufficient content (1 lines).
+2026-02-11 10:38:06,120 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=156714) due to insufficient content (0 lines).
+2026-02-11 10:38:06,120 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=156716) due to insufficient content (1 lines).
+2026-02-11 10:38:06,121 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=157859) due to insufficient content (0 lines).
+2026-02-11 10:38:06,121 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=157861) due to insufficient content (1 lines).
+2026-02-11 10:38:06,122 - __main__ - INFO - Filtered out title 'Special Query Techniques[¶](#special-query-techniques "Link to this heading")' (addr=2.4, line=158298) due to insufficient content (1 lines).
+2026-02-11 10:38:06,122 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=158630) due to insufficient content (0 lines).
+2026-02-11 10:38:06,122 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=158632) due to insufficient content (1 lines).
+2026-02-11 10:38:06,130 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=163564) due to insufficient content (0 lines).
+2026-02-11 10:38:06,130 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=163566) due to insufficient content (1 lines).
+2026-02-11 10:38:06,130 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.1, line=163826) due to insufficient content (0 lines).
+2026-02-11 10:38:06,130 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=163828) due to insufficient content (1 lines).
+2026-02-11 10:38:06,132 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=1.1, line=164537) due to insufficient content (0 lines).
+2026-02-11 10:38:06,132 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=3.1, line=164539) due to insufficient content (1 lines).
+2026-02-11 10:38:06,132 - __main__ - INFO - Filtered out title 'Configuring Relationships[¶](#configuring-relationships "Link to this heading")' (addr=1.1, line=164567) due to insufficient content (1 lines).
+2026-02-11 10:38:06,132 - __main__ - INFO - Filtered out title 'Evaluation of relationship arguments[¶](#evaluation-of-relationship-arguments "Link to this heading")' (addr=2.1, line=164571) due to insufficient content (1 lines).
+2026-02-11 10:38:06,132 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=1.1, line=164599) due to insufficient content (0 lines).
+2026-02-11 10:38:06,132 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=3.1, line=164601) due to insufficient content (1 lines).
+2026-02-11 10:38:06,133 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=1.2, line=165023) due to insufficient content (0 lines).
+2026-02-11 10:38:06,133 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=3.1, line=165025) due to insufficient content (1 lines).
+2026-02-11 10:38:06,133 - __main__ - INFO - Filtered out title 'Table Configuration[¶](#table-configuration "Link to this heading")' (addr=1.1, line=165053) due to insufficient content (1 lines).
+2026-02-11 10:38:06,133 - __main__ - INFO - Filtered out title 'Using a Hybrid Approach with \_\_table\_\_[¶](#using-a-hybrid-approach-with-table "Link to this heading")' (addr=2.1, line=165057) due to insufficient content (1 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=1.1, line=165085) due to insufficient content (0 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=3.1, line=165087) due to insufficient content (1 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=1.2, line=165137) due to insufficient content (0 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=3.1, line=165139) due to insufficient content (1 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title 'Basic Use[¶](#basic-use "Link to this heading")' (addr=1.1, line=165170) due to insufficient content (1 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title 'Defining Attributes[¶](#defining-attributes "Link to this heading")' (addr=2.1, line=165174) due to insufficient content (1 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title 'Accessing the MetaData[¶](#accessing-the-metadata "Link to this heading")' (addr=2.2, line=165178) due to insufficient content (1 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title 'Class Constructor[¶](#class-constructor "Link to this heading")' (addr=2.3, line=165182) due to insufficient content (1 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title 'Mapper Configuration[¶](#mapper-configuration "Link to this heading")' (addr=2.4, line=165186) due to insufficient content (1 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=1.1, line=165215) due to insufficient content (0 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=3.1, line=165217) due to insufficient content (1 lines).
+2026-02-11 10:38:06,134 - __main__ - INFO - Filtered out title 'Declarative API[¶](#declarative-api "Link to this heading")' (addr=1.1, line=165244) due to insufficient content (0 lines).
+2026-02-11 10:38:06,135 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=1.1, line=165281) due to insufficient content (0 lines).
+2026-02-11 10:38:06,135 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../../index.html)' (addr=3.1, line=165283) due to insufficient content (1 lines).
+2026-02-11 10:38:06,135 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=1.2, line=165333) due to insufficient content (0 lines).
+2026-02-11 10:38:06,135 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../../index.html)' (addr=3.1, line=165335) due to insufficient content (1 lines).
+2026-02-11 10:38:06,137 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=166312) due to insufficient content (0 lines).
+2026-02-11 10:38:06,137 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=166314) due to insufficient content (1 lines).
+2026-02-11 10:38:06,146 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=170007) due to insufficient content (0 lines).
+2026-02-11 10:38:06,146 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=170009) due to insufficient content (1 lines).
+2026-02-11 10:38:06,146 - __main__ - INFO - Filtered out title 'Non-Traditional Mappings[¶](#non-traditional-mappings "Link to this heading")' (addr=1.1, line=170061) due to insufficient content (0 lines).
+2026-02-11 10:38:06,146 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=170296) due to insufficient content (0 lines).
+2026-02-11 10:38:06,146 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=170298) due to insufficient content (1 lines).
+2026-02-11 10:38:06,147 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=171452) due to insufficient content (0 lines).
+2026-02-11 10:38:06,147 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=171454) due to insufficient content (1 lines).
+2026-02-11 10:38:06,149 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=172902) due to insufficient content (0 lines).
+2026-02-11 10:38:06,149 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=172904) due to insufficient content (1 lines).
+2026-02-11 10:38:06,149 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=172958) due to insufficient content (0 lines).
+2026-02-11 10:38:06,149 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=172960) due to insufficient content (1 lines).
+2026-02-11 10:38:06,150 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=173946) due to insufficient content (0 lines).
+2026-02-11 10:38:06,150 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=173948) due to insufficient content (1 lines).
+2026-02-11 10:38:06,150 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=174236) due to insufficient content (0 lines).
+2026-02-11 10:38:06,150 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=174238) due to insufficient content (1 lines).
+2026-02-11 10:38:06,150 - __main__ - INFO - Filtered out title 'Session Basics[¶](#session-basics "Link to this heading")' (addr=1.1, line=174327) due to insufficient content (0 lines).
+2026-02-11 10:38:06,151 - __main__ - INFO - Filtered out title 'Basics of Using a Session[¶](#basics-of-using-a-session "Link to this heading")' (addr=2.2, line=174369) due to insufficient content (1 lines).
+2026-02-11 10:38:06,153 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=175370) due to insufficient content (0 lines).
+2026-02-11 10:38:06,153 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=175372) due to insufficient content (1 lines).
+2026-02-11 10:38:06,153 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=175418) due to insufficient content (0 lines).
+2026-02-11 10:38:06,153 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=175420) due to insufficient content (1 lines).
+2026-02-11 10:38:06,158 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=178531) due to insufficient content (0 lines).
+2026-02-11 10:38:06,158 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=178533) due to insufficient content (1 lines).
+2026-02-11 10:38:06,158 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=178742) due to insufficient content (0 lines).
+2026-02-11 10:38:06,158 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=178744) due to insufficient content (1 lines).
+2026-02-11 10:38:06,159 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=179604) due to insufficient content (0 lines).
+2026-02-11 10:38:06,159 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=179606) due to insufficient content (1 lines).
+2026-02-11 10:38:06,159 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=179652) due to insufficient content (0 lines).
+2026-02-11 10:38:06,159 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=179654) due to insufficient content (1 lines).
+2026-02-11 10:38:06,159 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=179786) due to insufficient content (0 lines).
+2026-02-11 10:38:06,159 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=179788) due to insufficient content (1 lines).
+2026-02-11 10:38:06,160 - __main__ - INFO - Filtered out title 'Session API[¶](#session-api "Link to this heading")' (addr=1.1, line=180071) due to insufficient content (0 lines).
+2026-02-11 10:38:06,164 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=182657) due to insufficient content (0 lines).
+2026-02-11 10:38:06,164 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=182659) due to insufficient content (1 lines).
+2026-02-11 10:38:06,164 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=182705) due to insufficient content (0 lines).
+2026-02-11 10:38:06,164 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=182707) due to insufficient content (1 lines).
+2026-02-11 10:38:06,166 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=184169) due to insufficient content (0 lines).
+2026-02-11 10:38:06,166 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=184171) due to insufficient content (1 lines).
+2026-02-11 10:38:06,166 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=184217) due to insufficient content (0 lines).
+2026-02-11 10:38:06,166 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=184219) due to insufficient content (1 lines).
+2026-02-11 10:38:06,167 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=185007) due to insufficient content (0 lines).
+2026-02-11 10:38:06,167 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=185009) due to insufficient content (1 lines).
+2026-02-11 10:38:06,167 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=185221) due to insufficient content (0 lines).
+2026-02-11 10:38:06,167 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=185223) due to insufficient content (1 lines).
+2026-02-11 10:38:06,168 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=185837) due to insufficient content (0 lines).
+2026-02-11 10:38:06,168 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=185839) due to insufficient content (1 lines).
+2026-02-11 10:38:06,169 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=186637) due to insufficient content (0 lines).
+2026-02-11 10:38:06,169 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=186639) due to insufficient content (1 lines).
+2026-02-11 10:38:06,169 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=186685) due to insufficient content (0 lines).
+2026-02-11 10:38:06,169 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=186687) due to insufficient content (1 lines).
+2026-02-11 10:38:06,169 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=186808) due to insufficient content (0 lines).
+2026-02-11 10:38:06,170 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=186810) due to insufficient content (1 lines).
+2026-02-11 10:38:06,170 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=186861) due to insufficient content (0 lines).
+2026-02-11 10:38:06,170 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=186863) due to insufficient content (1 lines).
+2026-02-11 10:38:06,170 - __main__ - INFO - Filtered out title 'Special Relationship Persistence Patterns[¶](#special-relationship-persistence-patterns "Link to this heading")' (addr=1.1, line=186912) due to insufficient content (0 lines).
+2026-02-11 10:38:06,170 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=187240) due to insufficient content (0 lines).
+2026-02-11 10:38:06,170 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=187242) due to insufficient content (1 lines).
+2026-02-11 10:38:06,172 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=188488) due to insufficient content (0 lines).
+2026-02-11 10:38:06,172 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=188490) due to insufficient content (1 lines).
+2026-02-11 10:38:06,173 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=189999) due to insufficient content (0 lines).
+2026-02-11 10:38:06,173 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=190001) due to insufficient content (1 lines).
+2026-02-11 10:38:06,173 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=190335) due to insufficient content (0 lines).
+2026-02-11 10:38:06,173 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=190337) due to insufficient content (1 lines).
+2026-02-11 10:38:06,173 - __main__ - INFO - Filtered out title 'Transactions and Connection Management[¶](#transactions-and-connection-management "Link to this heading")' (addr=1.1, line=190408) due to insufficient content (0 lines).
+2026-02-11 10:38:06,174 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=191162) due to insufficient content (0 lines).
+2026-02-11 10:38:06,174 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=191164) due to insufficient content (1 lines).
+2026-02-11 10:38:06,175 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=191452) due to insufficient content (0 lines).
+2026-02-11 10:38:06,175 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=191454) due to insufficient content (1 lines).
+2026-02-11 10:38:06,175 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=191721) due to insufficient content (0 lines).
+2026-02-11 10:38:06,175 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=191723) due to insufficient content (1 lines).
+2026-02-11 10:38:06,175 - __main__ - INFO - Filtered out title 'Mapping Recipes[¶](#mapping-recipes "Link to this heading")' (addr=2.1, line=191820) due to insufficient content (0 lines).
+2026-02-11 10:38:06,175 - __main__ - INFO - Filtered out title 'Running all tests with time[¶](#running-all-tests-with-time "Link to this heading")' (addr=4.2, line=192043) due to insufficient content (1 lines).
+2026-02-11 10:38:06,175 - __main__ - INFO - Filtered out title 'Versioning Objects[¶](#versioning-objects "Link to this heading")' (addr=3.2, line=192222) due to insufficient content (0 lines).
+2026-02-11 10:38:06,176 - __main__ - INFO - Filtered out title 'Inheritance Mapping Recipes[¶](#inheritance-mapping-recipes "Link to this heading")' (addr=2.1, line=192386) due to insufficient content (0 lines).
+2026-02-11 10:38:06,176 - __main__ - INFO - Filtered out title 'Special APIs[¶](#special-apis "Link to this heading")' (addr=2.1, line=192399) due to insufficient content (0 lines).
+2026-02-11 10:38:06,176 - __main__ - INFO - Filtered out title 'Extending the ORM[¶](#extending-the-orm "Link to this heading")' (addr=2.1, line=192461) due to insufficient content (0 lines).
+2026-02-11 10:38:06,176 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=192588) due to insufficient content (0 lines).
+2026-02-11 10:38:06,176 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=192590) due to insufficient content (1 lines).
+2026-02-11 10:38:06,176 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=192669) due to insufficient content (0 lines).
+2026-02-11 10:38:06,176 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=192671) due to insufficient content (1 lines).
+2026-02-11 10:38:06,182 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=196759) due to insufficient content (0 lines).
+2026-02-11 10:38:06,182 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=196761) due to insufficient content (1 lines).
+2026-02-11 10:38:06,182 - __main__ - INFO - Filtered out title 'Additional Persistence Techniques[¶](#additional-persistence-techniques "Link to this heading")' (addr=1.1, line=196844) due to insufficient content (0 lines).
+2026-02-11 10:38:06,182 - __main__ - INFO - Filtered out title 'Using PostgreSQL ON CONFLICT with RETURNING to return upserted ORM objects[¶](#using-postgresql-on-conflict-with-returning-to-return-upserted-orm-objects "Link to this heading")' (addr=3.1, line=197502) due to insufficient content (1 lines).
+2026-02-11 10:38:06,182 - __main__ - INFO - Filtered out title 'Partitioning Strategies (e.g. multiple database backends per Session)[¶](#partitioning-strategies-e-g-multiple-database-backends-per-session "Link to this heading")' (addr=2.1, line=197506) due to insufficient content (0 lines).
+2026-02-11 10:38:06,183 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=197725) due to insufficient content (0 lines).
+2026-02-11 10:38:06,183 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=197727) due to insufficient content (1 lines).
+2026-02-11 10:38:06,183 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=197773) due to insufficient content (0 lines).
+2026-02-11 10:38:06,183 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=197775) due to insufficient content (1 lines).
+2026-02-11 10:38:06,185 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.4, line=198887) due to insufficient content (0 lines).
+2026-02-11 10:38:06,185 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=198889) due to insufficient content (1 lines).
+2026-02-11 10:38:06,186 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=199654) due to insufficient content (0 lines).
+2026-02-11 10:38:06,186 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=199656) due to insufficient content (1 lines).
+2026-02-11 10:38:06,186 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=199784) due to insufficient content (0 lines).
+2026-02-11 10:38:06,186 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=199786) due to insufficient content (1 lines).
+2026-02-11 10:38:06,186 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=200191) due to insufficient content (0 lines).
+2026-02-11 10:38:06,186 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=200193) due to insufficient content (1 lines).
+2026-02-11 10:38:06,187 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=200641) due to insufficient content (0 lines).
+2026-02-11 10:38:06,187 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=200643) due to insufficient content (1 lines).
+2026-02-11 10:38:06,187 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=200829) due to insufficient content (0 lines).
+2026-02-11 10:38:06,187 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=200831) due to insufficient content (1 lines).
+2026-02-11 10:38:06,187 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=200914) due to insufficient content (0 lines).
+2026-02-11 10:38:06,187 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=200916) due to insufficient content (1 lines).
+2026-02-11 10:38:06,188 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=201575) due to insufficient content (0 lines).
+2026-02-11 10:38:06,188 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=201577) due to insufficient content (1 lines).
+2026-02-11 10:38:06,190 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=203696) due to insufficient content (0 lines).
+2026-02-11 10:38:06,190 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=203698) due to insufficient content (1 lines).
+2026-02-11 10:38:06,191 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=204411) due to insufficient content (0 lines).
+2026-02-11 10:38:06,191 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=204413) due to insufficient content (1 lines).
+2026-02-11 10:38:06,192 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=204513) due to insufficient content (0 lines).
+2026-02-11 10:38:06,192 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=204515) due to insufficient content (1 lines).
+2026-02-11 10:38:06,192 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](index.html)' (addr=1.1, line=205052) due to insufficient content (0 lines).
+2026-02-11 10:38:06,192 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](index.html)' (addr=3.1, line=205054) due to insufficient content (1 lines).
+2026-02-11 10:38:06,193 - __main__ - INFO - Filtered out title 'Connections and Transactions[¶](#connections-and-transactions "Link to this heading")' (addr=2.1, line=205208) due to insufficient content (0 lines).
+2026-02-11 10:38:06,193 - __main__ - INFO - Filtered out title 'SQL Expression Language[¶](#sql-expression-language "Link to this heading")' (addr=2.1, line=205503) due to insufficient content (0 lines).
+2026-02-11 10:38:06,194 - __main__ - INFO - Filtered out title 'Object Relational Mapping[¶](#object-relational-mapping "Link to this heading")' (addr=2.1, line=206016) due to insufficient content (0 lines).
+2026-02-11 10:38:06,195 - __main__ - INFO - Filtered out title 'AsyncIO Exceptions[¶](#asyncio-exceptions "Link to this heading")' (addr=2.1, line=206722) due to insufficient content (0 lines).
+2026-02-11 10:38:06,195 - __main__ - INFO - Filtered out title 'Core Exception Classes[¶](#core-exception-classes "Link to this heading")' (addr=2.1, line=206777) due to insufficient content (1 lines).
+2026-02-11 10:38:06,195 - __main__ - INFO - Filtered out title 'ORM Exception Classes[¶](#orm-exception-classes "Link to this heading")' (addr=2.2, line=206781) due to insufficient content (1 lines).
+2026-02-11 10:38:06,195 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](index.html)' (addr=1.1, line=207074) due to insufficient content (0 lines).
+2026-02-11 10:38:06,195 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](index.html)' (addr=3.1, line=207076) due to insufficient content (1 lines).
+2026-02-11 10:38:06,195 - __main__ - INFO - Filtered out title 'Installation Guide[¶](#installation-guide "Link to this heading")' (addr=2.3, line=207203) due to insufficient content (0 lines).
+2026-02-11 10:38:06,196 - __main__ - INFO - Filtered out title 'Next Steps[¶](#next-steps "Link to this heading")' (addr=3.9, line=207344) due to insufficient content (1 lines).
+2026-02-11 10:38:06,196 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](index.html)' (addr=1.3, line=207413) due to insufficient content (0 lines).
+2026-02-11 10:38:06,196 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](index.html)' (addr=3.1, line=207415) due to insufficient content (1 lines).
+2026-02-11 10:38:06,196 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=207629) due to insufficient content (0 lines).
+2026-02-11 10:38:06,196 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=207631) due to insufficient content (1 lines).
+2026-02-11 10:38:06,197 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=208297) due to insufficient content (0 lines).
+2026-02-11 10:38:06,197 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=208299) due to insufficient content (1 lines).
+2026-02-11 10:38:06,197 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=208422) due to insufficient content (0 lines).
+2026-02-11 10:38:06,197 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=208424) due to insufficient content (1 lines).
+2026-02-11 10:38:06,198 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=208970) due to insufficient content (0 lines).
+2026-02-11 10:38:06,198 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=208972) due to insufficient content (1 lines).
+2026-02-11 10:38:06,198 - __main__ - INFO - Filtered out title 'Installation[¶](#installation "Link to this heading")' (addr=1.1, line=209007) due to insufficient content (0 lines).
+2026-02-11 10:38:06,198 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=209054) due to insufficient content (0 lines).
+2026-02-11 10:38:06,198 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=209056) due to insufficient content (1 lines).
+2026-02-11 10:38:06,198 - __main__ - INFO - Filtered out title 'How do I make a Query that always adds a certain filter to every query?[¶](#how-do-i-make-a-query-that-always-adds-a-certain-filter-to-every-query "Link to this heading")' (addr=2.1, line=209358) due to insufficient content (1 lines).
+2026-02-11 10:38:06,198 - __main__ - INFO - Filtered out title 'How Do I use Textual SQL with ORM Queries?[¶](#how-do-i-use-textual-sql-with-orm-queries "Link to this heading")' (addr=2.6, line=209486) due to insufficient content (1 lines).
+2026-02-11 10:38:06,198 - __main__ - INFO - Filtered out title 'I’m calling `Session.delete(myobject)` and it isn’t removed from the parent collection![¶](#i-m-calling-session-delete-myobject-and-it-isn-t-removed-from-the-parent-collection "Link to this heading")' (addr=2.7, line=209493) due to insufficient content (1 lines).
+2026-02-11 10:38:06,198 - __main__ - INFO - Filtered out title 'why isn’t my `__init__()` called when I load objects?[¶](#why-isn-t-my-init-called-when-i-load-objects "Link to this heading")' (addr=2.8, line=209497) due to insufficient content (1 lines).
+2026-02-11 10:38:06,199 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=209751) due to insufficient content (0 lines).
+2026-02-11 10:38:06,199 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=209753) due to insufficient content (1 lines).
+2026-02-11 10:38:06,199 - __main__ - INFO - Filtered out title 'How do I configure logging?[¶](#how-do-i-configure-logging "Link to this heading")' (addr=2.1, line=209834) due to insufficient content (1 lines).
+2026-02-11 10:38:06,200 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=210361) due to insufficient content (0 lines).
+2026-02-11 10:38:06,200 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=210363) due to insufficient content (1 lines).
+2026-02-11 10:38:06,200 - __main__ - INFO - Filtered out title 'Third Party Integration Issues[¶](#third-party-integration-issues "Link to this heading")' (addr=1.1, line=210400) due to insufficient content (0 lines).
+2026-02-11 10:38:06,200 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=210499) due to insufficient content (0 lines).
+2026-02-11 10:38:06,200 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=210501) due to insufficient content (1 lines).
+2026-02-11 10:38:06,200 - __main__ - INFO - Filtered out title 'How do I configure a Column that is a Python reserved word or similar?[¶](#how-do-i-configure-a-column-that-is-a-python-reserved-word-or-similar "Link to this heading")' (addr=2.2, line=210631) due to insufficient content (1 lines).
+2026-02-11 10:38:06,200 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=211022) due to insufficient content (0 lines).
+2026-02-11 10:38:06,201 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=211024) due to insufficient content (1 lines).
+2026-02-11 10:38:06,201 - __main__ - INFO - Filtered out title 'MetaData / Schema[¶](#metadata-schema "Link to this heading")' (addr=1.1, line=211067) due to insufficient content (0 lines).
+2026-02-11 10:38:06,201 - __main__ - INFO - Filtered out title 'How can I sort Table objects in order of their dependency?[¶](#how-can-i-sort-table-objects-in-order-of-their-dependency "Link to this heading")' (addr=2.3, line=211122) due to insufficient content (1 lines).
+2026-02-11 10:38:06,201 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](index.html)' (addr=1.1, line=211437) due to insufficient content (0 lines).
+2026-02-11 10:38:06,201 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](index.html)' (addr=3.1, line=211439) due to insufficient content (1 lines).
+2026-02-11 10:38:06,204 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=213240) due to insufficient content (0 lines).
+2026-02-11 10:38:06,204 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=213242) due to insufficient content (1 lines).
+2026-02-11 10:38:06,205 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=214159) due to insufficient content (0 lines).
+2026-02-11 10:38:06,205 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=214161) due to insufficient content (1 lines).
+2026-02-11 10:38:06,205 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=214353) due to insufficient content (0 lines).
+2026-02-11 10:38:06,205 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=214355) due to insufficient content (1 lines).
+2026-02-11 10:38:06,205 - __main__ - INFO - Filtered out title 'Custom SQL Constructs and Compilation Extension[¶](#module-sqlalchemy.ext.compiler "Link to this heading")' (addr=1.1, line=214424) due to insufficient content (1 lines).
+2026-02-11 10:38:06,206 - __main__ - INFO - Filtered out title 'Further Examples[¶](#further-examples "Link to this heading")' (addr=2.5, line=214784) due to insufficient content (0 lines).
+2026-02-11 10:38:06,206 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=214949) due to insufficient content (0 lines).
+2026-02-11 10:38:06,206 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=214951) due to insufficient content (1 lines).
+2026-02-11 10:38:06,219 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=224948) due to insufficient content (0 lines).
+2026-02-11 10:38:06,220 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=224950) due to insufficient content (1 lines).
+2026-02-11 10:38:06,221 - __main__ - INFO - Filtered out title 'TypeDecorator Recipes[¶](#typedecorator-recipes "Link to this heading")' (addr=2.3, line=225754) due to insufficient content (1 lines).
+2026-02-11 10:38:06,222 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=226838) due to insufficient content (0 lines).
+2026-02-11 10:38:06,222 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=226840) due to insufficient content (1 lines).
+2026-02-11 10:38:06,222 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=226895) due to insufficient content (0 lines).
+2026-02-11 10:38:06,222 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=226897) due to insufficient content (1 lines).
+2026-02-11 10:38:06,222 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=226995) due to insufficient content (0 lines).
+2026-02-11 10:38:06,222 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=226997) due to insufficient content (1 lines).
+2026-02-11 10:38:06,223 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=227578) due to insufficient content (0 lines).
+2026-02-11 10:38:06,223 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=227580) due to insufficient content (1 lines).
+2026-02-11 10:38:06,226 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=229863) due to insufficient content (0 lines).
+2026-02-11 10:38:06,226 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=229865) due to insufficient content (1 lines).
+2026-02-11 10:38:06,229 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=231688) due to insufficient content (0 lines).
+2026-02-11 10:38:06,229 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=231690) due to insufficient content (1 lines).
+2026-02-11 10:38:06,231 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=232791) due to insufficient content (0 lines).
+2026-02-11 10:38:06,231 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=232793) due to insufficient content (1 lines).
+2026-02-11 10:38:06,231 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=232959) due to insufficient content (0 lines).
+2026-02-11 10:38:06,231 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=232961) due to insufficient content (1 lines).
+2026-02-11 10:38:06,231 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=233137) due to insufficient content (0 lines).
+2026-02-11 10:38:06,231 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=233139) due to insufficient content (1 lines).
+2026-02-11 10:38:06,231 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=233199) due to insufficient content (0 lines).
+2026-02-11 10:38:06,231 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=233201) due to insufficient content (1 lines).
+2026-02-11 10:38:06,241 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=240780) due to insufficient content (0 lines).
+2026-02-11 10:38:06,242 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=240782) due to insufficient content (1 lines).
+2026-02-11 10:38:06,242 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=241141) due to insufficient content (0 lines).
+2026-02-11 10:38:06,242 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=241143) due to insufficient content (1 lines).
+2026-02-11 10:38:06,242 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=241587) due to insufficient content (0 lines).
+2026-02-11 10:38:06,242 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=241589) due to insufficient content (1 lines).
+2026-02-11 10:38:06,243 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=241731) due to insufficient content (0 lines).
+2026-02-11 10:38:06,243 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=241733) due to insufficient content (1 lines).
+2026-02-11 10:38:06,243 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=242612) due to insufficient content (0 lines).
+2026-02-11 10:38:06,243 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=242614) due to insufficient content (1 lines).
+2026-02-11 10:38:06,244 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=242760) due to insufficient content (0 lines).
+2026-02-11 10:38:06,244 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=242762) due to insufficient content (1 lines).
+2026-02-11 10:38:06,248 - __main__ - INFO - Filtered out title 'Multiple Result Sets[¶](#multiple-result-sets "Link to this heading")' (addr=3.4, line=245864) due to insufficient content (1 lines).
+2026-02-11 10:38:06,254 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=249896) due to insufficient content (0 lines).
+2026-02-11 10:38:06,254 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=249898) due to insufficient content (1 lines).
+2026-02-11 10:38:06,261 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=254874) due to insufficient content (0 lines).
+2026-02-11 10:38:06,261 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=254876) due to insufficient content (1 lines).
+2026-02-11 10:38:06,262 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=255489) due to insufficient content (0 lines).
+2026-02-11 10:38:06,262 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=255491) due to insufficient content (1 lines).
+2026-02-11 10:38:06,264 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=256777) due to insufficient content (0 lines).
+2026-02-11 10:38:06,264 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=256779) due to insufficient content (1 lines).
+2026-02-11 10:38:06,265 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=257409) due to insufficient content (0 lines).
+2026-02-11 10:38:06,265 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=257411) due to insufficient content (1 lines).
+2026-02-11 10:38:06,267 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=258953) due to insufficient content (0 lines).
+2026-02-11 10:38:06,267 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=258955) due to insufficient content (1 lines).
+2026-02-11 10:38:06,269 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=260295) due to insufficient content (0 lines).
+2026-02-11 10:38:06,269 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=260297) due to insufficient content (1 lines).
+2026-02-11 10:38:06,269 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=260498) due to insufficient content (0 lines).
+2026-02-11 10:38:06,269 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=260500) due to insufficient content (1 lines).
+2026-02-11 10:38:06,272 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=262327) due to insufficient content (0 lines).
+2026-02-11 10:38:06,272 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=262329) due to insufficient content (1 lines).
+2026-02-11 10:38:06,275 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=264308) due to insufficient content (0 lines).
+2026-02-11 10:38:06,275 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=264310) due to insufficient content (1 lines).
+2026-02-11 10:38:06,283 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.2, line=270189) due to insufficient content (0 lines).
+2026-02-11 10:38:06,283 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=270191) due to insufficient content (1 lines).
+2026-02-11 10:38:06,287 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=1.1, line=273140) due to insufficient content (0 lines).
+2026-02-11 10:38:06,287 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](../index.html)' (addr=3.1, line=273142) due to insufficient content (1 lines).
+2026-02-11 10:38:06,294 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](index.html)' (addr=1.2, line=277467) due to insufficient content (0 lines).
+2026-02-11 10:38:06,294 - __main__ - INFO - Filtered out title '[SQLAlchemy 2.0 Documentation](index.html)' (addr=3.1, line=277469) due to insufficient content (1 lines).
+2026-02-11 10:38:06,299 - __main__ - INFO - Sections successfully saved to: output/sqlalchemy_index.json
+2026-02-11 10:38:06,299 - __main__ - INFO - Final output has 2429 coherent titles.

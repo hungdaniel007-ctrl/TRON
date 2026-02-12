@@ -1,0 +1,232 @@
+# LangGraph × cognee: Enhancing Agents with Persistent, Queryable Memory
+
+![Hande Kafkas](https://www.cognee.ai/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fhande-k&w=96&q=75)
+
+Hande KafkasGrowth Engineer
+
+> 🧠 TL;DR: The LangGraph-cognee integration equips AI agents with persistent semantic memory that endures across sessions. Agents store data in cognee's graph-backed system and retrieve it via natural language, enabling more accurate results and seamless continuity, with no need for manual state management.*
+
+LangGraph agents excel in single-session workflows, with robust [state management capabilities](https://langchain-ai.github.io/langgraph/concepts/persistence/). Yet, preserving context across separate runs often demands additional infrastructure, like using checkpointers with *thread_id*s for short-term continuity or the LangChain Store for long-term memory.
+
+The LangGraph-cognee integration complements this by weaving in a semantic memory layer that fits naturally into LangGraph's existing tool ecosystem. While the Store offers simple key-value persistence, cognee delivers richer, queryable layers via embeddings and graphs.
+
+What developers get out-of-the-box:
+
+- **Reliable Control**: LangGraph's deterministic edges and conditional routing, paired with cognee's tools.
+- **Simplified Agents**: Use *create_react_agent* for tooling-driven flows, no custom orchestration needed.
+- **Modular Memory**: Add, search, prune, and visualize with cognee, building incrementally.
+- **Scoped Sessions**: Multi-tenant or per-user isolation, keeping data clean without custom agent wrappers.
+
+## Core Mechanics: The cognee-LangGraph Workflow
+
+The integration provides sessionized memory tools based on cognee’s core features. Agents store data in cognee's knowledge graph with embeddings, then query it semantically—leveraging LangGraph's tool-calling capabilities while adding persistent memory functionality.
+
+Here's the basic flow:
+
+1. **Storage**: Use *add_tool* to ingest data into cognee’s graph.
+2. **Processing**: cognee structures it with entities, relationships, and embeddings automatically.
+3. **Isolation**: Each user session maintains grouped node sets (think schemas in relational store) for organized, leak-proof memory.
+4. **Retrieval**: Agents query stored information with *search_tool* using natural language.
+5. **Context continuity**: Knowledge persists across agent instances and conversation sessions.
+6. **Incremental enrichment:** cognee can connect previously stored information (e.g., business data) to information ingested in new sessions.
+
+## Real-World Demo: Cross-Session Context Recall
+
+Say we have two sessions days apart: In session one, the agent records contract details from messaging with a human; in session two, a different agent instance asks for “healthcare contracts” and immediately surfaces all the relevant information stored in cognee’s memory (including all the contracts in healthcare industry that were already there).
+
+This works via:
+
+- **Fact Fact Recall**: cognee's thread-independent semantic memory.
+- **Decision Tool Loop**: LangGraph's ReAct pattern for when to add, search, or respond.
+
+The integration follows LangGraph's standard tool patterns:
+
+`from langgraph.prebuilt import create_react_agent from langgraph_cognee import get_sessionized_cognee_tools from langchain_core.messages import HumanMessage  # Get memory tools for a specific user session add_tool, search_tool = get_sessionized_cognee_tools()  # Create agent with memory capabilities agent = create_react_agent(     "openai:gpt-4o-mini",     tools=[add_tool, search_tool], )  # Agent can now store and retrieve information response = agent.invoke({     "messages": [         HumanMessage(content="We have signed a contract with the following company:: Acme Corp, healthcare industry, $1.2M value"),         HumanMessage(content="What healthcare contracts do we have?")     ], })`
+
+> 🔍 [This example notebook](https://github.com/topoteretes/cognee-integration-langgraph/blob/main/examples/guide.ipynb) covers LangGraph’s memory features and shows how to build a simple agent as well as how to add cognee as a persistent semantic memory layer.
+
+## The Value of Sessionization: Clean Isolation and Global Access
+
+LangGraph isolates short-term state via *thread_id* and durable memory through namespaces (e.g., *org_id*, *user_id*). cognee layers on this with external semantic memory, respecting boundaries while simplifying ops.
+
+Using *user_id* scopes cognee's stores so:
+
+- **Session vs. Global**: Per-run data (*thread_id*-scoped) stays separate from broader inputs (documents/datasets) ingested “out-of-session” under the user namespace.
+- **Out-of-Session Adds**: Ingest data anytime and still retrieve/visualize it alongside session data, yielding clear *clusters* by session versus global inputs.
+
+You can also enable cognee’s **user management features** if users want separate databases so that personalization doesn’t leak across users or threads (multi-tenant isolation by user/org).
+
+## Cross-Session Persistence
+
+The key benefit of the integration is the ability to maintain context across separate agent instances. Below is a simplified version of creating different agent instances that:
+
+- Has no conversation history from the previous agent
+- Has no internal state carried over
+- Can access all information stored in Cognee's knowledge graph
+
+`# Session 1: Store information agent_session_1 = create_react_agent(     "openai:gpt-4o-mini",     tools=get_sessionized_cognee_tools(), )  agent_session_1.invoke({     "messages": [HumanMessage(content="Remember: I'm working on the authentication module")] })  # Session 2: Different agent instance, same memory agent_session_2 = create_react_agent(     "openai:gpt-4o-mini",      tools=get_sessionized_cognee_tools(),  # Same user session )  response = agent_session_2.invoke({     "messages": [HumanMessage(content="What was I working on previously?")] }) # Agent retrieves: "authentication module" from stored memory`
+
+Below you can explore the graph example as an output of the [notebook](https://github.com/topoteretes/cognee-integration-langgraph/blob/main/examples/guide.ipynb) (hover over to see node and edge properties).
+
+## User Session Isolation
+
+The integration also provides session isolation for better memory management:
+
+`from langgraph_cognee import get_sessionized_cognee_tools  add_tool, search_tool = get_sessionized_cognee_tools()  super_fresh_agent = create_react_agent(     "openai:gpt-4o-mini",     tools=[         add_tool,         search_tool,     ], )  super_fresh_agent.step_timeout = None  response = super_fresh_agent.invoke(     {         "messages": [             HumanMessage(                 content="""                 We have signed a contract with the following company: "Guardian Insurance Ltd". Company is in the insurance industry. Start date is Feb 2023 and end date is Feb 2026. Contract value is £1.8M.             """             ),             HumanMessage(                 content="""                 We have signed a contract with the following company: "Pioneer Assurance Group". Company is in the insurance industry. Start date is Oct 2024 and end date is Oct 2029. Contract value is £4.2M.             """             ),             HumanMessage(                 content="""                 We have signed a contract with the following company: "Finovate Systems". Company is in the fintech industry. Start date is May 2024 and end date is May 2027. Contract value is £2.3M.             """             ),         ],     } )  -----  # Let's add one more input, but not as part of the session - and see how it renders!  await cognee.add(     'We have signed a contract with the following company: "Pied Piper Technologies". Company is in the fintech industry. Start date is Jan 2025 and end date is Jan 2028. Contract value is £3.1M.' ) await cognee.cognify()`
+
+![Cognee memory in Langgraph graph visualization 2](https://www.cognee.ai/content/blog/posts/langgraph-cognee-integration-build-langgraph-agents-with-persistent-cognee-memory/cognee-memory-langgraph-2.webp)
+
+You can see the sessionized graph example example above. Run the [notebook](https://github.com/topoteretes/cognee-integration-langgraph/blob/main/examples/guide.ipynb) to clearly observe session-based data clustering:
+
+1. **Session Cluster:** All data processed within our specific session is grouped together around the session identifier
+2. **Global Data:** Information added outside the session forms a separate cluster
+3. **Clean Separation:** The two data groups remain distinct while still being part of the same knowledge graph
+
+This demonstrates how cognee maintains both session isolation and global knowledge accessibility.
+
+## Technical Implementation Details
+
+The integration handles several technical considerations. LangGraph can make tool calls concurrently, and we want to make sure cognee slots in seamlessly.
+
+Incorporating new data into cognee is a two step process:
+
+1. *.add()* - imports data, but doesn’t rebuild knowledge graph yet
+2. *.cognify()* - actually rebuilds knowledge graph
+
+We can run *.add()* and *.cognify()* one after the other or run *.cognify()* once, after multiple *.add()* runs completed. Interaction with LangGraph can vary from user to user.
+
+Below we will cover both scenarios by leveraging async queues and waiting for some time for new queue inputs (2 seconds here) before cognifying the data.
+
+### Async Operations
+
+`# Background processing with proper concurrency handling async def _enqueue_add(*args, **kwargs):     global _add_lock     if _add_lock.locked():         await _add_queue.put((args, kwargs))         return     async with _add_lock:         await _add_queue.put((args, kwargs))         while True:             try:                 next_args, next_kwargs = await asyncio.wait_for(                     _add_queue.get(), timeout=2                 )                 _add_queue.task_done()             except asyncio.TimeoutError:                 break             await cognee.add(*next_args, **next_kwargs)         await cognee.cognify()`
+
+### Thread Safety
+
+- Dedicated locks prevent race conditions during initialization
+- Queue management for efficient batch processing
+
+### Tool Integration
+
+The memory tools follow LangChain's tool specifications:
+
+`@tool def add_tool(data: str, node_set: Optional[List[str]] = None):     """Store information in the knowledge base for later retrieval."""     # Implementation handles async operations safely      @tool   def search_tool(query_text: str, node_set: Optional[List[str]] = None):     """Search previously stored information from the knowledge base."""     # Returns relevant results using cognee's advanced retrieval system`
+
+### Understanding Session ID Generation
+
+Let's explore how session management works under the hood via *get_sessionized_cognee_tools()*:
+
+`def get_sessionized_cognee_tools(session_id: Optional[str] = None) -> list:     """     Returns a list of cognee tools sessionized for a specific user.          Args:         session_id (str): The session ID to bind to all tools              Returns:         list: List of sessionized cognee tools     """     if session_id is None:         import uuid         uid = str(uuid.uuid4())         session_id = f"cognee-test-user-{uid}"      session_decorator = sessionised_tool(session_id)     ...`
+
+Sessionization by definition requires a unique *session_id* to identify distinct sessions. To preserve the UX of using LangGraph tools, we return tools just as any other integration, but before that we create the *session_id* and use closures to make tools aware of the state.
+
+## Use Cases and Patterns
+
+The integration enables several practical patterns:
+
+- **Knowledge Accumulation**—Agents can build domain knowledge over multiple interactions:
+
+`# Gradually build understanding of a domain for document in knowledge_base:     agent.invoke({"messages": [HumanMessage(content=f"Learn: {document}")]})`
+
+- **Context-Aware Assistance**—Maintain user context across work sessions:
+
+`# Monday: Set context agent.invoke({"messages": [HumanMessage(content="I'm debugging the payment flow")]})  # Wednesday: Agent remembers context agent.invoke({"messages": [HumanMessage(content="What was I debugging?")]})`
+
+## Looking Ahead: Expanding Agent Capabilities
+
+This initial setup taps just part of cognee’s potential—enrichment, temporal awareness, and self-improving loops could further extend LangGraph agents’ functionalities and performance.
+
+## Jump In: Setting Up the Integration
+
+The integration aims to provide a straightforward way to add cognee’s semantic memory to LangGraph agents while maintaining compatibility with existing LangGraph patterns and best practices.
+
+To begin using persistent memory with your LangGraph agents:
+
+1- Go to the [integration repo](https://github.com/topoteretes/cognee-integration-langgraph) or install the [integration package](https://pypi.org/project/cognee-integration-langgraph/0.1.1/)
+
+2- Configure session management for your application
+
+3- Add cognee memory tools to your agent's tool list
+
+4- Test cross-session persistence in your use case
+
+> Last but not least, [join our community](https://discord.gg/cqF6RhDYWz) and [star our repo](https://github.com/topoteretes/cognee) to help us reach more developers.
+
+
+https://github.com/topoteretes/langchain-cognee
+
+
+# langchain-cognee
+
+This package contains the LangChain integration with [cognee](https://github.com/topoteretes/cognee).
+
+This package enables you to:
+- Ingest documents into cognee
+- Build or update a knowledge graph
+- Retrieve and query your data using LangChain's standard interfaces
+
+For more information, check out [cognee documentation](https://docs.cognee.ai/).
+
+## Installation
+
+```bash
+pip install -U langchain-cognee
+```
+
+## Configuration
+Set your environment variables required by cognee:
+
+```bash
+export LLM_API_KEY="your-openai-api-key"
+```
+
+Cognee's default settings:
+- LLM Provider: OpenAI 
+- Databases: SQLite, LanceDB, networkx
+
+In case you want to customize your settings, please refer [here](https://github.com/topoteretes/cognee/blob/dev/.env.template) and configure your env variables accordingly. 
+
+Supported databases
+- Relational databases: SQLite, PostgreSQL
+- Vector databases: LanceDB, PGVector, QDrant, Weviate
+- Graph databases: Neo4j, NetworkX
+
+## Basic Usage
+Below is a minimal example of how to use this integration:
+
+```python
+
+    from langchain_cognee.retrievers import CogneeRetriever
+    from langchain_core.documents import Document
+
+    # 1) Instantiate the retriever
+    retriever = CogneeRetriever(
+        llm_api_key="YOUR_KEY", 
+        dataset_name="test_dataset", 
+        k=3
+    )
+
+    # 2) (Optional) Reset dataset if you want a clean slate
+    retriever.prune()
+
+    # 3) Add documents
+    docs = [
+        Document(page_content="Elon Musk is the CEO of SpaceX."),
+        Document(page_content="SpaceX focuses on rockets."),
+    ]
+    retriever.add_documents(docs)
+
+    # 4) Build knowledge graph
+    retriever.process_data()
+
+    # 5) Retrieve documents
+    results = retriever.invoke("Tell me about Elon Musk")
+    for doc in results:
+        print(doc.page_content)
+```
+
+You can also incorporate CogneeRetriever in any LangChain chain. 
+
+
+
+
