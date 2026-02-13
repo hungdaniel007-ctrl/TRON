@@ -1,0 +1,7 @@
+# Core dependencies for the dynamic chat agent
+langchain
+langchain-core
+langchain-ollama
+langchain-deepseek
+pyyaml
+python-dotenv

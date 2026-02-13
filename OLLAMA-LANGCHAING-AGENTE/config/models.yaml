@@ -1,0 +1,28 @@
+# OLLAMA-LANGCHAING-AGENTE/config/models.yaml
+# Configuration for different language models accessible by the agent.
+
+# Default model to use if no other is specified.
+default_model: gemma-ollama
+
+models:
+  - id: gemma-ollama
+    name: "Gemma (Ollama)"
+    alias: gema
+    provider: ollama
+    # For Ollama, 'model' is the only required parameter.
+    # The 'api_key' is not needed for local Ollama.
+    # The 'base_url' defaults to http://localhost:11434 in the ChatOllama class.
+    config:
+      model: "gemma3:4b"
+
+  - id: deepseek-chat
+    name: "DeepSeek (API)"
+    alias: deepseek
+    provider: deepseek
+    # For DeepSeek, both 'model' and 'api_key' are required.
+    # The API key will be loaded from the .env file.
+    config:
+      model: "deepseek-chat"
+      # The api_key value here is just a placeholder.
+      # The application logic will fetch it from an environment variable.
+      api_key: ""
