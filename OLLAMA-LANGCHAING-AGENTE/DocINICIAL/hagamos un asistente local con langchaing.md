@@ -1,5 +1,255 @@
 Chat LangChain
 
+**LangChain no tiene CLI nativa para chat interactivo con cambio dinámico de modelos, pero usa `init_chat_model` para switching en runtime y LangGraph CLI para servidores locales con LangSmith Studio (interfaz web con model switching).**
+
+Para chats CLI personalizados, implementa un loop con `init_chat_model` que permite cambiar entre Ollama, OpenRouter/DeepSeek, etc. vía comandos. LangGraph CLI (`langgraph dev`) lanza servidor local con Studio para debugging/visualización en vivo.
+
+## Diseño CLI interactivo con model switching (Python)
+
+```python
+import os
+from langchain.chat_models import init_chat_model
+from langchain.schema import HumanMessage
+import cmd
+
+os.environ["OPENROUTER_API_KEY"] = "tu_key"  # Para DeepSeek via OpenRouter
+
+class ChatCLI(cmd.Cmd):
+    intro = 'Chat LangChain CLI. "model ollama/llama3.1" para cambiar. "quit" para salir.\n'
+    prompt = '> '
+    
+    def __init__(self):
+        super().__init__()
+        self.model_name = "ollama/llama3.1"  # Default local
+        self.llm = init_chat_model(self.model_name)
+        self.history = []
+
+    def do_model(self, arg):
+        """Cambia modelo: model ollama/llama3.1 | openai/gpt-4o-mini | openrouter/deepseek-chat"""
+        try:
+            self.model_name = arg.strip()
+            self.llm = init_chat_model(self.model_name)
+            print(f"✅ Modelo cambiado a `{self.model_name}`")
+        except Exception as e:
+            print(f"❌ Error: {e}")
+
+    def do_chat(self, arg):
+        """Envía mensaje al modelo actual."""
+        if not arg.strip():
+            return
+        try:
+            self.history.append(HumanMessage(content=arg))
+            response = self.llm.invoke(self.history)
+            print(f"🤖 {response.content}")
+            self.history.append(response)  # Mantiene memoria
+        except Exception as e:
+            print(f"❌ Error: {e}")
+
+    def default(self, line):
+        self.do_chat(line)  # Mensaje directo sin "chat "
+
+    def do_quit(self, arg):
+        print("¡Adiós!")
+        return True
+
+if __name__ == '__main__':
+    ChatCLI().cmdloop()
+```
+
+**Uso**:
+```
+> model ollama/llama3.1     # Local
+> Hola, ¿qué es LangChain?
+🤖 LangChain es...
+> model openrouter/deepseek-chat  # Cambia a DeepSeek via OpenRouter
+✅ Modelo cambiado a `openrouter/deepseek-chat`
+> Explica RAG
+🤖 RAG es...
+> quit
+```
+
+## Configuración switching plataformas
+
+`init_chat_model` maneja automáticamente:
+
+| Plataforma | Configuración |
+|------------|---------------|
+| **Ollama** | `"ollama/llama3.1"`, `base_url="http://localhost:11434"` |
+| **OpenRouter/DeepSeek** | `"openrouter/deepseek-chat"`, env `OPENROUTER_API_KEY` |
+| **OpenAI** | `"openai/gpt-4o-mini"`, env `OPENAI_API_KEY` |
+| **Anthropic** | `"anthropic/claude-3-5-sonnet-latest"` |
+
+## Errores frecuentes y soluciones
+
+| Error | Causa | Solución |
+|-------|-------|----------|
+| `Connection refused` | Ollama no running | `ollama serve && ollama pull llama3.1` |
+| `401 Unauthorized` | API key faltante | Set `OPENROUTER_API_KEY` o similar |
+| `Model not found` | Modelo no existe | Verifica en [OpenRouter models](https://openrouter.ai/models) o `ollama list` |
+| `Timeout` | Modelo lento/local | `timeout=120.0` en `ChatOllama`, usa GPU |
+| `Context too long` | Historia acumulada | Limita `history[-10:]` o usa summarization |
+| `init_chat_model fails` | Paquete faltante | `pip install langchain-openai langchain-ollama langchain-openrouter` |
+
+## LangGraph CLI + Studio (alternativa "nativa")
+
+Para interfaz visual con switching:
+
+1. Instala: `pip install -qU langgraph-cli`
+2. Crea `langgraph.json` con graphs multi-modelo.
+3. `langgraph dev` → Abre [Studio](https://smith.langchain.com/studio) local.
+4. Cambia modelos en runtime via config/threads.
+
+Studio permite hot-reload, traces en vivo, interrupciones HIL.
+
+## Ejemplo avanzado: CLI con RAG + switching
+
+Agrega retriever persistente:
+
+```python
+# En ChatCLI, añade:
+from langchain_ollama import OllamaEmbeddings
+from langchain_community.vectorstores.chroma import Chroma
+
+self.embeddings = OllamaEmbeddings(model="llama3.1")
+self.vectorstore = Chroma(persist_directory="./rag_db", embedding_function=self.embeddings)
+self.retriever = self.vectorstore.as_retriever()
+
+def do_chat(self, arg):
+    docs = self.retriever.get_relevant_documents(arg)
+    context = "\n".join([d.page_content for d in docs])
+    full_prompt = f"Contexto: {context}\n\nPregunta: {arg}"
+    # resto igual...
+```
+
+**Relevant docs:**
+- [init_chat_model](https://docs.langchain.com/oss/python/langchain/multi-agent/handoffs-customer-support#select-an-llm)
+- [LangGraph CLI](https://docs.langchain.com/langsmith/cli)
+- [LangSmith Studio](https://docs.langchain.com/oss/javascript/langgraph/studio)
+- [Model Integrations](https://docs.langchain.com/oss/python/integrations/providers/ollama)
+
+**¡Hola! Conecta LangChain con Ollama usando `ChatOllama` para chat models y `OllamaEmbeddings` para embeddings, apuntando a `http://localhost:11434` por defecto.**
+
+Ollama ejecuta modelos open-source localmente (ver [Ollama model library](https://ollama.com/library)). Instala `langchain-ollama` con `pip install -qU langchain-ollama` (Python) o `npm i @langchain/ollama` (JS).
+
+## Conexión básica ChatOllama (Python)
+
+```python
+from langchain_ollama import ChatOllama
+
+llm = ChatOllama(
+    model="llama3.1",      # o llama3, mistral, etc.
+    temperature=0.2,
+    base_url="http://localhost:11434"  # default
+)
+
+response = llm.invoke("¿Qué es LangChain?")
+print(response.content)
+```
+
+Soporta streaming, tool calling y structured output.
+
+## Embeddings con Ollama (Python)
+
+```python
+from langchain_ollama import OllamaEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
+
+# Embeddings para RAG
+embeddings = OllamaEmbeddings(model="llama3.1")
+
+# Ejemplo: indexar docs
+docs = [Document(page_content="Texto de ejemplo sobre IA.")]
+splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+splits = splitter.split_documents(docs)
+vectorstore = FAISS.from_documents(splits, embeddings)
+```
+
+## Configuraciones API Ollama
+
+Parámetros clave en `ChatOllama`/`OllamaEmbeddings`:
+
+| Parámetro | Descripción | Ejemplo |
+|-----------|-------------|---------|
+| `model` | Modelo Ollama | `"llama3.1"`, `"mistral"` |
+| `base_url` | URL servidor | `"http://host:11434"` |
+| `temperature` | Creatividad | `0.0` (determinista) - `1.0` |
+| `top_p` / `top_k` | Sampling | `0.9`, `40` |
+| `num_ctx` | Contexto max | `8192` tokens |
+| `mirostat` | Modo calidad | `2` (balanceado) |
+
+Ver [Ollama API docs](https://github.com/ollama/ollama/blob/main/docs/api.md) para más.
+
+## Problemas comunes
+
+- **Ollama no iniciado**: Ejecuta `ollama serve` y `ollama pull llama3.1`.
+- **Modelo no descargado**: `ollama pull <model>`.
+- **Puerto ocupado**: Cambia `base_url`.
+- **Memoria insuficiente**: Usa modelos más pequeños como `phi3:3.8b`.
+- **Timeouts largos**: Aumenta `timeout=60.0` en LangChain.
+
+## Ollama + RAG: Caso de uso y ejemplo
+
+**Caso de uso típico**: Q&A sobre documentos privados/locales sin enviar datos a la nube.
+
+Ejemplo completo RAG (Python):
+
+```python
+from langchain_ollama import ChatOllama, OllamaEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_core.prompts import PromptTemplate
+from langchain_core.runnables import RunnablePassthrough
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
+
+# 1. Embeddings y vectorstore
+embeddings = OllamaEmbeddings(model="llama3.1")
+docs = [Document(page_content="LangChain integra Ollama para ejecución local.")]
+splits = RecursiveCharacterTextSplitter(chunk_size=500).split_documents(docs)
+vectorstore = FAISS.from_documents(splits, embeddings)
+retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
+
+# 2. LLM
+llm = ChatOllama(model="llama3.1")
+
+# 3. Prompt RAG
+prompt = PromptTemplate.from_template(
+    """Responde basado en contexto: {context}\n\nPregunta: {question}"""
+)
+
+# 4. Chain
+def format_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
+
+rag_chain = (
+    {"context": retriever | format_docs, "question": RunnablePassthrough()}
+    | prompt
+    | llm
+)
+
+# Uso
+respuesta = rag_chain.invoke("¿Cómo integra LangChain con Ollama?")
+print(respuesta.content)
+```
+
+Para JS, usa `@langchain/ollama` similar.
+
+**Casos de uso adicionales**:
+- Agentes locales con tools.
+- RAG agentic con LangGraph.
+- Embeddings para búsqueda semántica.
+
+**Relevant docs:**
+- [ChatOllama Python](https://docs.langchain.com/oss/python/integrations/chat/ollama)
+- [OllamaEmbeddings Python](https://docs.langchain.com/oss/python/integrations/text_embedding/ollama)
+- [Ollama Integrations](https://docs.langchain.com/oss/python/integrations/providers/ollama)
+- [RAG con LangChain](https://docs.langchain.com/oss/python/langchain/rag)
+- [ChatOllama JS](https://docs.langchain.com/oss/javascript/integrations/chat/ollama)
+- [OllamaEmbeddings JS](https://docs.langchain.com/oss/javascript/integrations/text_embedding/ollama)
+
+
+
 New Chat
 
 ![User](https://chat.langchain.com/_next/image?url=%2Fassets%2Fimages%2FUser%20icon.png&w=64&q=75)
