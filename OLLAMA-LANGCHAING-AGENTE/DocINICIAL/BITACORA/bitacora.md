@@ -1,3 +1,74 @@
+# QUE TENEMOS QUE FALTA
+
+
+Lo que tenemos actualmente:
+
+     1. Arquitectura de agentes modulares - Agentes con capacidad de evolución, pudiendo actuar como agentes independientes o como subagentes según las
+        necesidades
+     2. Soporte multi-proveedor - Compatible con Ollama (local), DeepSeek (API), y extensible a otros proveedores
+     3. Streaming con cancelación real - Implementación robusta de streaming que permite interrupción inmediata de la generación (especialmente crítica para
+        Ollama)
+     4. Configuración flexible - Sistema de configuración basado en YAML que permite definir múltiples modelos con alias y configuraciones específicas
+     5. Modo CLI interactivo - Interfaz de comandos versátil para uso interactivo con comandos como /exit, /model, /stream, /clear, /help
+     6. Modo CLI one-shot - Ejecución por lotes para procesamiento automatizado de consultas
+     7. Cancelación de generación con Ctrl+C - Posibilidad de interrumpir la generación actual de respuestas en tiempo real
+     8. Sistema de alias para modelos - Uso de nombres cortos para referirse a modelos específicos en la configuración
+     9. Gestión dinámica de modelos - Capacidad de cambiar entre diferentes modelos durante la ejecución
+     10. Sistema de herramientas modulares - Componentes que amplían la funcionalidad del agente y pueden incluirse o excluirse físicamente
+     11. Paradigma adaptable de desarrollo - Uso del paradigma más eficaz y eficiente según el caso de uso: funcional, orientado a objetos, o mixto
+     12. Componentes físicos desacoplables - Las herramientas y funcionalidades pueden incluirse o excluirse físicamente del sistema, permitiendo versiones
+         modulares del agente
+     13. Sistema de configuración basado en YAML - Definición clara y estructurada de modelos y proveedores
+     14. Soporte para múltiples configuraciones de modelos - Posibilidad de definir diferentes configuraciones específicas para cada modelo
+     15. Interfaz de comandos versátil - Soporte tanto para uso interactivo como por lotes
+     16. Implementación robusta de streaming - Resuelve problemas de socket bloqueante con Ollama
+     17. Uso de API HTTP nativa para Ollama - Solución técnica que permite cierre real de conexión con response.close()
+     18. Threading + Queue para streaming - El streaming corre en un thread separado que comunica chunks mediante queue.Queue
+     19. Sistema de gestión de entorno virtual con uv - Gestión eficiente de dependencias y entornos
+     20. Arquitectura extensible - Diseño que permite añadir fácilmente nuevos proveedores y funcionalidades
+     21. Gestión de señales para interrupción limpia - Manejo de KeyboardInterrupt para detener generación sin cerrar el programa
+     22. Soporte para variables de entorno - Integración con .env para manejo seguro de claves API
+     23. Sistema de logging y manejo de errores - Mensajes de error detallados y manejo de excepciones
+     24. Soporte para diferentes tipos de mensajes - Integración con HumanMessage, SystemMessage, AIMessage de LangChain
+     25. Sistema de historial de conversación - Almacenamiento de interacciones previas para contexto continuo
+
+    Lo que debemos implementar:
+
+     26. Sistema de agentes con memoria dual - Implementación de memoria de documentos y memoria de chat según especificación
+     27. Configuración declarativa de agentes - Creación de archivo agentes.yaml para definir agentes con herramientas, memoria y prompts personalizados
+     28. Sistema de herramientas auto-registrables - Implementación de mecanismo de descubrimiento automático de herramientas en carpetas
+     29. Lazy loading de herramientas - Carga diferida de herramientas para optimizar recursos
+     30. Sistema de metadatos ontológicos - Implementación de metadatos para filtrado preciso en recuperación de información
+     31. Sistema de indexación de documentos - Proceso automático para convertir documentos en representaciones vectoriales
+     32. Base de datos vectorial integrada - Almacenamiento y recuperación eficiente de fragmentos de documentos
+     33. Sistema de sesiones de chat persistentes - Almacenamiento estructurado de conversaciones en base de datos SQL
+     34. Generación automática de títulos de sesión - Uso de LLM para crear títulos descriptivos de conversaciones
+     35. Sistema de búsqueda semántica en historial - Capacidad de buscar conversaciones anteriores por contenido
+     36. Comandos dinámicos de herramientas - Activación/desactivación de herramientas en tiempo de ejecución con /tool activate y /tool deactivate
+     37. Sistema de subagentes como herramientas - Capacidad de empaquetar agentes como herramientas para otros agentes
+     38. Gestión avanzada de contexto - Límites y manejo eficiente del historial para evitar saturación de contexto
+     39. Sistema de backup y restauración - Scripts para respaldar bases de datos y vectorstores
+     40. Interfaz CLI mejorada - Soporte para selección de agente por ID y gestión de sesiones
+     41. Sistema de plugins modulares - Estructura para añadir funcionalidades externas sin modificar el núcleo
+     42. Gestión de permisos y usuarios - Control de acceso a diferentes agentes y funcionalidades
+     43. Sistema de auditoría y logs detallados - Registro de todas las interacciones para cumplimiento y análisis
+     44. Integración con sistemas empresariales - Conectores para CRM, ERP y otras herramientas corporativas
+     45. Sistema de notificaciones - Alertas para eventos importantes o tareas completadas
+     46. Panel de administración - Interfaz para supervisar y gestionar agentes y configuraciones
+     47. Sistema de pruebas automatizadas - Suite de tests para validar funcionalidades y cambios
+     48. Documentación generada automáticamente - Documentación actualizada basada en la configuración declarativa
+     49. Sistema de actualización en caliente - Capacidad de actualizar componentes sin interrumpir el servicio
+     50. Monitorización de rendimiento - Métricas de uso, tiempos de respuesta y consumo de recursos
+
+
+
+
+
+
+
+
+----
+## BITACORA
 **Es una excelente pregunta técnica. Mis soluciones anteriores fallaron porque se basaban en el comportamiento estándar de la librería LangChain ("High-level API"), pero Ollama tiene un comportamiento de socket bloqueante que no está documentado de forma transparente en las guías básicas.**
 
 Aquí está el análisis de por qué las soluciones estándar no funcionaron y qué dice (o no dice) la documentación oficial:
