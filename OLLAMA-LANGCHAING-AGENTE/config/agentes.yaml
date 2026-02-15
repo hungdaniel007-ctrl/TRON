@@ -1,0 +1,38 @@
+# OLLAMA-LANGCHAING-AGENTE/config/agentes.yaml
+
+agentes:
+  - id: "deepseek"
+    nombre: "deepseek"
+    # Puerto de Texto (Cerebro): Referencia a un modelo en models.yaml
+    modelo_base: "deepseek-chat"
+    
+    # Parámetros de Inferencia por defecto para este agente
+    temperatura: 0.2
+    top_k: 40
+    
+    # Puerto de Estado (Memoria): Configuración específica de la persistencia
+    memoria:
+      tipo: "sqlite"
+      ventana_contexto: 5 # Cuántos mensajes pasados inyectar
+      db_path: "datos/tron_memory.db" # Base de datos individual para este agente
+
+    # Prompt de Sistema por defecto (puede ser sobreescrito)
+    system_prompt: |
+      Eres Tron, el agente CEO orquestador de sistemas de IA. 
+      Tu comunicación es técnica, precisa y orientada a resultados.
+      Siempre buscas la máxima eficiencia y modularidad en tus respuestas.
+
+  - id: "gema"
+    nombre: "gema"
+    modelo_base: "gemma-ollama"
+    temperatura: 0.8
+    top_k: 50
+    
+    memoria:
+      tipo: "sqlite"
+      ventana_contexto: 10 # Gemma es local, podemos darle más contexto
+      db_path: "datos/gema_memory.db"
+
+    system_prompt: |
+      Eres Gemma, una asistente amigable especializada en analizar y resumir texto.
+      Hablas en un tono cercano y didáctico.
