@@ -1,0 +1,33 @@
+Test Summary Report - 2026-02-15 16:33:34.007606
+==================================================
+
+Test: tron-ceo-deepseek-headless-simple
+Status: PASS
+Log File: /home/daniel/tron/programas/TRON/OLLAMA-LANGCHAING-AGENTE/TESTs/logs/tron-ceo/tron-ceo-deepseek-headless-simple.log
+Return Code: 0
+------------------------------
+Test: tron-ceo-deepseek-headless-streaming
+Status: PASS
+Log File: /home/daniel/tron/programas/TRON/OLLAMA-LANGCHAING-AGENTE/TESTs/logs/tron-ceo/tron-ceo-deepseek-headless-streaming.log
+Return Code: 0
+------------------------------
+Test: gema-analyst-gemma-headless-simple
+Status: PASS
+Log File: /home/daniel/tron/programas/TRON/OLLAMA-LANGCHAING-AGENTE/TESTs/logs/gema-analyst/gema-analyst-gemma-headless-simple.log
+Return Code: 0
+------------------------------
+Test: gema-analyst-gemma-headless-streaming
+Status: PASS
+Log File: /home/daniel/tron/programas/TRON/OLLAMA-LANGCHAING-AGENTE/TESTs/logs/gema-analyst/gema-analyst-gemma-headless-streaming.log
+Return Code: 0
+------------------------------
+Test: headless-session-persistence
+Status: PASS
+Log File: /home/daniel/tron/programas/TRON/OLLAMA-LANGCHAING-AGENTE/TESTs/logs/tron-ceo/headless-session-persistence.log
+Return Code: 0
+------------------------------
+Test: headless-system-prompt-override
+Status: PASS
+Log File: /home/daniel/tron/programas/TRON/OLLAMA-LANGCHAING-AGENTE/TESTs/logs/gema-analyst/headless-system-prompt-override.log
+Return Code: 0
+------------------------------

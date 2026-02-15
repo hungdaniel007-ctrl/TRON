@@ -1,23 +1,24 @@
-# OLLAMA-LANGCHAING-AGENTE/config/models.yaml
+# config/models.yaml
 
-default_model: gemma-ollama
+# Esta es la biblioteca de "Cerebros" disponibles para todos los agentes.
+
+default_model: "gemma-ollama-local"
 
 models:
-  - id: gemma-ollama
-    name: "Gemma (Ollama)"
-    alias: gema
-    provider: ollama
+  - id: "deepseek-api-oficial" # Identificador único y técnico de la configuración
+    alias: "deepseek"           # Comando corto para la CLI (/model deepseek)
+    nombre_display: "DeepSeek (API)" # Nombre "bonito" que se muestra en la UI
+    provider: "deepseek"        # Clase interna que se usará
     config:
-      # IMPORTANTE: El nombre del modelo debe coincidir exactamente con 'ollama list'
-      model: "gemma3:4b"  # Asegúrate de que este modelo existe con 'ollama list'
-      # IMPORTANTE: Definir explícitamente la URL y puerto
-      base_url: "http://localhost:11434"
-      temperature: 0.7
+      modelo_provider: "deepseek-chat" # Nombre EXACTO que espera la API de DeepSeek
 
-  - id: deepseek-chat
-    name: "DeepSeek (API)"
-    alias: deepseek
-    provider: deepseek
+  - id: "gemma-ollama-local"
+    alias: "gema"
+    nombre_display: "Gemma (Ollama)"
+    provider: "ollama"
     config:
-      model: "deepseek-chat"
-      api_key: "ENV" # Se cargará desde el entorno
+      modelo_provider: "gemma:7b" # Usar un tag específico es mejor práctica
+      base_url: "http://localhost:11434"
+
+      
+  

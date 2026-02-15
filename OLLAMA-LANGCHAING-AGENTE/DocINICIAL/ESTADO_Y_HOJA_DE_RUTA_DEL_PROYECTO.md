@@ -49,6 +49,27 @@ Esta sección detalla las siguientes funcionalidades a implementar, en orden de 
     5.  Una vez el usuario elija o escriba un título, actualizar el `self.titulo_actual` y cambiar el estado a `ACTIVE`.
     6.  Continuar la conversación de forma transparente.
 
+**Detalles de Implementación - Sub-tareas Atómicas:**
+1.  **Añadir Gestión de Estados y Conteo de Interacciones:**
+    *   Modificar la clase `AgenteInteligente` para incluir atributos como `self.interaccion_count` (inicializado a 0) y `self.session_state` (inicializado a "INITIAL").
+    *   Ajustar `gestionar_titulo_sesion` para iniciar el estado `PROBATIONARY` si no se proporciona un título explícito.
+    *   Incrementar `self.interaccion_count` en `procesar_mensaje` durante el estado `PROBATIONARY` después de cada turno (usuario + asistente).
+2.  **Implementar LLM para Sugerencia de Títulos:**
+    *   Crear un LLM secundario (ej. `gema-ollama`) dentro del agente (o reutilizar el existente si es adecuado) para generar sugerencias de títulos a partir del historial.
+    *   Crear un nuevo método `_sugerir_titulo_con_llm(historial_mensajes)` que use este LLM.
+    *   Este método debe tomar los últimos N mensajes de la conversación y generar 3 títulos cortos y descriptivos.
+3.  **Integrar Lógica de Sugerencia en `procesar_mensaje`:**
+    *   Si `self.session_state == "PROBATIONARY"` y `self.interaccion_count >= X` (ej. 5 interacciones):
+        *   Pausar la conversación (dejar de procesar entrada de usuario normal).
+        *   Llamar a `_sugerir_titulo_con_llm`.
+        *   Presentar las opciones al usuario y entrar en el estado `AWAITING_TITLE_SELECTION`.
+4.  **Manejar Selección de Título por el Usuario:**
+    *   Añadir lógica en `iniciar_modo_interactivo` (o un nuevo método de manejo de comandos) para capturar la elección del usuario (una de las sugerencias, o un título personalizado).
+    *   Actualizar `self.titulo_actual` con el título elegido.
+    *   Cambiar `self.session_state = "ACTIVE"`.
+5.  **Migrar Títulos en la Base de Datos:**
+    *   Implementar una función en `GestorDePersistencia` (o un nuevo método en `AgenteInteligente`) que, una vez seleccionado el título definitivo, actualice los registros de la base de datos de la sesión temporal (`sesion_temporal_...`) al nuevo `titulo_actual`.
+
 ### **Siguientes Pasos en la Hoja de Ruta:**
 1.  **Integrar Editor `micro` para System Prompts:**
     *   **Objetivo:** Implementar el comando `/prompt-sistema` en modo interactivo.

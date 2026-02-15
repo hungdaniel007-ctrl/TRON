@@ -38,8 +38,14 @@ class AgenteInteligente:
         self.nombre = self.config['nombre']
         self.system_prompt = system_prompt_override if system_prompt_override else self.config['system_prompt']
         
-        self.modelo_actual_id = self.config['modelo_base']
-        self.llm = load_llm(self.modelo_actual_id, self.global_configs)
+        # Corrección del KeyError y la lógica de carga
+        self.cerebro_config = self.config.get('cerebro', {})
+        self.modelo_actual_id = self.cerebro_config.get('modelo_base_id')
+
+        # Store original model config for reloading if needed
+        self.original_model_config_id = self.modelo_actual_id # Store original model ID for reloading if needed
+
+        self.llm = load_llm(self.modelo_actual_id, self.global_configs, agent_cerebro_config=self.cerebro_config)
         
         memoria_config = self.config['memoria']
         self.memoria = GestorDePersistencia(db_path=memoria_config['db_path'])
@@ -54,8 +60,13 @@ class AgenteInteligente:
         y corre en un thread para permitir cancelación real.
         """
         try:
-            model_name = self.llm.model
-            base_url = getattr(self.llm, 'base_url', "http://localhost:11434")
+            model_info = next((m for m in self.global_configs['models'] if m['id'] == self.modelo_actual_id), None)
+            if not model_info:
+                output_queue.put(("error", f"No se encontró la configuración del modelo para el ID: {self.modelo_actual_id}"))
+                return
+
+            model_name = model_info['config']['modelo_provider']
+            base_url = model_info['config'].get('base_url', "http://localhost:11434")
             
             ollama_messages = []
             for msg in messages:
@@ -71,7 +82,7 @@ class AgenteInteligente:
                 "model": model_name,
                 "messages": ollama_messages,
                 "stream": True,
-                "options": { "temperature": getattr(self.llm, 'temperature', 0.7) }
+                "options": { "temperature": self.cerebro_config.get('temperature', 0.7) }
             }
             
             response = requests.post(url, json=payload, stream=True)
@@ -123,9 +134,10 @@ class AgenteInteligente:
 
         respuesta_completa = ""
         cancelled = False
+        stream_thread = None # Initialize here to ensure it is always defined
         
         try:
-            # Lógica de streaming diferenciada
+            # Logica de streaming diferenciada
             if stream:
                 if isinstance(self.llm, ChatOllama):
                     # ---- Streaming robusto para Ollama ----
@@ -142,21 +154,24 @@ class AgenteInteligente:
                                 respuesta_completa += data
                             elif status in ("done", "cancelled", "error"):
                                 if status == "cancelled": cancelled = True
-                                if status == "error": print(f"❌ Error en thread: {data}")
+                                if status == "error" and not quiet: print(f"❌ Error en thread: {data}") # Solo imprimir si no esta en modo quiet
                                 break
                         except queue.Empty: continue
-                    print()
+                    if not quiet and not respuesta_completa.endswith("\n"): print() # Solo imprime nueva linea si no termina en una y no esta en modo quiet
                 else:
-                    # ---- Streaming estándar para otros proveedores ----
+                    # ---- Streaming estandar para otros proveedores ----
                     for chunk in self.llm.stream(mensajes_para_llm):
                         content = chunk.content or ""
                         print(content, end="", flush=True)
                         respuesta_completa += content
-                    print()
+                    if not quiet and not respuesta_completa.endswith("\n"): print() # Solo imprime nueva linea si no termina en una y no esta en modo quiet
             else:
                 # ---- Modo sin streaming ----
                 resp = self.llm.invoke(mensajes_para_llm)
-                print(resp.content)
+                if quiet:
+                    print(resp.content, end="") # En modo quiet, no queremos saltos de linea adicionales
+                else:
+                    print(resp.content)
                 respuesta_completa = resp.content
             
             if persistir and not cancelled:
@@ -165,18 +180,19 @@ class AgenteInteligente:
                 )
             
         except KeyboardInterrupt:
-            if 'stream_thread' in locals() and stream_thread.is_alive():
+            # Se inicializa a None, asi que no hay UnboundLocalError
+            if stream_thread is not None and stream_thread.is_alive(): 
                 stop_streaming_event.set()
                 stream_thread.join(timeout=2.0)
             
-            if not quiet: print("\n\n🛑 Generación detenida por el usuario.")
+            if not quiet: print("\n\n🛑 Generacion detenida por el usuario.")
             if persistir:
                 self.memoria.guardar_mensaje(
                     self.usuario_actual, self.titulo_actual, 'assistant', 
-                    respuesta_completa + " [GENERACIÓN INTERRUMPIDA]", modelo=self.modelo_actual_id
+                    respuesta_completa + " [GENERACION INTERRUMPIDA]", modelo=self.modelo_actual_id
                 )
         except Exception as e:
-            if not quiet: print(f"\n\n❌ Ocurrió un error: {e}")
+            if not quiet: print(f"\n\n❌ Ocurrio un error: {e}")
 
     def gestionar_titulo_sesion(self) -> str:
         """
@@ -197,21 +213,38 @@ class AgenteInteligente:
         Permite cambiar el cerebro (LLM) del agente en tiempo de ejecución.
         """
         nuevo_id_real = get_model_id_from_alias(nuevo_identificador, self.global_configs) or nuevo_identificador
-        
+
         # Evitar recargar el mismo modelo
         if nuevo_id_real == self.modelo_actual_id:
             print(f"El modelo '{self.modelo_actual_id}' ya está cargado.")
             return True
 
-        nuevo_llm = load_llm(nuevo_id_real, self.global_configs)
-        
+        nuevo_llm = load_llm(nuevo_id_real, self.global_configs, agent_cerebro_config=self.cerebro_config)
+
         if nuevo_llm:
             self.llm = nuevo_llm
             self.modelo_actual_id = nuevo_id_real
-            print(f"✅ Cerebro del agente '{self.nombre}' cambiado a: {self.modelo_actual_id}")
+            # Obtener nombre_display del nuevo modelo para el mensaje
+            nuevo_model_info = next((m for m in self.global_configs['models'] if m['id'] == nuevo_id_real), None)
+            display_name = nuevo_model_info.get('nombre_display', nuevo_id_real) if nuevo_model_info else nuevo_id_real
+            print(f"✅ Cerebro del agente {self.nombre} cambiado a: {display_name}")
             return True
         else:
-            print(f"❌ No se pudo cambiar al modelo: {nuevo_identificador}")
+            print(f"❌ No se pudo cambiar al cerebro: {nuevo_identificador}")
+            # Intentar recargar el cerebro original para mantener la estabilidad del agente
+            original_cerebro_config = self.config.get('cerebro', {})
+
+            original_llm = load_llm(self.original_model_config_id, self.global_configs, agent_cerebro_config=original_cerebro_config)
+            
+            if original_llm:
+                self.llm = original_llm
+                self.modelo_actual_id = self.original_model_config_id
+                # Obtener nombre_display del modelo original para el mensaje
+                original_model_info = next((m for m in self.global_configs['models'] if m['id'] == self.original_model_config_id), None)
+                original_display_name = original_model_info.get('nombre_display', self.original_model_config_id) if original_model_info else self.original_model_config_id
+                print(f"⚠️  Recuperando cerebro original: {original_display_name}")
+            else:
+                print(f"❌ Error crítico: No se pudo recuperar ni el cerebro nuevo ni el original. El agente puede estar inestable.")
             return False
 
     def iniciar_modo_interactivo(self, stream_por_defecto: bool = True):
@@ -221,7 +254,9 @@ class AgenteInteligente:
         self.titulo_actual = self.gestionar_titulo_sesion()
         
         print("-" * 50)
-        print(f"Iniciando Chat Interactivo con '{self.nombre}' (Modelo: {self.modelo_actual_id})")
+        model_info = next((m for m in self.global_configs['models'] if m['id'] == self.modelo_actual_id), None)
+        nombre_modelo_display = model_info.get('nombre_display', self.modelo_actual_id) if model_info else self.modelo_actual_id
+        print(f"Iniciando Chat Interactivo con '{self.nombre}' (Cerebro: {nombre_modelo_display})")
         print(f"Sesión: '{self.titulo_actual}'")
         print("Comandos: /exit, /model [alias], /stream, /help")
         print("-" * 50)
@@ -280,10 +315,10 @@ def main():
         print("❌ Error Fatal: El archivo 'config/agentes.yaml' no fue encontrado.")
         sys.exit(1)
 
-    default_agent_id = agentes_configs['agentes'][0]['id'] if agentes_configs.get('agentes') else None
+    default_agent_id = agentes_configs.get('agentes', [{}])[0].get('id')
     parser = argparse.ArgumentParser(description="Framework de Agentes Modulares con Persistencia")
     parser.add_argument('--agent', type=str, default=default_agent_id, help=f"ID del agente a utilizar. Defecto: {default_agent_id}")
-    parser.add_argument('-sc', '--headless', action='store_true', help="Activar modo 'sin cabeza' (raw output).")
+    parser.add_argument('-sc', '--headless', action='store_true', help="Activar modo sin cabeza (raw output).")
     parser.add_argument('-m', '--message', type=str, help="Mensaje a enviar en modo headless.")
     parser.add_argument('-ps', '--prompt-sistema', type=str, default=None, help="Sobrescribe el system_prompt del agente.")
     parser.add_argument('-s', '--stream', action='store_true', help="Activar streaming.")
@@ -293,11 +328,11 @@ def main():
 
     info_agente_seleccionado = next((a for a in agentes_configs['agentes'] if a['id'] == args.agent), None)
     if not info_agente_seleccionado:
-        print(f"❌ Error Fatal: Agente '{args.agent}' no definido en 'agentes.yaml'.")
+        print(f"❌ Error Fatal: Agente {args.agent} no definido en agentes.yaml.")
         sys.exit(1)
         
     if not args.headless:
-        print(f"Iniciando fábrica para el agente: '{args.agent}'...")
+        print(f"Iniciando fábrica para el agente: {args.agent}...")
         
     agente = AgenteInteligente(info_agente_seleccionado, model_configs, system_prompt_override=args.prompt_sistema)
 
