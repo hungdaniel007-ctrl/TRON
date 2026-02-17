@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 """
+# --- FILOSOFÍA DEL PROYECTO ---
+# Principio de "Cápsulas Inviolables":
+# Se prioriza la identificación, aislamiento y corrección de la funcionalidad rota,
+# dejando intactas las partes del código que ya han demostrado ser estables y funcionales.
+# Esto minimiza el riesgo de introducir nuevas regresiones y asegura un progreso robusto.
+#
 Script de Ejecución Agnóstico del Proyecto.
 
 Este script es el punto de entrada profesional para el sistema de agentes.

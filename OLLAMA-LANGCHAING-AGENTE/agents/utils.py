@@ -1,4 +1,11 @@
 # OLLAMA-LANGCHAING-AGENTE/agents/utils.py
+# --- HISTORIAL DE ERRORES Y SOLUCIONES ---
+# 1.  TypeError: Completions.create() got an unexpected keyword argument 'modelo_base_id'.
+#     - Causa: Se pasaban claves de configuración internas del framework ('modelo_base_id', 'temperatura')
+#       directamente a los constructores de LangChain (ChatDeepSeek, ChatOllama), que no las reconocen.
+#     - Solución: En `load_llm`, "sanitizar" el diccionario `merged_config` antes de pasarlo,
+#       eliminando claves no estándar y mapeando nombres (ej. 'temperatura' -> 'temperature').
+#
 """
 Módulo de Utilidades:
 - Contiene funciones puras y reutilizables para la carga de configuraciones y modelos.
@@ -61,17 +68,33 @@ def load_llm(model_identifier: str, all_configs: dict, agent_cerebro_config: dic
     provider_model_name = base_model_config.pop("modelo_provider") # Extrae el nombre del modelo del proveedor
 
     # Combina la configuración base con los overrides del agente
-    merged_config = base_model_config
+    merged_config = base_model_config.copy()
+    _top_k_value = None # Inicializar a None
+
     if agent_cerebro_config:
-        # Los parametros de temperatura, top_k, etc. del agente sobreescriben los de models.yaml
-        merged_config.update(agent_cerebro_config)
-        # Asegurarse de que modelo_provider no se sobreescriba si el agente tiene un modelo_base_id diferente
-        # (Esto ya esta manejado por provider_model_name que ya fue extraido)
+        agent_overrides_clean = agent_cerebro_config.copy() # Crear una copia limpia para trabajar
+        
+        if 'temperatura' in agent_overrides_clean:
+            merged_config['temperature'] = agent_overrides_clean.pop('temperatura')
+        
+        if 'top_k' in agent_overrides_clean:
+            _top_k_value = agent_overrides_clean.pop('top_k') # Extraer top_k para manejo especial
+            
+        if 'modelo_base_id' in agent_overrides_clean:
+            agent_overrides_clean.pop('modelo_base_id')
+        
+        # Fusionar cualquier parametro restante que no haya sido mapeado o limpiado
+        merged_config.update(agent_overrides_clean)
 
     print(f"🧠  Cargando cerebro: {model_info.get("nombre_display")} (Proveedor: {provider})")
 
     try:
         if provider == 'ollama':
+            ollama_options = {}
+            if _top_k_value is not None:
+                ollama_options['top_k'] = _top_k_value
+            if ollama_options: # Solo añadir 'options' si tiene contenido
+                merged_config['options'] = ollama_options
             return ChatOllama(model=provider_model_name, **merged_config)
         
         elif provider == 'deepseek':
@@ -80,6 +103,9 @@ def load_llm(model_identifier: str, all_configs: dict, agent_cerebro_config: dic
                 print("\n❌ Error: DEEPSEEK_API_KEY no fue encontrada en el entorno.")
                 return None
             merged_config['api_key'] = deepseek_api_key
+            # 'top_k' no es un argumento directo para ChatDeepSeek, por lo tanto no lo incluimos
+            # directamente en merged_config. Si LangChain soporta pasarlo via client_kwargs o model_kwargs
+            # se haria aqui. Por ahora, asumimos que DeepSeek usara su default.
             return ChatDeepSeek(model=provider_model_name, **merged_config)
             
         else:

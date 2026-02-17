@@ -17,7 +17,7 @@ models:
     nombre_display: "Gemma (Ollama)"
     provider: "ollama"
     config:
-      modelo_provider: "gemma:7b" # Usar un tag específico es mejor práctica
+      modelo_provider: "gemma3:4b" # Usar el tag del modelo instalado por el usuario
       base_url: "http://localhost:11434"
 
       

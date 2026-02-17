@@ -1,5 +1,14 @@
 # OLLAMA-LANGCHAING-AGENTE/agents/agente.py
 """
+# --- HISTORIAL DE ERRORES Y SOLUCIONES ---
+# 1.  UserWarning: WARNING! ... is not default parameter.
+#     - Causa: Parámetros del framework (ej. 'modelo_base_id', 'temperatura', 'top_k') persistían
+#       en 'self.cerebro_config' y eran pasados a constructores de LangChain o directamente a APIs
+#       (ej. Ollama nativa), que no los reconocían.
+#     - Solución: En AgenteInteligente.__init__, se limpia 'self.cerebro_config' de estos parámetros
+#       antes de su uso. En _stream_ollama_with_cancel, se asegura que los parámetros se usen
+#       con el nombre correcto ('temperature' en lugar de 'temperatura').
+#
 Nodo Agente Inteligente y Orquestador Principal
 - Punto de entrada para el sistema modular.
 - Reemplaza la lógica de ejecución de general.py, mientras lo usa como librería.
@@ -42,10 +51,23 @@ class AgenteInteligente:
         self.cerebro_config = self.config.get('cerebro', {})
         self.modelo_actual_id = self.cerebro_config.get('modelo_base_id')
 
+        # Inicia limpieza de cerebro_config para no pasar parametros no validos a LLMs
+        _clean_cerebro_config = self.cerebro_config.copy()
+        if 'modelo_base_id' in _clean_cerebro_config:
+            _clean_cerebro_config.pop('modelo_base_id')
+        if 'temperatura' in _clean_cerebro_config:
+            _clean_cerebro_config['temperature'] = _clean_cerebro_config.pop('temperatura')
+        if 'top_k' in _clean_cerebro_config:
+            _clean_cerebro_config['top_k'] = _clean_cerebro_config.pop('top_k')
+        
+        self._cleaned_cerebro_config_for_llm = _clean_cerebro_config # Guardar la version limpia para _stream_ollama_with_cancel
+        # --- Fin limpieza ---
+
         # Store original model config for reloading if needed
         self.original_model_config_id = self.modelo_actual_id # Store original model ID for reloading if needed
 
-        self.llm = load_llm(self.modelo_actual_id, self.global_configs, agent_cerebro_config=self.cerebro_config)
+        # Usar la configuración limpia para load_llm
+        self.llm = load_llm(self.modelo_actual_id, self.global_configs, agent_cerebro_config=self._cleaned_cerebro_config_for_llm)
         
         memoria_config = self.config['memoria']
         self.memoria = GestorDePersistencia(db_path=memoria_config['db_path'])
@@ -82,11 +104,14 @@ class AgenteInteligente:
                 "model": model_name,
                 "messages": ollama_messages,
                 "stream": True,
-                "options": { "temperature": self.cerebro_config.get('temperature', 0.7) }
+                "options": { "temperature": self._cleaned_cerebro_config_for_llm.get('temperature', 0.7),
+                             "top_k": self._cleaned_cerebro_config_for_llm.get('top_k') # Añadir top_k si existe
+                           }
             }
             
             response = requests.post(url, json=payload, stream=True)
-            
+            response.raise_for_status() # Lanza HTTPError para respuestas 4xx/5xx
+
             full_content = ""
             for line in response.iter_lines():
                 if stop_streaming_event.is_set():
@@ -105,8 +130,15 @@ class AgenteInteligente:
             
             output_queue.put(("done", full_content))
             
+        except requests.exceptions.HTTPError as http_err:
+            if http_err.response.status_code == 404:
+                output_queue.put(("error", f"❌ Error 404 de Ollama: Modelo '{model_name}' no encontrado o cargado en el servidor Ollama ({base_url}). Por favor, asegúrate de que el modelo esté disponible (ej. 'ollama pull {model_name}' y 'ollama run {model_name}')."))
+            else:
+                output_queue.put(("error", f"❌ Error HTTP de Ollama: {http_err}"))
+        except requests.exceptions.ConnectionError as conn_err:
+            output_queue.put(("error", f"❌ Error de Conexión a Ollama: No se pudo conectar a {base_url}. Asegúrate de que Ollama esté corriendo."))
         except Exception as e:
-            output_queue.put(("error", str(e)))
+            output_queue.put(("error", f"❌ Ocurrió un error inesperado con Ollama: {e}"))
 
     def procesar_mensaje(self, entrada_usuario: str, stream: bool = True, quiet: bool = False):
         # La persistencia solo se activa si hay un título de sesión.
