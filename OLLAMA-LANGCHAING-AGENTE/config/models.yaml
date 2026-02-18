@@ -11,6 +11,7 @@ models:
     provider: "deepseek"        # Clase interna que se usará
     config:
       modelo_provider: "deepseek-chat" # Nombre EXACTO que espera la API de DeepSeek
+      max_tokens_context: 4096 # Ejemplo: 4k tokens
 
   - id: "gemma-ollama-local"
     alias: "gema"
@@ -19,6 +20,7 @@ models:
     config:
       modelo_provider: "gemma3:4b" # Usar el tag del modelo instalado por el usuario
       base_url: "http://localhost:11434"
+      max_tokens_context: 8192 # Ejemplo: 8k tokens (Gemma 3 de Ollama)
 
       
   

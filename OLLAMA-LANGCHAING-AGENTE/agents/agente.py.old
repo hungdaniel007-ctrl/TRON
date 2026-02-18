@@ -1,11 +1,5 @@
 # OLLAMA-LANGCHAING-AGENTE/agents/agente.py
 """
-# --- FILOSOFÍA DEL PROYECTO ---
-# Principio de "Cápsulas Inviolables":
-# Se prioriza la identificación, aislamiento y corrección de la funcionalidad rota,
-# dejando intactas las partes del código que ya han demostrado ser estables y funcionales.
-# Esto minimiza el riesgo de introducir nuevas regresiones y asegura un progreso robusto.
-#
 # --- HISTORIAL DE ERRORES Y SOLUCIONES ---
 # 1.  UserWarning: WARNING! ... is not default parameter.
 #     - Causa: Parámetros del framework (ej. 'modelo_base_id', 'temperatura', 'top_k') persistían
@@ -47,14 +41,11 @@ from langchain_ollama.chat_models import ChatOllama
 stop_streaming_event = threading.Event()
 
 class AgenteInteligente:
-    def __init__(self, agente_config: dict, global_model_configs: dict, cli_args: argparse.Namespace, system_prompt_override: str = None):
+    def __init__(self, agente_config: dict, global_model_configs: dict, system_prompt_override: str = None):
         self.config = agente_config
         self.global_configs = global_model_configs
         self.nombre = self.config['nombre']
         self.system_prompt = system_prompt_override if system_prompt_override else self.config['system_prompt']
-        
-        # Almacenar los argumentos CLI para gestión de sesiones
-        self.cli_args = cli_args
         
         # Corrección del KeyError y la lógica de carga
         self.cerebro_config = self.config.get('cerebro', {})
@@ -84,11 +75,8 @@ class AgenteInteligente:
         self.memoria = GestorDePersistencia(db_type=db_type, db_config=db_config)
         self.ventana_contexto = memoria_config['ventana_contexto']
         
-        # Inicialización de sesión y usuario (dinámico)
-        self.usuario_actual = self.cli_args.user if self.cli_args else "default"
+        self.usuario_actual = "cli_user"
         self.titulo_actual = None
-        self.persist_current_session = not self.cli_args.no_persist if self.cli_args else True
-
 
     def _stream_ollama_with_cancel(self, messages, output_queue):
         """
@@ -155,8 +143,8 @@ class AgenteInteligente:
             output_queue.put(("error", f"❌ Ocurrió un error inesperado con Ollama: {e}"))
 
     def procesar_mensaje(self, entrada_usuario: str, stream: bool = True, quiet: bool = False):
-        # La persistencia solo se activa si self.persist_current_session es True y hay un titulo.
-        persistir = self.persist_current_session and (self.titulo_actual is not None)
+        # La persistencia solo se activa si hay un título de sesión.
+        persistir = self.titulo_actual is not None
 
         mensajes_para_llm = [SystemMessage(content=self.system_prompt)]
         
@@ -176,8 +164,7 @@ class AgenteInteligente:
             self.memoria.guardar_mensaje(self.usuario_actual, self.titulo_actual, 'user', entrada_usuario)
 
         if not quiet:
-            print(f"
-{self.nombre}: ", end="", flush=True)
+            print(f"\n{self.nombre}: ", end="", flush=True)
 
         respuesta_completa = ""
         cancelled = False
@@ -204,16 +191,14 @@ class AgenteInteligente:
                                 if status == "error" and not quiet: print(f"❌ Error en thread: {data}") # Solo imprimir si no esta en modo quiet
                                 break
                         except queue.Empty: continue
-                    if not quiet and not respuesta_completa.endswith("
-"): print() # Solo imprime nueva linea si no termina en una y no esta en modo quiet
+                    if not quiet and not respuesta_completa.endswith("\n"): print() # Solo imprime nueva linea si no termina en una y no esta en modo quiet
                 else:
                     # ---- Streaming estandar para otros proveedores ----
                     for chunk in self.llm.stream(mensajes_para_llm):
                         content = chunk.content or ""
                         print(content, end="", flush=True)
                         respuesta_completa += content
-                    if not quiet and not respuesta_completa.endswith("
-"): print() # Solo imprime nueva linea si no termina en una y no esta en modo quiet
+                    if not quiet and not respuesta_completa.endswith("\n"): print() # Solo imprime nueva linea si no termina en una y no esta en modo quiet
             else:
                 # ---- Modo sin streaming ----
                 resp = self.llm.invoke(mensajes_para_llm)
@@ -234,140 +219,28 @@ class AgenteInteligente:
                 stop_streaming_event.set()
                 stream_thread.join(timeout=2.0)
             
-            if not quiet: print("
-
-🛑 Generacion detenida por el usuario.")
+            if not quiet: print("\n\n🛑 Generacion detenida por el usuario.")
             if persistir:
                 self.memoria.guardar_mensaje(
                     self.usuario_actual, self.titulo_actual, 'assistant', 
                     respuesta_completa + " [GENERACION INTERRUMPIDA]", modelo=self.modelo_actual_id
                 )
         except Exception as e:
-            if not quiet: print(f"
+            if not quiet: print(f"\n\n❌ Ocurrio un error: {e}")
 
-❌ Ocurrio un error: {e}")
-
-    # --- PUERTO DE GESTIÓN DE SESIONES ---
-    def gestionar_sesion_global(self):
+    def gestionar_titulo_sesion(self) -> str:
         """
-        [PUERTO] Puerto de Gestión de Sesiones: Centraliza la lógica de inicio/reanudación/listado de conversaciones.
-        Opera en modo interactivo o headless según los argumentos CLI almacenados en self.cli_args.
+        Gestiona la creación o selección del título de la conversación.
+        Implementa la lógica de pedir título al inicio.
         """
-        # 1. Manejar --list-chats
-        if self.cli_args.list_chats:
-            titulos = self.memoria.obtener_titulos_conversacion(self.usuario_actual)
-            print(f"
---- Conversaciones para el usuario '{self.usuario_actual}' ---")
-            if not titulos:
-                print("No se encontraron conversaciones.")
-            else:
-                for i, titulo in enumerate(titulos):
-                    print(f"{i+1}. {titulo}")
-            print("-" * 50)
-            sys.exit(0) # Salir después de listar en modo headless
-
-        # 2. Manejar --select-chat (solo interactivo)
-        if self.cli_args.select_chat:
-            self._seleccionar_chat_interactivo()
-            return # Regresa después de la selección
-
-        # 3. Manejar --chat-name
-        if self.cli_args.chat_name:
-            self.titulo_actual = self.cli_args.chat_name
-            # Verificar si la conversación ya existe
-            if self.titulo_actual in self.memoria.obtener_titulos_conversacion(self.usuario_actual):
-                print(f"Sesión reanudada con el título: '{self.titulo_actual}'")
-            else:
-                print(f"Sesión iniciada con el nuevo título: '{self.titulo_actual}'")
-            self.persist_current_session = not self.cli_args.no_persist # Confirmar persistencia
-            return
-
-        # 4. Comportamiento por defecto (sin argumentos de sesión, en modo interactivo)
-        if not self.cli_args.headless and not (self.cli_args.chat_name or self.cli_args.list_chats or self.cli_args.select_chat):
-            self._gestionar_sesion_interactiva_por_defecto()
-            return
-
-        # 5. Comportamiento por defecto (headless sin chat_name)
-        if self.cli_args.headless and not self.cli_args.chat_name:
-            self.titulo_actual = "sesion_temporal_" + datetime.now().strftime("%Y%m%d%H%M%S")
-            self.persist_current_session = False # No persistir por defecto si no se especifica
-
-    def _seleccionar_chat_interactivo(self):
-        """Método auxiliar para la selección interactiva de chat."""
-        while True:
-            titulos = self.memoria.obtener_titulos_conversacion(self.usuario_actual)
-            print(f"
---- Selecciona o crea una conversación para '{self.usuario_actual}' ---")
-            if not titulos:
-                print("No se encontraron conversaciones existentes.")
-            else:
-                for i, titulo in enumerate(titulos):
-                    print(f"{i+1}. {titulo}")
-            print("-" * 50)
-            print("N. Nueva conversación")
-            print("S. Salir")
-            print("-" * 50)
-
-            opcion = input("Tu elección: ").strip().lower()
-
-            if opcion == 's':
-                sys.exit(0)
-            elif opcion == 'n':
-                nuevo_titulo = input("Introduce el título para la nueva conversación: ").strip()
-                if nuevo_titulo:
-                    self.titulo_actual = nuevo_titulo
-                    self.persist_current_session = True
-                    print(f"Iniciando nueva sesión: '{self.titulo_actual}'")
-                    break
-                else:
-                    print("Título no puede estar vacío.")
-            else:
-                try:
-                    seleccion_idx = int(opcion) - 1
-                    if 0 <= seleccion_idx < len(titulos):
-                        self.titulo_actual = titulos[seleccion_idx]
-                        self.persist_current_session = True
-                        print(f"Reanudando sesión: '{self.titulo_actual}'")
-                        break
-                    else:
-                        print("Opción no válida.")
-                except ValueError:
-                    print("Entrada no válida.")
-
-    def _gestionar_sesion_interactiva_por_defecto(self):
-        """Método auxiliar para la gestión de sesión interactiva por defecto (sin CLI args)."""
-        while True:
-            print("
---- Gestión de Sesiones ---")
-            print("1. Iniciar nueva conversación")
-            print("2. Reanudar conversación existente (selección interactiva)")
-            print("3. Conversación temporal (no se guarda)")
-            print("S. Salir")
-            print("-" * 50)
-            opcion = input("Tu elección: ").strip().lower()
-
-            if opcion == 's':
-                sys.exit(0)
-            elif opcion == '1':
-                nuevo_titulo = input("Introduce el título para la nueva conversación: ").strip()
-                if nuevo_titulo:
-                    self.titulo_actual = nuevo_titulo
-                    self.persist_current_session = True
-                    print(f"Iniciando nueva sesión: '{self.titulo_actual}'")
-                    break
-                else:
-                    print("Título no puede estar vacío.")
-            elif opcion == '2':
-                self._seleccionar_chat_interactivo()
-                if self.titulo_actual: # Si se seleccionó uno
-                    break
-            elif opcion == '3':
-                self.titulo_actual = "sesion_temporal_" + datetime.now().strftime("%Y%m%d%H%M%S")
-                self.persist_current_session = False
-                print("Iniciando sesión temporal (no guardada).")
-                break
-            else:
-                print("Opción no válida.")
+        titulo = input("Introduce el título para esta conversación (o presiona Enter para decidirlo después): ").strip()
+        if titulo:
+            print(f"Sesión iniciada con el título: '{titulo}'")
+            return titulo
+        else:
+            print("No se especificó título. Se usará un título temporal y se sugerirá un nombre más adelante.")
+            # En el futuro, aquí comenzaría el estado "probationary"
+            return "sesion_temporal_" + datetime.now().strftime("%Y%m%d%H%M%S")
 
     def cambiar_modelo(self, nuevo_identificador: str) -> bool:
         """
@@ -413,8 +286,18 @@ class AgenteInteligente:
         Bucle de chat para la interacción continua con el agente.
         """
         # --- REFLEXION ARQUITECTÓNICA: GESTIÓN DE SESIONES EN CLI ---
-        # La lógica de 'gestionar_titulo_sesion' se reemplaza por 'gestionar_sesion_global'.
-        self.gestionar_sesion_global()
+        # Táctica: "Nucleación de Acciones" y "Puertos" para la UX de persistencia.
+        # Principio: La experiencia de usuario en CLI debe ser controlable por parámetros,
+        # no por prompts interactivos no parametrizables, especialmente en modo headless.
+        #
+        # Actualmente, el sistema pide interactiva y automáticamente un título.
+        # La meta es reemplazar esta lógica con un manejo explícito vía argumentos CLI:
+        # --user <ID_USUARIO>, --chat-name <NOMBRE>, --no-persist (flag), --list-chats (flag),
+        # y --select-chat (flag para selección interactiva).
+        # Esto permitirá tanto la automatización (headless) como una interacción más potente.
+        # La función 'gestionar_titulo_sesion' será refactorizada a 'gestionar_sesion_global(self, args)'.
+        # --- FIN REFLEXION ---
+        self.titulo_actual = self.gestionar_titulo_sesion()
         
         print("-" * 50)
         model_info = next((m for m in self.global_configs['models'] if m['id'] == self.modelo_actual_id), None)
@@ -428,8 +311,7 @@ class AgenteInteligente:
 
         while True:
             try:
-                u_in = input("
-Tú: ").strip()
+                u_in = input("\nTú: ").strip()
                 if not u_in:
                     continue
                 
@@ -439,8 +321,7 @@ Tú: ").strip()
                     break
                 
                 if u_in.lower() == '/help':
-                    print("
-Comandos disponibles:")
+                    print("\nComandos disponibles:")
                     print("  /exit          - Salir del chat.")
                     print("  /model [alias] - Cambiar el modelo en caliente (ej: /model gema).")
                     print("  /stream        - Activar/desactivar el modo streaming.")
@@ -461,15 +342,11 @@ Comandos disponibles:")
                 self.procesar_mensaje(u_in, stream=stream_activo, quiet=False)
                 
             except (KeyboardInterrupt, EOFError):
-                print("
-
-Cerrando sesión. ¡Hasta luego!")
+                print("\n\nCerrando sesión. ¡Hasta luego!")
                 break
 
-    def ejecutar_modo_headless(self, mensaje: str, stream: bool = False):
-        # La gestión del título y la persistencia ahora se manejan en gestionar_sesion_global
-        self.gestionar_sesion_global()
-
+    def ejecutar_modo_headless(self, mensaje: str, titulo: str, stream: bool = False):
+        self.titulo_actual = titulo
         # La persistencia se decide dentro de procesar_mensaje
         self.procesar_mensaje(mensaje, stream=stream, quiet=True)
 
@@ -517,27 +394,6 @@ def main():
     if args.headless and not args.message and not args.list_chats:
         parser.error("En modo headless (-sc), se requiere -m/--message, a menos que se use --list-chats.")
 
-    info_agente_seleccionado = next((a for a in agentes_configs['agentes'] if a['id'] == args.agent), None)
-    if not info_agente_seleccionado:
-        print(f"❌ Error Fatal: Agente {args.agent} no definido en agentes.yaml.")
-        sys.exit(1)
-        
-    if not args.headless:
-        print(f"Iniciando fábrica para el agente: {args.agent}...")
-        
-    # Instanciación del agente pasando los argumentos CLI
-    agente = AgenteInteligente(info_agente_seleccionado, model_configs, cli_args=args, system_prompt_override=args.prompt_sistema)
-
-    # El flujo de ejecución principal se simplifica
-    if args.list_chats:
-        agente.gestionar_sesion_global()
-        sys.exit(0)
-
-    if args.headless:
-        agente.ejecutar_modo_headless(args.message, stream=args.stream)
-    else:
-        agente.iniciar_modo_interactivo(stream_por_defecto=args.stream)
-
-if __name__ == "__main__":
-    main()
-```
+    # Incompatibilidad entre --chat-name y --session (el antiguo --session ya no existe, pero es bueno recordarlo)
+    # if args.session and (args.chat_name or args.list_chats or args.select_chat):
+    #    parser.error("El antiguo --session no puede usarse con los nuevos argumentos de gestión de chat.")

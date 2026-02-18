@@ -15,7 +15,9 @@ agentes:
     # Puerto de Estado (Memoria)
     memoria:
       ventana_contexto: 5
-      db_path: "datos/tron_memory.db"
+      db_type: "sqlite"
+      db_config:
+        db_path: "datos/tron_memory.db"
 
     # Prompt de Sistema por defecto
     system_prompt: |
@@ -32,7 +34,9 @@ agentes:
 
     memoria:
       ventana_contexto: 10
-      db_path: "datos/gema_analyst_memory.db"
+      db_type: "sqlite"
+      db_config:
+        db_path: "datos/gema_analyst_memory.db"
 
     system_prompt: |
       Eres un analista de datos llamado Gemma. Tu especialidad es encontrar patrones
