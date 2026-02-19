@@ -231,14 +231,16 @@ class AgenteInteligente:
                 stop_streaming_event.set()
                 stream_thread.join(timeout=2.0)
             
-            if not quiet: print("\n🛑 Generacion detenida por el usuario.")
+            if not quiet: print("
+🛑 Generacion detenida por el usuario.")
             if persistir:
                 self.memoria.guardar_mensaje(
                     self.usuario_actual, self.titulo_actual, 'assistant', 
                     respuesta_completa + " [GENERACION INTERRUMPIDA]", modelo=self.modelo_actual_id
                 )
         except Exception as e:
-            if not quiet: print(f"\n❌ Ocurrio un error: {e}")
+            if not quiet: print(f"
+❌ Ocurrio un error: {e}")
 
     # --- PUERTO DE GESTIÓN DE SESIONES ---
     def gestionar_sesion_global(self):
@@ -249,7 +251,8 @@ class AgenteInteligente:
         # 1. Manejar --list-chats
         if self.cli_args.list_chats:
             titulos = self.memoria.obtener_titulos_conversacion(self.usuario_actual)
-            print(f"\n--- Conversaciones para el usuario '{self.usuario_actual}' ---")
+            print(f"
+--- Conversaciones para el usuario '{self.usuario_actual}' ---")
             if not titulos:
                 print("No se encontraron conversaciones.")
             else:
@@ -288,7 +291,8 @@ class AgenteInteligente:
         """Método auxiliar para la selección interactiva de chat."""
         while True:
             titulos = self.memoria.obtener_titulos_conversacion(self.usuario_actual)
-            print(f"\n--- Selecciona o crea una conversación para '{self.usuario_actual}' ---")
+            print(f"
+--- Selecciona o crea una conversación para '{self.usuario_actual}' ---")
             if not titulos:
                 print("No se encontraron conversaciones existentes.")
             else:
@@ -328,7 +332,8 @@ class AgenteInteligente:
     def _gestionar_sesion_interactiva_por_defecto(self):
         """Método auxiliar para la gestión de sesión interactiva por defecto (sin CLI args)."""
         while True:
-            print("\n--- Gestión de Sesiones ---")
+            print("
+--- Gestión de Sesiones ---")
             print("1. Iniciar nueva conversación")
             print("2. Reanudar conversación existente (selección interactiva)")
             print("3. Conversación temporal (no se guarda)")
@@ -418,7 +423,8 @@ class AgenteInteligente:
 
         while True:
             try:
-                u_in = input("\nTú: ").strip()
+                u_in = input("
+Tú: ").strip()
                 if not u_in:
                     continue
                 
@@ -428,7 +434,8 @@ class AgenteInteligente:
                     break
                 
                 if u_in.lower() == '/help':
-                    print("\nComandos disponibles:")
+                    print("
+Comandos disponibles:")
                     print("  /exit          - Salir del chat.")
                     print("  /model [alias] - Cambiar el modelo en caliente (ej: /model gema).")
                     print("  /stream        - Activar/desactivar el modo streaming.")
@@ -449,7 +456,9 @@ class AgenteInteligente:
                 self.procesar_mensaje(u_in, stream=stream_activo, quiet=False)
                 
             except (KeyboardInterrupt, EOFError):
-                print("\nCerrando sesión. ¡Hasta luego!")
+                print("
+
+Cerrando sesión. ¡Hasta luego!")
                 break
 
     def ejecutar_modo_headless(self, mensaje: str, stream: bool = False):
@@ -526,3 +535,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
