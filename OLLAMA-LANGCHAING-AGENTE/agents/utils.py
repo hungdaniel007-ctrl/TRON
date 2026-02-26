@@ -103,6 +103,9 @@ def load_llm(model_identifier: str, all_configs: dict, agent_cerebro_config: dic
                 print("\n❌ Error: DEEPSEEK_API_KEY no fue encontrada en el entorno.")
                 return None
             merged_config['api_key'] = deepseek_api_key
+            # Eliminar parámetros no reconocidos por ChatDeepSeek
+            if 'max_tokens_context' in merged_config:
+                merged_config.pop('max_tokens_context')
             # 'top_k' no es un argumento directo para ChatDeepSeek, por lo tanto no lo incluimos
             # directamente en merged_config. Si LangChain soporta pasarlo via client_kwargs o model_kwargs
             # se haria aqui. Por ahora, asumimos que DeepSeek usara su default.
